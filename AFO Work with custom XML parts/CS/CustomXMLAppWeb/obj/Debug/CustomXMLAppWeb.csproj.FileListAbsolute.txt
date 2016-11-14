@@ -1,0 +1,5 @@
+c:\users\saulc\documents\visual studio 2012\Projects\CustomXMLApp\CustomXMLAppWeb\bin\CustomXMLAppWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\CustomXMLApp\CustomXMLAppWeb\bin\CustomXMLAppWeb.pdb
+c:\users\saulc\documents\visual studio 2012\Projects\CustomXMLApp\CustomXMLAppWeb\obj\Debug\CustomXMLAppWeb.csprojResolveAssemblyReference.cache
+c:\users\saulc\documents\visual studio 2012\Projects\CustomXMLApp\CustomXMLAppWeb\obj\Debug\CustomXMLAppWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\CustomXMLApp\CustomXMLAppWeb\obj\Debug\CustomXMLAppWeb.pdb

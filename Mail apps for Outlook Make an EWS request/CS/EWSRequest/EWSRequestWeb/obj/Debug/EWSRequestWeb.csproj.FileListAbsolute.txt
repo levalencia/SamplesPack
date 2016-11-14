@@ -1,0 +1,5 @@
+C:\Data\Projects\EWSRequest\EWSRequestWeb\bin\EWSRequestWeb.dll
+C:\Data\Projects\EWSRequest\EWSRequestWeb\bin\EWSRequestWeb.pdb
+C:\Data\Projects\EWSRequest\EWSRequestWeb\obj\Debug\EWSRequestWeb.csprojResolveAssemblyReference.cache
+C:\Data\Projects\EWSRequest\EWSRequestWeb\obj\Debug\EWSRequestWeb.dll
+C:\Data\Projects\EWSRequest\EWSRequestWeb\obj\Debug\EWSRequestWeb.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityTokenService", "IdentityTokenService\IdentityTokenService.csproj", "{3AF88B17-EFB1-48DE-A3F1-A90BB209B010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityToken", "IdentityToken\IdentityToken.csproj", "{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityTokenWeb", "IdentityTokenWeb\IdentityTokenWeb.csproj", "{50FF7109-6ED1-4546-A198-405825B69941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AF88B17-EFB1-48DE-A3F1-A90BB209B010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF88B17-EFB1-48DE-A3F1-A90BB209B010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF88B17-EFB1-48DE-A3F1-A90BB209B010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF88B17-EFB1-48DE-A3F1-A90BB209B010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5B11E6-85B2-4F0D-883E-B0D7F98FD358}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{50FF7109-6ED1-4546-A198-405825B69941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FF7109-6ED1-4546-A198-405825B69941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FF7109-6ED1-4546-A198-405825B69941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FF7109-6ED1-4546-A198-405825B69941}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorLookup", "VendorLookup\VendorLookup.csproj", "{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorLookupWeb", "VendorLookupWeb\VendorLookupWeb.csproj", "{65012D2B-F421-4DFF-9FBF-323F261B14F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{65012D2B-F421-4DFF-9FBF-323F261B14F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65012D2B-F421-4DFF-9FBF-323F261B14F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65012D2B-F421-4DFF-9FBF-323F261B14F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65012D2B-F421-4DFF-9FBF-323F261B14F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

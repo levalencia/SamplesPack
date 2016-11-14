@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWSRequest", "EWSRequest\EWSRequest.csproj", "{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWSRequestWeb", "EWSRequestWeb\EWSRequestWeb.csproj", "{01AE975E-4A82-4A19-8539-F1DCE3662765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E4DCF7A-049A-4D73-B8DF-9299A8D281D8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{01AE975E-4A82-4A19-8539-F1DCE3662765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AE975E-4A82-4A19-8539-F1DCE3662765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AE975E-4A82-4A19-8539-F1DCE3662765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AE975E-4A82-4A19-8539-F1DCE3662765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

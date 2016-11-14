@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CodeSample_OfflineCalculatorApp.xml
+\\back\Scratch\erschmid\Projects\CodeSample_OfflineCalculatorApp\CodeSample_OfflineCalculatorApp\bin\Debug\CodeSample_OfflineCalculatorApp.app

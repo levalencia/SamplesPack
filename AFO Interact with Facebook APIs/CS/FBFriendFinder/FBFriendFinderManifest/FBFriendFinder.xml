@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>7938d66c-bb98-4415-85ca-9351ab0819bf</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>SaulC</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Log in to Facebook" />
+  <Description DefaultValue="FBFriendFinder Description"/>
+  <Capabilities>
+    <Capability Name="Workbook" />
+  </Capabilities>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="http://localhost:64726/App/Home/Home.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

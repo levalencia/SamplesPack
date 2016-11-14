@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6da3b21a-dc32-4522-8110-24ef9d81d8c6}"
+       Name="ScriptDescription"
+       DisplayName="Description"
+       Type="Note"
+       Required="FALSE"
+       Group="s43"
+       RichTextMode="Full">
+  </Field>
+</Elements>

@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=7A770956F95829094E6B437F2E15F78D" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/f1ba9241-fa93-41f3-bce3-a025e0ba4044Combined.css,0:ImageSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=091859E5A4DB58EB5F31FB2CDF7DABDE" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Create a mail app for VoIP dialing</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Create a mail app for VoIP dialing</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Outlook Web App, Visual Studio 2012, Outlook 2013, apps for Office, Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            mail app
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last updated</label>
+                    <div id="LastUpdated">8/28/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-dc28341f">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-size:small">This mail app allows users to conveniently dial a telephone number in the app pane in Outlook, if the selected email message or appointment contains one or more telephone numbers. The following figure is a screen shot of the
+ Phone Dialer mail app activated for a message in the Reading Pane. The accompanying topic,
+<a href="http://msdn.microsoft.com/en-us/library/office/apps/fp142164(v=office.15).aspx">
+How to: Build a mail app for Voice Over IP dialing</a>,&nbsp;also shows a video of this mail app in action.</span></p>
+<p><img id="60114" src="description/mailApp_Small.png" alt="" width="645" height="454"></p>
+<p><span style="font-size:small">The main code files for this mail app are manifest.xml, dialer.htm, and dialer.js, along with logo image files for this app and the JavaScript library and string files for apps for Office. The following is a high level summary
+ of how the mail app works:</span></p>
+<p style="padding-left:30px"><span style="font-size:small">1.&nbsp;This mail app specifies in the manifest.xml file that it requires a host application that supports the mailbox capability:</span></p>
+<p style="padding-left:30px"><span style="font-size:small">&lt;Capabilities&gt;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; &lt;Capability Name=&quot;Mailbox&quot;/&gt;</span><br>
+<span style="font-size:small">&lt;/Capabilities&gt;</span></p>
+<p style="padding-left:30px"><span style="font-size:small">In Office 2013,&nbsp;mail apps are supported in the Outlook rich client and&nbsp;Outlook Web App.</span></p>
+<p style="padding-left:30px"><span style="font-size:small">2.&nbsp;The mail app specifies in the manifest file its support for the desktop form factor. This further determines that in Office 2013, the applications that can host this mail app are the Outlook
+ rich client and Outlook Web App.</span></p>
+<p style="padding-left:30px"><span style="font-size:small">&lt;DesktopSettings&gt;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; &lt;!-- Change the following line to specify the web server where the HTML file is hosted. --&gt;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; &lt;SourceLocation DefaultValue=&quot;https://webserver/PhoneDialer/dialer.htm&quot; /&gt;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; &lt;RequestedHeight&gt;150&lt;/RequestedHeight&gt;</span><br>
+<span style="font-size:small">&lt;/DesktopSettings&gt;</span></p>
+<p style="padding-left:30px"><span style="font-size:small">3.&nbsp;The mail requests the
+<strong>ReadItem</strong> permission in the manifest file.</span></p>
+<p style="padding-left:30px"><span style="font-size:small">&lt;Permissions&gt;ReadItem&lt;/Permissions&gt;&nbsp;</span></p>
+<p style="padding-left:30px"><span style="font-size:small">4.&nbsp;The host application activates this mail app when the selected message or appointment contains a telephone number. It does so by first reading on startup the manifest.xml file which specifies
+ an <strong><a href="http://msdn.microsoft.com/en-us/library/fp161166(v=office.15)">ItemHasKnownEntity</a></strong> activation rule:</span></p>
+<p style="padding-left:30px"><span style="font-size:small">&lt;Rule xsi:type=&quot;ItemHasKnownEntity&quot; EntityType=&quot;PhoneNumber&quot;/&gt;</span></p>
+<p style="padding-left:30px"><span style="font-size:small">5.&nbsp;The mail app defines an initialize function which is an event handler for the
+<strong><a href="http://msdn.microsoft.com/en-us/library/fp161139.aspx">initialize</a></strong> event. The initialize function obtains the selected item by first using the
+<strong><a href="http://msdn.microsoft.com/en-us/library/fp142162(v=office.15)">Mailbox</a></strong> object from the
+<strong><a href="http://msdn.microsoft.com/en-us/library/fp161058(v=office.15)">Office.context.mailbox</a></strong> property, then using the
+<strong><a href="http://msdn.microsoft.com/en-us/library/fp142196(v=office.15)">item</a>&nbsp;</strong>property of the
+<strong>Mailbox</strong> object. At the end of the initialize event handler, it calls the onInitializeComplete function.</span></p>
+<p style="padding-left:30px"><span style="font-size:small">// The initialize function is required for all apps.</span><br>
+<span style="font-size:small">Office.initialize = function () {</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; item = Office.context.mailbox.item;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; onInitializeComplete();</span><br>
+<span style="font-size:small">}</span></p>
+<p style="padding-left:30px"><span style="font-size:small">6.&nbsp;This mail app makes sure that the main function of the mail app, initDialer, is called only when both the run-time environment is loaded and the DOM is ready. It does so with the help of the
+ onInitializeComplete and loadcomplete functions. The loadcomplete function is an event handler of the
+<strong>onload</strong> event which fires when the browser has loaded the HTML body and the DOM is ready. When both the run-time environment is loaded (init is true) and the DOM is ready (bodyload is true), the onInitializeComplete function or loadcomplete
+ function, whichever occurs later, calls the main function of the mail app, initDialer, as shown in the code snippet below:</span></p>
+<p style="padding-left:30px"><span style="font-size:small">// Handler for initialization complete.</span><br>
+<span style="font-size:small">function onInitializeComplete() {</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; init = true;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; if (bodyload &amp;&amp; init) {</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initDialer();</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; }</span><br>
+<span style="font-size:small">}</span></p>
+<p style="padding-left:30px"><span style="font-size:small">// Handler for app body onload.</span><br>
+<span style="font-size:small">function loadcomplete() {</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; bodyload = true;</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; if (bodyload &amp;&amp; init) {</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initDialer();</span><br>
+<span style="font-size:small">&nbsp;&nbsp;&nbsp; }</span><br>
+<span style="font-size:small">}</span></p>
+<p style="padding-left:30px"><span style="font-size:small">7.&nbsp;The initDialer function uses the
+<strong>getEntities</strong> method of the current item to return an array of supported entities in the subject or body of the current item. initDialer then uses the
+<strong><a href="http://msdn.microsoft.com/en-us/library/fp160970(v=office.15)">phoneNumbers</a></strong> property to get an array of one or more phone numbers among the entities. initDialer parses the array, associates each telephone number with a
+<strong>callto:tel:</strong> hyperlink. When the user chooses one of these links, Lync opens and the user can proceed to use Lync to dial the number.</span></p>
+<h1>Prerequisites</h1>
+<p><span style="font-size:small">The following are the requirements for the sample:</span></p>
+<ul>
+<li><span style="font-size:small">Your favorite web development tool and web server to author and host HTML and JavaScript files.</span>
+</li><li><span style="font-size:small">An email account on Exchange Server 2013.</span>
+</li><li><span style="font-size:small">Client applications that support the mailbox capability in Office 2013, on the desktop and tablet form factors: Outlook 2013&nbsp;and Outlook Web App.</span>
+</li><li><span style="font-size:small">Internet Explorer 9 or Internet Explorer 10 Preview.</span>
+</li><li><span style="font-size:small">Required technical familiarity: HTML, JavaScript.</span>
+</li></ul>
+<h1>Key components of the sample</h1>
+<p><span style="font-size:small">The following are the primary files in the sample:</span></p>
+<ul>
+<li><span style="font-size:small">manifest.xml</span> </li><li><span style="font-size:small">dialer.htm</span> </li><li><span style="font-size:small">dialer.js</span> </li><li><span style="font-size:small">Icon_narrow.png</span> </li><li><span style="font-size:small">Outlook.css</span> </li><li><span style="line-height:115%; font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;; font-size:11pt">MicrosoftAjax.js</span>
+</li><li><span style="line-height:115%; font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;; font-size:11pt">jquery-1.4.2.js</span>
+</li><li><span style="line-height:115%; font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;; font-size:11pt">json2.js</span>
+</li></ul>
+<h1>Configure the sample</h1>
+<p><span style="font-size:small">Host the dialer.htm file on a web server, and make sure the paths to the image, CSS and JavaScript files are specified appropriately in the dialer.htm file so that they are accessible.</span></p>
+<p><span style="font-size:small">Copy the manifest.xml to a location that is accessible by the Exchange Server during installation, for example, local drive, on a server, so that when you install the mail app on the Unified Management Console for the mailbox,
+ you can specify the path to the manifest. After installation, the manifest is stored on the Exchange Server for the mailbox.</span></p>
+<h1>Run and test the sample</h1>
+<p><span style="font-size:small">Using the Exchange 2013 email account, create an email message or appointment and add one or more telephone numbers to the subject or body. The mail app activates when you view the item in the read inspector or Reading Pane
+ (in the case of a message). Choose the <strong>Phone Dialer </strong>app button to start the app.</span></p>
+<h1>Related content</h1>
+<p><span style="font-size:small"><a href="http://msdn.microsoft.com/en-us/library/fp142164(v=office.15)">How to: Build a mail app for Voice Over IP dialing</a></span></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Created:cbbc9d22-5cf7-4e4c-8ee9-42a772aae58a-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" ProductID="{144d64fc-af7d-4336-b1fe-528b0f013724}" Version="1.0.0.0" SharePointMinVersion="15.0.0.0" Name="ClassroomOnline">
+  <Properties>
+    <Title>ClassroomOnline</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <InstalledEventEndpoint>https://levalencia1.servicebus.windows.net/673712560/139059342/obj/25b23141-8ec2-4982-9134-09f8d2c02620/AppEventReceiver.svc</InstalledEventEndpoint>
+    <UninstallingEventEndpoint>https://levalencia1.servicebus.windows.net/673712560/139059342/obj/25b23141-8ec2-4982-9134-09f8d2c02620/AppEventReceiver.svc</UninstallingEventEndpoint>
+    <UpgradedEventEndpoint>https://levalencia1.servicebus.windows.net/673712560/139059342/obj/25b23141-8ec2-4982-9134-09f8d2c02620/AppEventReceiver.svc</UpgradedEventEndpoint>
+  </Properties>
+  <AppPrincipal>
+    <AutoDeployedWebApplication>
+      <DebugInfo ClientSecret="cwKZ5kQwp0bR2jDB2M2Ak6kc6vlZEU8ARkCICrlrTv8=" AppUrl="https://localhost:44324/;https://levalencia1.servicebus.windows.net/673712560/139059342/obj/25b23141-8ec2-4982-9134-09f8d2c02620/" />
+    </AutoDeployedWebApplication>
+  </AppPrincipal>
+  <AppPermissionRequests></AppPermissionRequests>
+</App>

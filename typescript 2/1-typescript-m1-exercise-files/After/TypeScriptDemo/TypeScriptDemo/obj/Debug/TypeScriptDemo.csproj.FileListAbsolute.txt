@@ -1,0 +1,5 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\TypeScriptDemo\TypeScriptDemo\bin\TypeScriptDemo.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\TypeScriptDemo\TypeScriptDemo\bin\TypeScriptDemo.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\TypeScriptDemo\TypeScriptDemo\bin\TypeScriptDemo.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\TypeScriptDemo\TypeScriptDemo\obj\Debug\TypeScriptDemo.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\TypeScriptDemo\TypeScriptDemo\obj\Debug\TypeScriptDemo.pdb

@@ -1,0 +1,5 @@
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb

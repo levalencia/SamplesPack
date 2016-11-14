@@ -1,0 +1,22 @@
+﻿.displayedPage {
+    display:block;
+}
+
+.hiddenPage {
+    display:none;
+}
+
+.toast 
+{
+
+    background-color:rgba(128, 128, 128, 0.77);
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+
+}
+
+h1 {
+    font-size: medium;
+}

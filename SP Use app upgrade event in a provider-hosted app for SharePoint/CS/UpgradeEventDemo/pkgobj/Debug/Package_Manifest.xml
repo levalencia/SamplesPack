@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="98e2d697-33cd-4624-9947-0c82de486933" SharePointProductVersion="14.0">
+  <FeatureManifests>
+    <FeatureManifest Location="UpgradeEventDemo_AppWebMain\Feature.xml" />
+  </FeatureManifests>
+</Solution>

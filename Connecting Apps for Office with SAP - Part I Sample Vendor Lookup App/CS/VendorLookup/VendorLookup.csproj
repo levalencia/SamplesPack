@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{948A63DE-AD71-42F9-B555-A6D9A5F0A69C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VendorLookup</RootNamespace>
+    <AssemblyName>VendorLookup</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <AppFeaturePartId>{fb0de35d-9050-4e74-ba19-781a4a152fb8}</AppFeaturePartId>
+    <WspPartId>{24125ada-a89a-489c-92a9-6031e23b1b8b}</WspPartId>
+    <WorkflowPartId>{1b49947e-fad8-422a-a2ad-79626de1f431}</WorkflowPartId>
+    <CspkgPartId>{0c0644f7-f05b-40e3-a8d1-4b46fdb4dad0}</CspkgPartId>
+    <SqlPackagePartId>{5f3ca345-96fe-4051-99c8-c081de8328ef}</SqlPackagePartId>
+    <ProjectMode>OfficeApp</ProjectMode>
+    <IsAutoDeployedWebApplication>True</IsAutoDeployedWebApplication>
+    <AutohostedOfficeAppProductId>{269abc40-ae94-4b2b-88a8-ec34d4be184c}</AutohostedOfficeAppProductId>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="VendorLookupManifest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cce4571d-6797-4179-9fd5-d6cb84f15326}</SharePointProjectItemId>
+    </None>
+    <Content Include="VendorLookupManifest\VendorLookup.xml">
+      <OpcRelationship>manifest-oemanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VendorLookupWeb\VendorLookupWeb.csproj">
+      <Project>{65012D2B-F421-4DFF-9FBF-323F261B14F1}</Project>
+      <Name>VendorLookupWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>VendorLookupWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

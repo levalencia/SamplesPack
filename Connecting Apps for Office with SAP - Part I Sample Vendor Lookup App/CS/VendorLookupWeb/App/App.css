@@ -1,0 +1,156 @@
+﻿/* Common app styling */
+
+#content-header {
+    /*background: #2a8dd4; original value*/
+    background-image: url(../Content/Images/sap_background_12_80.png);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Fixed header height */
+    overflow: hidden; /* Disable scrollbars for header */
+}
+
+#header-logo {
+    position: absolute;
+    margin: 20px 15px;
+}
+
+#header-text {
+    position:absolute;
+    margin-left: 110px;
+    margin-top: 20px;
+    color: #fff;
+    font-size:2.0em;
+    font-weight:400;
+}
+#content-main {
+    background: #fff;
+    position: fixed;
+    top: 80px; /* Same value as #content-header's height */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto; /* Enable scrollbars within main content section */
+}
+
+#vendor-search {
+    position: relative;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    z-index: 3;
+}
+
+.lookup #byname, #bynumber {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.vendor-input {
+    margin-top: 10px;
+}
+
+.vendor-input #vendor {
+    width: 78%;
+    background-image: url(../Content/Images/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#btnGet {
+    margin: 10px 0 10px 0;
+    border-color: #CCCCCC;
+    width: 20%;
+}
+
+.vendor-details {
+    padding-left: 5px;
+    padding-top: 5px;
+    margin: -220px 15px 0px 15px;
+    position: relative;
+    height: 185px;
+    /*animation-name: mymove;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;*/
+    z-index: 1;
+}
+
+@keyframes mymove
+{
+from {top:0px;}
+to {top:200px;}
+}
+
+
+#vendor-id, #vendor-address, #vendor-phone {
+    margin-top: 20px;
+}
+
+#vendor-id .label, #vendor-address .label, #vendor-phone .label {
+    float: left;
+}
+
+#vendor-id .value, #vendor-address .value, #vendor-phone .value {
+    float: left;
+    position:absolute;
+    margin-left: 70px;
+    color: #2a8dd4;
+}
+
+#vendor-id .link, #vendor-address .link, #vendor-phone .link {
+    float: right;
+    margin-right: 20px;
+}
+
+.link a {
+    color:#767676;
+}
+
+.valuex {
+    clear:both;
+    position: relative;
+    margin-left: 70px;
+    color: #2a8dd4;
+}
+
+.break {
+    clear: both;
+}
+
+#notification-message {
+    background-color: #818285;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    right: 0;
+    z-index: 100;
+    bottom: 0;
+    display: none; /* Hidden until invoked */
+}
+
+#notification-message-header {
+    font-size: medium;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#notification-message-body {
+    color: #fff;
+}
+
+#notification-message-close {
+    background-image: url("../Content/Images/Close.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}

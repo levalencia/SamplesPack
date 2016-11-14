@@ -1,0 +1,1 @@
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperations\bin\Debug\app.publish\1.0.0.0\BasicDataOperations.app

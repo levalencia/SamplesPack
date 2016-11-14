@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Start group IM from a message</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Start group IM from a message</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Exchange Online, Outlook Web App, lync online, Outlook 2013, apps for Office, Lync 2013, Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            mail app
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">5/30/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Mail apps for Outlook - Start a group IM from a message</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p>&nbsp;</p>
+<div>
+<p>Learn to create a mail app that lets you conveniently start a group instant message session with people whose email addresses are included in the currently selected message.</p>
+</div>
+<div>
+<h1>Description of the Group IM mail app sample</h1>
+<div id="sectionSection0">
+<p>The Group IM mail app allows you to conveniently start a group IM session within or Outlook Web App with the sender, recipients, or other people whose email addresses are included in the body of the currently selected message. Figure 1 shows that the user
+ Belinda Newman has selected the recipients Jeff and Ben and is ready to start an IM session using the Group IM mail app.</p>
+<strong>
+<div class="caption">Figure 1. Selecting message recipients in the Group IM mail app to start a group IM conversation</div>
+</strong><br>
+<img src="description/image.png" alt="">
+<p>See the accompanying article <a href="http://msdn.microsoft.com/magazine/dn205107" >
+Exploring the JavaScript API for Office: A Sample Mail App</a> for details about the code design.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>The following are the requirements for the sample:</p>
+<ul>
+<li>
+<p>Your favorite web development tool and web server to author and host HTML and JavaScript files.</p>
+</li><li>
+<p>An email account on Exchange Server 2013 or a later version.</p>
+</li><li>
+<p>Client applications that support the mailbox capability in Office 2013, on the desktop and tablet form factors: Outlook 2013 and Outlook Web App.</p>
+</li><li>
+<p>Internet Explorer 9 or a later version.</p>
+</li><li>
+<p>Required technical familiarity: HTML, JavaScript.</p>
+</li></ul>
+</div>
+<h1>Installation permissions</h1>
+<div id="sectionSection2">
+<p>You install this mail app by specifying the file path to the app manifest. This sample does not require any of the following tools:</p>
+<ul>
+<li>
+<p>Office 365 developer tenant</p>
+</li><li>
+<p>&quot;Napa&quot; Office 365 Development Tools</p>
+</li><li>
+<p>Visual Studio</p>
+</li></ul>
+<p>However, if you do not use any of these tools and do not have at least the My Custom Apps role for your Exchange Server, you can install mail apps only from the Office Store. If this is the case, request that your Exchange administrator provide the necessary
+ permissions.</p>
+<p>The Exchange administrator can run the following PowerShell cmdlet to assign the necessary permissions for a single user. In this example, wendyri is the user's email alias.</p>
+<p><span>New-ManagementRoleAssignment -Role &quot;My Custom Apps&quot; -User &quot;wendyri&quot;</span></p>
+<p>If necessary, the administrator can run the following cmdlet to assign similar permissions for multiple users:</p>
+<p><span>$users = Get-Mailbox *</span></p>
+<p><span>$users | ForEach-Object { New-ManagementRoleAssignment -Role &quot;My Custom Apps&quot; -User $_.Alias}</span></p>
+<p>For more information about the My Custom Apps role, see <a href="http://technet.microsoft.com/en-us/library/jj657478(v=exchg.150).aspx" >
+My Custom Apps role</a>.</p>
+<p>Using Office 365, &quot;Napa&quot; Office 365 Development Tools, or Visual Studio to develop mail apps assigns you the organization administrator role, which allows you to install mail apps by file or URL in the EAC, or by Powershell cmdlets.</p>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection3">
+<p>The following are the primary files in the sample:</p>
+<ul>
+<li>
+<p>Lync IM.xml.</p>
+</li><li>
+<p>InstantMessage.htm.</p>
+</li><li>
+<p>InstantMessage.js.</p>
+</li><li>
+<p>mslync-logo_small.png.</p>
+</li><li>
+<p>mslync-logo.png.</p>
+</li><li>
+<p>Office_strings.js, in a subfolder named en-us.</p>
+</li></ul>
+<p>Notice that this sample mail app requires the following files, as well, and gets them from the corresponding locations, as specified:</p>
+<ul>
+<li>
+<p>Office.js: from the Content Delivery Network (CDN) at <a href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16/https://appsforoffice.microsoft.com/lib/1.0/" >
+http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16/https://appsforoffice.microsoft.com/lib/1.0/</a>.</p>
+</li><li>
+<p>jquery-1.7.1.min.js: from <a href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16/https://ajax.aspnetcdn.com/ajax/jQuery/" >
+http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16/https://ajax.aspnetcdn.com/ajax/jQuery/</a>.</p>
+</li></ul>
+</div>
+<h1>Customize the sample</h1>
+<div id="sectionSection4">
+<p>There are a few URLs in the app manifest file that you need to specify for your setup before installing the mail app:</p>
+<ol>
+<li>
+<p>Download the source files for the sample from <a href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-2b20fc16" >
+Mail apps for Outlook: Start group IM from a message</a>.</p>
+<p>For the purpose of describing this procedure, save them to a local folder <em>
+d</em>:\GroupIM, where <em>d</em>: is a local drive on your computer.</p>
+</li><li>
+<p>Host the set of source files on a web server.</p>
+<p>For the purpose of describing this procedure, assume <em>contoso</em> as the name of the web server. Create a folder called GroupIM on contoso, and copy the source files to this folder.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>Only the HTML, JavaScript, and image files must be on contoso. You can save Lync IM.xml on a local or network drive that is accessible to your Exchange Server.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>Update the following files and paths in Lync IM.xml to reflect the location of respective files:</p>
+<ol>
+<li>
+<p>Find the following URL of the image file that represents your app after it's been installed in the host application:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>XML </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>&lt;IconUrl DefaultValue=
+  &quot;https://webserver/GroupIM/mslync-logo_small.png&quot;/&gt;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>Change it to the following URL:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>XML </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>&lt;IconUrl DefaultValue=
+  &quot;https://contoso/GroupIM/mslync-logo_small.png&quot;/&gt;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>Find the two instances of the following URL of the app HTML file to use on the desktop and on the tablet:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>XML </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>&lt;SourceLocation DefaultValue=
+  &quot;https://webserver/GroupIM/InstantMessage.htm&quot;/&gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>Change the instances to the following URL:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>XML </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>&lt;SourceLocation DefaultValue=
+  &quot;https://contoso/GroupIM/InstantMessage.htm&quot;/&gt;
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li></ol>
+</li></ol>
+</div>
+<h1>Install the sample</h1>
+<div id="sectionSection5">
+<p>The following procedure describes how to use the Outlook rich client and the Exchange Admin Center (EAC) to install the Group IM app for use by the same Outlook mailbox in the Outlook rich client and Outlook Web App. The procedure to install an app from
+ Outlook Web App through the EAC is similar, once you are in the EAC as described in Step 3 below. In general, as long as the manifest file specifies the applicable form factors, once you have installed an app for a mailbox in the EAC, the app is available
+ for use for that mailbox in the Outlook rich client or Outlook Web App on the supporting form factors.</p>
+<ol>
+<li>
+<p>In the Outlook rich client, choose <strong><span class="ui">File</span></strong>,
+<strong><span class="ui">Manage Apps</span></strong>.</p>
+<p>This opens a browser for you to log on to Outlook Web App to go to the EAC.</p>
+</li><li>
+<p>Log on to your Exchange account.</p>
+</li><li>
+<p>In the EAC, choose the drop-down box that is adjacent to the &#43; button, and then
+<strong><span class="ui">Add from file</span></strong>.</p>
+</li><li>
+<p>In the <strong><span class="ui">add from file</span></strong> dialog box, browse to the location of manifest.xml in d:\GroupIM, choose
+<strong><span class="ui">Open</span></strong>, <strong><span class="ui">Next</span></strong>.</p>
+</li></ol>
+<p>You should then see the Group IM app in the list of apps for Outlook.</p>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6">
+<p><a href="http://msdn.microsoft.com/magazine/dn205107" >Exploring the JavaScript API for Office: A Sample Mail App</a></p>
+<p><a href="http://msdn.microsoft.com/magazine/dn201750" >Exploring the JavaScript API for Office: Mail Apps</a></p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

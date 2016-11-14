@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fb407b53-0efb-4c4a-baae-3cf95de2b0e1" solutionId="fb407b53-0efb-4c4a-baae-3cf95de2b0e1" resetWebServer="false" sharePointProductVersion="15.0" name="S43ScriptLibrary" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4f2d4083-7484-48d5-b8a9-da92b7b4f48f" />
+  </features>
+</package>

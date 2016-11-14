@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/UpgradeEventDemo" />
+  <setParameter name="ClientId" value="2084f712-a88b-45d7-a4e6-82d39cbb80d0" />
+  <setParameter name="ClientSecret" value="" />
+</parameters>

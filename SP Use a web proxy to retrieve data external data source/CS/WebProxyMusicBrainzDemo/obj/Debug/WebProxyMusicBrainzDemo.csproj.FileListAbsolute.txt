@@ -1,0 +1,3 @@
+C:\Demos_Samples\WebProxyMusicBrainzDemo\WebProxyMusicBrainzDemo\bin\Debug\WebProxyMusicBrainzDemo.pdb
+C:\Demos_Samples\WebProxyMusicBrainzDemo\WebProxyMusicBrainzDemo\obj\Debug\WebProxyMusicBrainzDemo.dll
+C:\Demos_Samples\WebProxyMusicBrainzDemo\WebProxyMusicBrainzDemo\obj\Debug\WebProxyMusicBrainzDemo.pdb

@@ -1,0 +1,48 @@
+﻿
+
+.basicJSOMContainer{ 
+    width:900px;
+    
+}
+.resultsDisplayHeader{
+    float:left;
+    width:400px;
+    padding-left:10px;
+}
+.resultsDisplay {
+    float:right;
+    width:400px;
+    background-color: lightgray;
+    border: solid 1px black;
+    min-height:300px;
+}
+
+.resultsDisplayHeaderSingle{
+    width:400px;
+    padding-left:10px;
+}
+
+
+.resultsDisplaySingle {
+    width:400px;
+    background-color: lightgray;
+    border: solid 1px black;
+    min-height:300px;
+}
+
+.sampleCodeHeader{
+    float:left;
+    width:450px;
+}
+.sampleCode {
+    float:left;
+    width:450px;
+    background-color:lightgray;
+    border: solid 1px black;
+    min-height:300px;
+}
+
+.highlighted{
+    background-color:yellow;
+}
+

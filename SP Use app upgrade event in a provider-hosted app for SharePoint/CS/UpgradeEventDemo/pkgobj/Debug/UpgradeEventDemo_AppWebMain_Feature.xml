@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="5359447c-3047-44df-9569-1738228083cb" Scope="Web" Title="UpgradeEventDemo Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Books\Elements.xml" />
+  </ElementManifests>
+</Feature>

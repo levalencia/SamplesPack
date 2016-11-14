@@ -1,0 +1,12 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\bin\UsingInterfaces.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\UsingInterfaces\UsingInterfaces\obj\Debug\UsingInterfaces.pdb

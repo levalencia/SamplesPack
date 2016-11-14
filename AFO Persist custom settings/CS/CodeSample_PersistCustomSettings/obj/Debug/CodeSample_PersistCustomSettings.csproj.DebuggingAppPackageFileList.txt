@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CodeSample_PersistCustomSettings.xml
+c:\users\erschmid\documents\visual studio 2012\Projects\CodeSample_PersistCustomSettings\CodeSample_PersistCustomSettings\bin\Debug\CodeSample_PersistCustomSettings.app

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>http://dev.swampland.local/</SharePointSiteUrl>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2014-02-03T18:47:57Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>0053b7e3-98ff-4680-8a6f-070693e059c8</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

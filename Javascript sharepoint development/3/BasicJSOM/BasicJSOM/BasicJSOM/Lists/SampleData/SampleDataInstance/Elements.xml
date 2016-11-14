@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SampleData" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/SampleData" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Included #1</Field>
+          <Field Name="DataColumn1">1</Field>
+          <Field Name="Secret">Secret #1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Included #2</Field>
+          <Field Name="DataColumn1">2</Field>
+          <Field Name="Secret">Secret #2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Included #3</Field>
+          <Field Name="DataColumn1">3</Field>
+          <Field Name="Secret">Secret #2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Excluded</Field>
+          <Field Name="DataColumn1">4</Field>
+          <Field Name="Secret">No Secret</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Excluded</Field>
+          <Field Name="DataColumn1">5</Field>
+          <Field Name="Secret">No Secret</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

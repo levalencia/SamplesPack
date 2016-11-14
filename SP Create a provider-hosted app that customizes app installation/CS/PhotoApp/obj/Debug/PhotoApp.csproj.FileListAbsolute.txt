@@ -1,0 +1,4 @@
+C:\Demos\PhotoApp\PhotoApp\bin\Debug\PhotoApp.pdb
+C:\Demos\PhotoApp\PhotoApp\obj\Debug\PhotoApp.dll
+C:\Demos\PhotoApp\PhotoApp\obj\Debug\PhotoApp.pdb
+C:\Demos\PhotoApp\PhotoApp\obj\Debug\PhotoApp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\Demos\13 - BCS\ExternalListEvents\ExternalListEvents\bin\Debug\ExternalListEvents.dll
+D:\Demos\13 - BCS\ExternalListEvents\ExternalListEvents\bin\Debug\ExternalListEvents.pdb
+D:\Demos\13 - BCS\ExternalListEvents\ExternalListEvents\obj\Debug\ExternalListEvents.dll
+D:\Demos\13 - BCS\ExternalListEvents\ExternalListEvents\obj\Debug\ExternalListEvents.pdb
+D:\Demos\13 - BCS\ExternalListEvents\ExternalListEvents\obj\Debug\ExternalListEvents.csprojResolveAssemblyReference.cache

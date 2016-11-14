@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="9c3b0c2d-c5fe-40a4-b47e-31b6de4f23f0" 
+        solutionId="9c3b0c2d-c5fe-40a4-b47e-31b6de4f23f0" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BasicJSOM"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d03aafc6-abae-428c-b6f0-57687e31d271" />
+  </features>
+</package>

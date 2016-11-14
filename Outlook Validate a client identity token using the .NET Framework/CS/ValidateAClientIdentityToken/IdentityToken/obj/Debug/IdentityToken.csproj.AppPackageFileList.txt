@@ -1,0 +1,2 @@
+bin\Debug\app.publish\OfficeAppManifests\IdentityTokenManifest.xml
+D:\Programming\IdentityToken\IdentityToken\bin\Debug\app.publish\IdentityToken.app

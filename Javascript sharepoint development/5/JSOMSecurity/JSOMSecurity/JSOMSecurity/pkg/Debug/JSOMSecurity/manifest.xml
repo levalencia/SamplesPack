@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="5f85dbd0-76c7-4407-90cd-81edbbd6c545" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="JSOMSecurity.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\JSOMSecurity\JSOMSecurity.aspx" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\App.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\jquery-1.7.1.intellisense.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\jquery-1.7.1.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\jquery-1.7.1.min.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\security.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Scripts\_references.js" />
+    <TemplateFile Location="Layouts\JSOMSecurity\Style\App.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="JSOMSecurity_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ChildList" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/ChildList" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Child 0a</Field>
+          <Field Name="SampleData">1;#Item 0</Field>
+         
+        </Row>
+        <Row>
+          <Field Name="Title">Child 1a</Field>
+          <Field Name="SampleData">2;#Item 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 2a</Field>
+          <Field Name="SampleData">3;#Item 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 3a</Field>
+          <Field Name="SampleData">4;#Item 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 0b</Field>
+          <Field Name="SampleData">1;#Item 0</Field>
+
+        </Row>
+        <Row>
+          <Field Name="Title">Child 1b</Field>
+          <Field Name="SampleData">2;#Item 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 2b</Field>
+          <Field Name="SampleData">3;#Item 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 3b</Field>
+          <Field Name="SampleData">4;#Item 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 0c</Field>
+          <Field Name="SampleData">1;#Item 0</Field>
+
+        </Row>
+        <Row>
+          <Field Name="Title">Child 1c</Field>
+          <Field Name="SampleData">2;#Item 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 2c</Field>
+          <Field Name="SampleData">3;#Item 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Child 3c</Field>
+          <Field Name="SampleData">4;#Item 3</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>

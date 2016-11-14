@@ -1,0 +1,50 @@
+﻿<div ng-hide="isDeleted">
+    <div class="col-md-12 col-xs-12" ng-show="editMode">
+        <form class="form-inline" role="form">
+            <div class="checkbox">
+                <label><input type="checkbox" id="Progress" ng-model="todo.done" /> Completed</label>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="DueDate">Due Date:</label>
+                <input type="text" id="DueDate" class="form-control input-sm" datepicker-popup="dd-MMM-yyyy" ng-model="todo.dueDate" is-open="opened" min="minDate" max="'2015-06-22'" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="TaskTitle">Title:</label>
+                <input type="text" id="TaskTitle" class="form-control input-sm" on-enter="save()" on-esc="cancel()" ng-model="todo.text" />
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="peoplePickerDiv">Assigned To:</label>
+                <div id="peoplePickerDiv{{todo.id}}" ng-model="todo.assignedTo"></div>
+            </div>
+            <button ng-click="cancel()" class="btn btn-default btn-xs active">cancel</button>
+            <button ng-click="save()" class="btn-primary  btn-xs active">save</button>
+        </form>
+    </div>
+    <div ng-mouseenter="showEdit = true" ng-mouseleave="showEdit = false">
+        <div class="col-md-1 col-xs-1" ng-hide="editMode">
+            <div class="dropdown" ng-controller="DropdownCtrl">
+                <a class="dropdown-toggle" title="Bump Me!"><img src="../Images/bump.png" /></a>
+                <ul class="dropdown-menu">
+                    <li ng-repeat="choice in items">
+                        <a ng-click="bump(choice.date)">{{choice.text}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-1 col-xs-1" ng-hide="editMode">
+            <div class="date"><p>{{todo.dueDate | date:'dd'}}<span>{{todo.dueDate | date:'MMM'}}</span></p></div>
+        </div>
+        <div class="col-md-4 col-xs-4" ng-hide="editMode">
+            <span class="done-{{todo.done}}" ng-click="edit()">{{todo.text}}</span>
+        </div>
+        <div class="col-md-3 col-xs-3" ng-hide="editMode">
+            <span ng-click="edit()">{{todo.assignedTo}}</span>
+        </div>
+        <div class="col-md-1 col-xs-1" ng-hide="editMode">
+            <a ng-click="edit()" title="Edit"><img src="../Images/edit.png" /></a>
+            <a ng-click="delete()" title="Delete"><img src="../Images/delete.png" /></a>
+        </div>
+        <div class="col-md-2 col-xs-6" ng-hide="editMode">
+        </div>
+    </div>
+</div>

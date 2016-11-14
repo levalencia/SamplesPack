@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Scripts" TemplateType="15847" Url="Scripts" Description="JavaScript Library" VersioningEnabled="TRUE"></ListInstance>
+</Elements>

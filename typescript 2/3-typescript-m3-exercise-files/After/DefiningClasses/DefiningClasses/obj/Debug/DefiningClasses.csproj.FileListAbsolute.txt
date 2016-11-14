@@ -1,0 +1,6 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\bin\DefiningClasses.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\bin\DefiningClasses.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\bin\DefiningClasses.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\obj\Debug\DefiningClasses.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\obj\Debug\DefiningClasses.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\After\DefiningClasses\DefiningClasses\obj\Debug\DefiningClasses.pdb

@@ -1,0 +1,5 @@
+c:\Users\soliver\Documents\Visual Studio 2012\Projects\ExcelDataVisualization\ExcelDataVisualizationWeb\bin\ExcelDataVisualizationWeb.dll
+c:\Users\soliver\Documents\Visual Studio 2012\Projects\ExcelDataVisualization\ExcelDataVisualizationWeb\bin\ExcelDataVisualizationWeb.pdb
+c:\Users\soliver\Documents\Visual Studio 2012\Projects\ExcelDataVisualization\ExcelDataVisualizationWeb\obj\Debug\ExcelDataVisualizationWeb.csprojResolveAssemblyReference.cache
+c:\Users\soliver\Documents\Visual Studio 2012\Projects\ExcelDataVisualization\ExcelDataVisualizationWeb\obj\Debug\ExcelDataVisualizationWeb.dll
+c:\Users\soliver\Documents\Visual Studio 2012\Projects\ExcelDataVisualization\ExcelDataVisualizationWeb\obj\Debug\ExcelDataVisualizationWeb.pdb

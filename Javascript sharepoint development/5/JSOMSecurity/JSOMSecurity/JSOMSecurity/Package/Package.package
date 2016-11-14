@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5f85dbd0-76c7-4407-90cd-81edbbd6c545" solutionId="5f85dbd0-76c7-4407-90cd-81edbbd6c545" resetWebServer="false" sharePointProductVersion="15.0" name="JSOMSecurity" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2529f232-3cb0-4e36-938f-b10ec36f3256" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="038aeb6c-969f-4566-8e06-60f48838974e" />
+  </projectItems>
+</package>

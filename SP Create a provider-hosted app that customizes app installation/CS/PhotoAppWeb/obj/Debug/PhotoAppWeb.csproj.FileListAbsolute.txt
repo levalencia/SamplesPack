@@ -1,0 +1,12 @@
+C:\Demos\PhotoApp\PhotoAppWeb\bin\PhotoAppWeb.dll
+C:\Demos\PhotoApp\PhotoAppWeb\bin\PhotoAppWeb.pdb
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.IdentityModel.dll
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.SharePoint.Client.xml
+C:\Demos\PhotoApp\PhotoAppWeb\bin\Microsoft.SharePoint.Client.Runtime.xml
+C:\Demos\PhotoApp\PhotoAppWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Demos\PhotoApp\PhotoAppWeb\obj\Debug\PhotoAppWeb.csprojResolveAssemblyReference.cache
+C:\Demos\PhotoApp\PhotoAppWeb\obj\Debug\PhotoAppWeb.dll
+C:\Demos\PhotoApp\PhotoAppWeb\obj\Debug\PhotoAppWeb.pdb

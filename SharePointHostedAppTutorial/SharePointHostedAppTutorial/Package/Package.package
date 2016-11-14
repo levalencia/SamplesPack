@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="980a147b-432d-465f-a77e-d4cf7d91b979" 
+        solutionId="980a147b-432d-465f-a77e-d4cf7d91b979" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePointHostedAppTutorial"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="e9baf750-5b96-46fb-a9bc-c961a88fb40d" />
+  </features>
+</package>

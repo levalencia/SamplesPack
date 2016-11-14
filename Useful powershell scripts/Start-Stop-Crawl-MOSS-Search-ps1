@@ -1,0 +1,43 @@
+function Start-Stop-All-Crawl([string]$SiteCollectionURL, [string]$FullIncrementalorStop) 
+{ 
+    [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint") > $null 
+    [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Office.Server.Search") > $null 
+
+    $site = new-object Microsoft.SharePoint.SPSite($SiteCollectionURL) 
+    Write-Host "SiteCollectionURL", $SiteCollectionURL 
+    $context =  [Microsoft.Office.Server.Search.Administration.SearchContext]::GetContext($site) 
+
+    $site.Dispose() 
+    $sspcontent = new-object Microsoft.Office.Server.Search.Administration.Content($context) 
+    $sspContentSources =  $sspcontent.ContentSources 
+    Write-Host "Total of Content Sources: ", $sspContentSources.Count 
+    foreach ($cs in $sspContentSources) 
+    { 
+        Write-Host "NAME: ", $cs.Name, " - ID: ", $cs.Id 
+        switch($FullIncrementalorStop) 
+        { 
+        "full" 
+            { 
+                Write-Host "Start Full Crawl" 
+                $cs.StartFullCrawl() 
+                Write-Host "Full Crawl Started" 
+            } 
+        "incremental" 
+            { 
+                Write-Host "Start Incremental Crawl" 
+                $cs.StartIncrementalCrawl() 
+                Write-Host "Incremental Crawl Started" 
+            } 
+        default 
+            { 
+                Write-Host "Stop Crawl" 
+                $cs.StopCrawl() 
+                Write-Host "Crawl Stopped" 
+            } 
+        } 
+    } 
+}
+
+Start-Stop-All-Crawl “http://mysearchMOSS” "" # Stop all Search tasks
+Start-Stop-All-Crawl “http://mysearchMOSS” "incremental" # Start the search engine in incremental mode for all datasources
+Start-Stop-All-Crawl “http://mysearchMOSS” "full" # Start the search engine in full crawl mode for all datasources

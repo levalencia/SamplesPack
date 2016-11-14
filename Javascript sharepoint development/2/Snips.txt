@@ -1,0 +1,143 @@
+Showing all global vars:
+
+var globalVars=[]; 
+for(var oneVar in this){
+	globalVars.push(oneVar);
+} 
+globalVars.sort();
+
+console.log("There are " + globalVars.length + " items in the Global Namespace:");
+
+for(var x in globalVars){
+	console.log(globalVars[x]);
+}
+
+************************************
+Variables Demo #1:
+************************************
+document.location.href = SetUrlKeyValue ("ID","5",true,ctx.editFormUrl)
+
+************************************
+Variables Demo #2:
+************************************
+var uiVer;
+switch(_spPageContextInfo.webUIVersion)
+ {
+ case 12:
+   uiVer = "SharePoint 2007";
+   break;
+ case 14:
+   uiVer = "SharePoint 2010";
+   break;
+ case 15:
+   uiVer = "SharePoint 2013";
+   break;
+ default:
+   uiVer = "(unknown)";
+   break;
+ }
+msg = "Welcome to the " + _spPageContextInfo.webTitle + " site, located at " + _spPageContextInfo.webAbsoluteUrl + "."
+msg += "\n\nYou are browsing the site in " + _spPageContextInfo.currentCultureName + " using the " + uiVer + " user interface";
+
+alert(msg);
+
+********************************
+List Views Demo #1:
+********************************
+function selectItems(){
+	clearAll();
+	for (var i=0; i<ctx.ListData.Row.length;i++){
+
+		if (parseInt(ctx.ListData.Row[i].ID) % 2 !== 0){
+			SelectRowByIndex(ctx,i,true);
+		}
+	}
+}
+
+function clearAll(){
+	var clvp = ctx.clvp
+	var tab = clvp.tab;
+	DeselectAllItems(ctx, tab.rows, false);
+}
+
+function showItemTab(){
+    ribbon = SP.Ribbon.PageManager.get_instance().get_ribbon();
+    SelectRibbonTab("Ribbon.ListItem", true);
+}
+
+selectItems();
+var itemCount = CountSelectedItems(ctx);
+alert("There are " + itemCount + " selected items to be deleted.  Please confirm and then click the Delete button in the Ribbon to delete them");
+showItemTab();
+
+
+
+************************************
+urls Demo #1:
+************************************
+var currentUrl = _spPageContextInfo.webAbsoluteUrl.replace("http://", "") + _spPageContextInfo.serverRequestPath; 
+
+//Note: we cannot use SP.Utilities.UrlBuilder.urlCombine here as _spPageContextInfo.serverRequestPath begins with a "/"
+
+alert("urlCombine doesn't work right: \n\n" + SP.Utilities.UrlBuilder.urlCombine(_spPageContextInfo.webAbsoluteUrl.replace('http://', ''), _spPageContextInfo.serverRequestPath));
+
+var illChar = IndexOfIllegalCharInUrlPath(currentUrl); 
+var msg = "Current URL is " + currentUrl  + ".  ";
+if (illChar > -1){
+	msg += "It contains an illegal character: " + currentUrl.substring(illChar,illChar + 1);
+}
+else{
+	msg += "It does not contain any illegal characters";
+}
+alert(msg);
+
+
+************************************
+urls Demo #2:
+PREP: navigate to http://intranet.wingtip.com/_layouts/15/start.aspx#/?badParam=y
+************************************
+var tokenizedUrl = "http://www.example.com?List={ListId}&SiteUrl={SiteUrl}&ListUrlDir={ListUrlDir}&Source={Source}";
+var url = ReplaceUrlTokens(tokenizedUrl, ctx);
+var listId = GetUrlKeyValue("List", false, url, true);
+var siteUrl= GetUrlKeyValue("SiteUrl", false, url, true);
+var listUrlDir = GetUrlKeyValue("ListUrlDir", false, url, true);
+var source = GetUrlKeyValue("Source", false, url, true);
+source = SP.Utilities.UrlBuilder.removeQueryString(source, "badParam");
+
+var msg = "Values added for tokens (after decoding):\n\n";
+msg += "List: " + listId + "\n\n";
+msg += "Site URL: " + siteUrl + "\n\n";
+msg += "ListURLDir: " + listUrlDir + "\n\n";
+msg += "Source: " + source + "\n\n";
+
+alert(msg);
+
+
+************************************
+urls Demo #3:
+************************************
+alert(SP.Utilities.Utility.getLayoutsPageUrl("SiteSettings.aspx"))
+
+
+************************************
+urls Demo #4:
+PREP: Add Script Editor web part to NewForm of Announcements list with the following contents:
+************************************
+<a onclick='SP.Utilities.HttpUtility.navigateTo("http://intranet.wingtip.com/_layouts/settings.aspx")'>Navigate in Dialog</a>
+
+<a href="http://intranet.wingtip.com/_layouts/settings.aspx" >Navigate without Dialog</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

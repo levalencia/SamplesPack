@@ -1,0 +1,6 @@
+c:\dev\PatientData\CorsClient\bin\CorsClient.dll.config
+c:\dev\PatientData\CorsClient\bin\CorsClient.dll
+c:\dev\PatientData\CorsClient\bin\CorsClient.pdb
+c:\dev\PatientData\CorsClient\obj\Debug\CorsClient.csprojResolveAssemblyReference.cache
+c:\dev\PatientData\CorsClient\obj\Debug\CorsClient.dll
+c:\dev\PatientData\CorsClient\obj\Debug\CorsClient.pdb

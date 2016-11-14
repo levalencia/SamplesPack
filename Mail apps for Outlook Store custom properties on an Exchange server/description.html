@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Store custom properties on an Exchange server</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Store custom properties on an Exchange server</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Outlook Web App, Outlook 2013, apps for Office, Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            mail, data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">3/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-8b3df748">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-size:small">This sample shows how to set a property on an email message and then store that property on your Exchange server so that you can retrieve it the next time the item is returned. For example, if your mail app for Outlook adds
+ contacts to an external contacts database, you can set a property on an item to show that a contact was added so that you are not prompted to add the same contact a second time.</span></p>
+<p><span style="font-size:small">The <a href="http://msdn.microsoft.com/library/dfbec151-8ea7-4915-b723-09ea1396a261">
+loadCustomPropertiesAsync method</a> on the item object returns a <a href="http://msdn.microsoft.com/library/ 95a69bd6-c4dc-429a-8b27-e2b68f74f3e3">
+CustomProperties object</a> that contains and manages the custom properties that you've stored for an item. After you loaded the custom properties, you can do the following:</span></p>
+<ul>
+<li><span style="font-size:small">Use the <a href="http://msdn.microsoft.com/library/3ab90551-138a-482d-9d93-4cdb20db193b">
+get method</a> and <a href="http://msdn.microsoft.com/library/03a8b253-b681-4a09-b828-80d9cf46ca9d">
+set method</a> to read and write custom properties. </span></li><li><span style="font-size:small">Use the <a href="http://msdn.microsoft.com/library/01983beb-766f-4308-9e23-e840e950f7e3">
+remove method</a> to delete custom properties that you've created.</span> </li><li><span style="font-size:small">Use the <a href="http://msdn.microsoft.com/library/690d5aa9-62b5-4e5c-9548-62dfdbb5fa56">
+saveAsync method</a> to persist any changes that you've made back to the Exchange server.</span>
+</li></ul>
+<p><span style="font-size:small">You must call the <a href="http://msdn.microsoft.com/library/690d5aa9-62b5-4e5c-9548-62dfdbb5fa56">
+saveAsync method</a> to store the properties on the Exchange server; otherwise, all the changes that you made are discarded when the current item is changed.</span></p>
+<p><span style="font-size:small">The sample UI has three pages: one to set the key and value of a custom property, one to retrieve the value of a custom property, and one to remove custom properties or to persist the changes that you make to the Exchange server.</span></p>
+<p><span style="font-size:small">The JavaScript file contains click handlers for buttons in the UI to get, set, remove, and save custom properties by using the corresponding methods on the
+<a href="http://msdn.microsoft.com/library/ 95a69bd6-c4dc-429a-8b27-e2b68f74f3e3">
+CustomProperties object</a>. A local Boolean variable, customPropertiesAreLoaded, is set in the callback function for the
+<a href="http://msdn.microsoft.com/library/dfbec151-8ea7-4915-b723-09ea1396a261">
+loadCustomPropertiesAsync method</a> to show that the custom properties object is loaded. The handlers check this value to make sure that the
+<a href="http://msdn.microsoft.com/library/ 95a69bd6-c4dc-429a-8b27-e2b68f74f3e3">
+CustomProperties object</a> is available before calling functions on the object.&nbsp;</span></p>
+<h1>Prerequisites</h1>
+<p><span style="font-size:small">This sample requires that you have the following:</span></p>
+<ul>
+<li><span style="font-size:small">Visual Studio 2012, with the apps for Office project templates.</span>
+</li><li><span style="font-size:small">A computer running Exchange 2013 with at least one email account, or an Office 365 developer account.</span>
+</li><li><span style="font-size:small">Familiarity with JavaScript programming and web services.</span>
+</li><li><span style="font-size:small">Internet Explorer 9 or Internet Explorer 10 Preview.</span>
+</li></ul>
+<h1>Key components of the sample</h1>
+<p><span style="font-size:small">The sample solution contains the following files:</span></p>
+<ul>
+<li><span style="font-size:small">CustomProperties project</span>
+<ul>
+<li><span style="font-size:small">CustomProperties.xml &ndash; The manifest file for the mail app for Outlook.</span>
+</li></ul>
+</li><li><span style="font-size:small">CustomPropertiesWeb project</span>
+<ul>
+<li><span style="font-size:small">CustomProperties.html &ndash; The HTML user interface for the mail app for Outlook.</span>
+</li><li><span style="font-size:small">Scripts\ CustomProperties.js &ndash; The JavaScript file that handles requesting and using the Exchange Web Services (EWS) request.</span>
+</li><li><span style="font-size:small">Scripts\Lib &ndash; The mail app for Outlook and Outlook Web App API.</span>
+</li></ul>
+</li></ul>
+<h1>Configure the sample</h1>
+<p><span style="font-size:small">The mail app will be activated on any email message in the user's Inbox. You can make it easier to test the app by sending one or more email messages to your test account before you run the sample app.</span></p>
+<h1>Build the sample</h1>
+<p><span style="font-size:small">Press F5 to build and deploy the sample application. Complete the following tasks to deploy the application:</span></p>
+<ol>
+<li><span style="font-size:small">Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.</span>
+</li><li><span style="font-size:small">Allow the server to configure the email account.</span>
+</li></ol>
+<h1>Run and test the sample</h1>
+<p><span style="font-size:small">You run and test the sample in the web browser that is started by Visual Studio when you build and deploy the sample.</span></p>
+<p><span style="font-size:small">If you are running the sample on an Exchange server that is using the default self-signed certificate, you will receive a certificate error when the web browser starts. After you verify that the web browser is opening the correct
+ URL by looking at the web address, you can click <strong>Continue to this Web site</strong> to start Outlook Web App.</span></p>
+<p><span style="font-size:small">Follow these steps to run the sample:</span></p>
+<ol>
+<li><span style="font-size:small">Log on to the email account by entering the account name and password.</span>
+</li><li><span style="font-size:small">Select a message in the Inbox.</span> </li><li><span style="font-size:small">Wait for the App bar to appear over the message.</span>
+</li><li><span style="font-size:small">In the App bar, click <strong>Custom Properties</strong>.</span>
+</li><li><span style="font-size:small">When the Custom Properties mail app appears, type a property name and value into the text boxes and then click the
+<strong>Save</strong> button to save the property value.</span> </li><li><span style="font-size:small">Click <strong>Get</strong>, type a property name, and then click the
+<strong>Get</strong> button to retrieve a property.</span> </li><li><span style="font-size:small">Click <strong>Manage</strong>, and either click
+<strong>Persist</strong> to save the stored properties to the Exchange server, or type a property name and click
+<strong>Remove</strong> to delete the property from storage.</span> </li></ol>
+<h1>Troubleshooting</h1>
+<p><span style="font-size:small">The following are common errors that can occur when you use Outlook Web App to test a mail app for Outlook:</span></p>
+<ul>
+<li><span style="font-size:small">The App bar does not appear when a message is selected. If this occurs, restart the application by selecting
+<strong>Debug &ndash; Stop Debugging</strong> in the Visual Studio window, then press F5 to rebuild and deploy the app.</span>
+</li><li><span style="font-size:small">Changes to the JavaScript code may not be picked up when you deploy and run the app. If the changes are not picked up, clear the cache on the web browser by selecting
+<strong>Tools &ndash; Internet options</strong> and clicking the Delete&hellip; button. Delete the temporary Internet files and then restart the app.</span>
+</li></ul>
+<h1>Additional resources</h1>
+<ul>
+<li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/ 95a69bd6-c4dc-429a-8b27-e2b68f74f3e3">CustomProperties object</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/dfbec151-8ea7-4915-b723-09ea1396a261">loadCustomPropertiesAsync method</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/3ab90551-138a-482d-9d93-4cdb20db193b">get method</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/03a8b253-b681-4a09-b828-80d9cf46ca9d">set method</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/01983beb-766f-4308-9e23-e840e950f7e3">remove method</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/690d5aa9-62b5-4e5c-9548-62dfdbb5fa56">saveAsync method</a></span>
+</li></ul>
+
+</div>
+
+
+    </div>
+</body>
+</html>

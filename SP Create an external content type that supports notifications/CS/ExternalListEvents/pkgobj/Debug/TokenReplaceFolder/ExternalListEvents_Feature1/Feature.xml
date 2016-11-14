@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="a2eb7a0f-251b-477c-8172-15ee8bb87ac9" ReceiverAssembly="ExternalListEvents, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f3e998418ec415ce" ReceiverClass="ExternalListEvents.Features.Feature1.Feature1EventReceiver" Scope="Web" Title="ExternalListEvents Feature1">
+  <ElementManifests>
+    <ElementManifest Location="ActivitiesInstance\Elements.xml" />
+    <ElementManifest Location="Activities\Elements.xml" />
+    <ElementFile Location="Activities\Schema.xml" />
+  </ElementManifests>
+</Feature>

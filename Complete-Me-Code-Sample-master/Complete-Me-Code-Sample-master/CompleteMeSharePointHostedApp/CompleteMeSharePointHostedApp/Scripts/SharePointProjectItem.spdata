@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="moment.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ui-bootstrap-tpls-0.10.0.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="Services\MockSharePointService.js" Target="Scripts\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="Services\SharePointService.js" Target="Scripts\Services\" Type="ElementFile" />
+    <ProjectItemFile Source="Controller\BumpItController.js" Target="Scripts\Controller\" Type="ElementFile" />
+    <ProjectItemFile Source="Controller\TaskInlineEditController.js" Target="Scripts\Controller\" Type="ElementFile" />
+    <ProjectItemFile Source="Controller\TodoController.js" Target="Scripts\Controller\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

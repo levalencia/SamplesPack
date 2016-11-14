@@ -1,0 +1,5 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\HelloWorldTypeScript\HelloWorldTypeScript\bin\HelloWorldTypeScript.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\HelloWorldTypeScript\HelloWorldTypeScript\bin\HelloWorldTypeScript.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\HelloWorldTypeScript\HelloWorldTypeScript\bin\HelloWorldTypeScript.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\HelloWorldTypeScript\HelloWorldTypeScript\obj\Debug\HelloWorldTypeScript.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\After\HelloWorldTypeScript\HelloWorldTypeScript\obj\Debug\HelloWorldTypeScript.pdb

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="52703731-ccdb-4b1a-ace7-08f694ac0cf1" Scope="Web" Title="AnnouncementCSR Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.intellisense.js" />
+    <ElementFile Location="Scripts\AnnouncementsCSR.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="AnnouncementsInstance\Elements.xml" />
+    <ElementManifest Location="Announcements\Elements.xml" />
+    <ElementFile Location="Announcements\Schema.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AppScripts">
+    <File Path="AppScripts\App.js" Url="AppScripts/App.js" />
+    <File Path="AppScripts\Lib4.js" Url="AppScripts/Lib4.js" />
+    <File Path="AppScripts\RevId.js" Url="AppScripts/RevId.js" />
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{28a3dd89-d84c-4408-b988-08b7e9f87c40}"
+       Name="DocumentationLink"
+       DisplayName="Documentation Link"
+       Type="Text"
+       Required="FALSE"
+       Group="s43">
+  </Field>
+</Elements>

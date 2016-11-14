@@ -1,0 +1,6 @@
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\bin\Debug\ClassroomOnline.pdb
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\obj\Debug\ClassroomOnline.dll
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\obj\Debug\ClassroomOnline.pdb
+C:\Users\LuisEsteban\Google Drive\Sharepoint Ebooks\Pro Sharepoint 2013 App Development\Pro SharePoint 2013 App Development\Chapter 2 Code\ClassroomOnline\bin\Debug\ClassroomOnline.pdb
+C:\Users\LuisEsteban\Google Drive\Sharepoint Ebooks\Pro Sharepoint 2013 App Development\Pro SharePoint 2013 App Development\Chapter 2 Code\ClassroomOnline\obj\Debug\ClassroomOnline.dll
+C:\Users\LuisEsteban\Google Drive\Sharepoint Ebooks\Pro Sharepoint 2013 App Development\Pro SharePoint 2013 App Development\Chapter 2 Code\ClassroomOnline\obj\Debug\ClassroomOnline.pdb

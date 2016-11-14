@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="classroomonline2" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\LuisEsteban\\Google\ Drive\\Sharepoint\ Ebooks\\Pro\ Sharepoint\ 2013\ App\ Development\\Pro\ SharePoint\ 2013\ App\ Development\\Chapter\ 3\ Code\\ClassroomOnlineWeb\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\LuisEsteban\\Google\ Drive\\Sharepoint\ Ebooks\\Pro\ Sharepoint\ 2013\ App\ Development\\Pro\ SharePoint\ 2013\ App\ Development\\Chapter\ 3\ Code\\ClassroomOnlineWeb\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

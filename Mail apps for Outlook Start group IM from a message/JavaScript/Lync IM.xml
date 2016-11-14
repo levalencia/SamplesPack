@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>0DA74E27-C945-47A0-9857-64268DEF6542</Id>
+  <Version>1.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>EN-US</DefaultLocale>
+  <DisplayName DefaultValue="Group IM">
+    <Override Locale="FR-FR" Value="Message instantané"/>
+  </DisplayName>
+  <Description DefaultValue="Start a group instant message session using Lync.">
+    <Override Locale="FR-FR" Value=
+    "Démarrer un message instantané appel directement à partir de Outlook ou Outlook Web App à l'aide de Lync."/>
+  </Description>
+  <!-- Change the following line to specify the web server -->
+  <!-- that hosts the image file. -->
+  <IconUrl DefaultValue=
+    "https://webserver/GroupIM/mslync-logo_small.png"/>
+
+  <Capabilities>
+    <Capability Name="Mailbox"/>
+  </Capabilities>
+  <DesktopSettings>
+    <!-- Change the following line to specify the web server -->
+    <!-- that hosts the HTML file. -->
+    <SourceLocation DefaultValue=
+      "https://webserver/GroupIM/InstantMessage.htm"/>
+    <RequestedHeight>216</RequestedHeight>
+  </DesktopSettings>
+  <TabletSettings>
+    <!-- Change the following line to specify the web server -->
+    <!-- that hosts the HTML file. -->
+    <SourceLocation DefaultValue=
+      "https://webserver/GroupIM/InstantMessage.htm"/>
+    <RequestedHeight>180</RequestedHeight>
+  </TabletSettings>
+  <Permissions>ReadItem</Permissions>
+
+  <Rule xsi:type="ItemIs" ItemType="Message"/>
+
+
+</OfficeApp>

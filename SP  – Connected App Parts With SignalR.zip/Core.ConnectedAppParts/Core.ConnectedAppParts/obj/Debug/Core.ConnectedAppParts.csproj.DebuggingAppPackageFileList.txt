@@ -1,0 +1,1 @@
+C:\TFS\AMS\DEV\Samples\Core.ConnectedAppParts\Core.ConnectedAppParts\bin\Debug\Core.ConnectedAppParts.debugapp

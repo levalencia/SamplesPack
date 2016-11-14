@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="05146e02-6d19-4ea6-adf9-9a4b3592435c" 
+        solutionId="05146e02-6d19-4ea6-adf9-9a4b3592435c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ScriptLoader"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="29dd03b4-d763-4b8e-8b84-d31e4ef297a6" />
+  </features>
+</package>

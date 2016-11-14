@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x010100F76AAB77EE604BEBA98EC7ECD271BEE7" Name="ScriptItem" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{adbd3f85-6946-46af-b82b-284094c13677}" DisplayName="Source" Required="FALSE" Hidden="FALSE" Name="OriginalSource" />
+      <FieldRef ID="{28a3dd89-d84c-4408-b988-08b7e9f87c40}" DisplayName="Documentation Link" Required="FALSE" Name="DocumentationLink" Hidden="FALSE" />
+      <FieldRef ID="{359b7a80-4f49-4a10-b35e-db28e44d2d69}" DisplayName="Version Number" Required="FALSE" Hidden="FALSE" Name="VersionNumber" />
+      <FieldRef ID="{6da3b21a-dc32-4522-8110-24ef9d81d8c6}" DisplayName="Description" Required="FALSE" Hidden="FALSE" Name="ScriptDescription" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AO2013_ZoteroWordCodeSample_CSWeb.Service.ZoteroApiCaller" CodeBehind="ZoteroApiCaller.svc.cs" %>

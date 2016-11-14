@@ -1,0 +1,5 @@
+c:\users\soliver\documents\visual studio 2012\Projects\PowerPointEBookPublisher\PowerPointEBookPublisherWeb\bin\PowerPointEBookPublisherWeb.dll
+c:\users\soliver\documents\visual studio 2012\Projects\PowerPointEBookPublisher\PowerPointEBookPublisherWeb\bin\PowerPointEBookPublisherWeb.pdb
+c:\users\soliver\documents\visual studio 2012\Projects\PowerPointEBookPublisher\PowerPointEBookPublisherWeb\obj\Debug\PowerPointEBookPublisherWeb.csprojResolveAssemblyReference.cache
+c:\users\soliver\documents\visual studio 2012\Projects\PowerPointEBookPublisher\PowerPointEBookPublisherWeb\obj\Debug\PowerPointEBookPublisherWeb.dll
+c:\users\soliver\documents\visual studio 2012\Projects\PowerPointEBookPublisher\PowerPointEBookPublisherWeb\obj\Debug\PowerPointEBookPublisherWeb.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="791482d4-fa01-459c-83fc-9a3b939a9a1b" Scope="Web" Title="CrossDomainRestDemo Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Customers\Elements.xml" />
+  </ElementManifests>
+</Feature>

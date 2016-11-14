@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Make an EWS request</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Make an EWS request</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Outlook Web App, Outlook 2013, apps for Office, Exchange Web Services (EWS), Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            mail
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">5/6/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-Make-770b2528">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-size:small"><span style="font-size:small">This sample accompanies the MSDN article
+<a href="http://msdn.microsoft.com/en-us/library/office/apps/fp160952(v=office.15).aspx">
+Calling Web services from a mail app</a>.</span></span></p>
+<p><span style="font-size:small">The JavaScript code in this sample shows a simple request for the subject of the current email message. While this is a simple request, it does demonstrate the steps required to create an EWS service request and the best practices
+ for making the request.</span><br>
+<span style="font-size:small">The code that creates the EWS XML request includes two methods. The first method, getSoapEnvelope(), wraps a SOAP envelope around a web service request. Because the SOAP envelope is standard for all EWS requests, this method can
+ be reused to wrap any EWS request.</span></p>
+<p><span style="font-size:small">The second method, getSubjectRequest(), returns the EWS request to get the subject field of an item. The id parameter is the Exchange item identifier for the requested item. Note the following about the request:</span></p>
+<ul>
+<li><span style="font-size:small">The <strong>ItemShape</strong> element is used to restrict the response to the base shape
+<strong>IdOnly</strong>. This limits the response to only the item identifier for the item and prevents excessive data from being sent back from the server.</span>
+</li><li><span style="font-size:small">The <strong>AdditionalProperties</strong> element is used to add the Subject field to the response. By using the
+<strong>IdOnly</strong> base shape and a list of additional properties, you can limit the size of the response from the server to just the data that your app requires.</span>
+</li></ul>
+<p><span style="font-size:small">The sendRequest() method is called when you click the
+<strong>Make EWS request </strong>button in the app UI. It gets the Exchange identifier of the current item and passes it to the getSubjectRequest() and getSoapEnvelope() methods, then makes an asynchronous call to the Exchange server by using the
+<a href="http://msdn.microsoft.com/library/ 2ec380e0-4a67-4146-92a6-6a39f65dc6f2">
+makeEwsRequestAsync method</a>. The <a href="http://msdn.microsoft.com/library/ 2ec380e0-4a67-4146-92a6-6a39f65dc6f2">
+makeEwsRequestAsync method</a> takes two parameters: the EWS request wrapped in its SOAP envelope, and a callback method that is called when the asynchronous request to EWS is complete. You can add a third optional
+<em>userContext</em> parameter to the <a href="http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2">
+makeEwsRequestAsync method</a> if you have to provide additional information to the callback method.</span></p>
+<p><span style="font-size:small">The callback() method is called with a single parameter,
+<em>asynchResult</em>. The <em>asynchResult</em> object has two members:</span></p>
+<ul>
+<li><span style="font-size:small">value &ndash; The contents of the response from EWS.</span>
+</li><li><span style="font-size:small">context &ndash; The <em>userContext</em> parameter passed to the
+<a href="http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2">
+makeEwsRequestAsync method</a>.</span> </li></ul>
+<p><span style="font-size:small">The callback method in the sample displays the contents of the response in a scrollable
+<strong>div</strong> element in the UI, but your code can use the response in more sophisticated ways.</span></p>
+<h1>Prerequisites</h1>
+<p><span style="font-size:small">This sample requires that you have the following:</span></p>
+<ul>
+<li><span style="font-size:small">Visual Studio 2012, with the apps for Office project templates.</span>
+</li><li><span style="font-size:small">A computer running Exchange 2013 with at least one email account, or an Office 365 developer account.</span>
+</li><li><span style="font-size:small">Internet Explorer 9 or Internet Explorer 10 Preview.</span>
+</li><li><span style="font-size:small">Familiarity with JavaScript programming and web services.</span>
+</li></ul>
+<h1>Key components of the sample</h1>
+<p><span style="font-size:small">The sample solution contains the following files:</span></p>
+<ul>
+<li><span style="font-size:small">EWSRequest project</span>
+<ul>
+<li><span style="font-size:small">EWSRequest.xml &ndash; The manifest file for the mail app for Outlook.</span>
+</li></ul>
+</li><li><span style="font-size:small">EWSRequestWeb project</span>
+<ul>
+<li><span style="font-size:small">EWSRequest.html &ndash; The HTML user interface for the mail app for Outlook.</span>
+</li><li><span style="font-size:small">Scripts\EWSRequest.js &ndash; The JavaScript file that handles requesting and using the EWS request.</span>
+</li><li><span style="font-size:small">Scripts\Lib &ndash; The mail app for Outlook and Outlook Web App API.</span>
+</li></ul>
+</li></ul>
+<h1>Configure the sample</h1>
+<p><span style="font-size:small">The mail app will be activated on any email message in the user's Inbox. You can make it easier to test the app by sending one or more email messages to your test account before you run the sample app.</span></p>
+<h1>Build the sample</h1>
+<p><span style="font-size:small">Press F5 to build and deploy the sample application. Complete the following tasks to deploy the application:</span></p>
+<ol>
+<li><span style="font-size:small">Connect to an Exchange account by providing the email address and password on an Exchange 2013 server.</span>
+</li><li><span style="font-size:small">Allow the server to configure the email account.</span>
+</li></ol>
+<h1>Run and test the sample</h1>
+<p><span style="font-size:small">You run and test the sample in the web browser that is started by Visual Studio when you build and deploy the sample.</span></p>
+<p><span style="font-size:small">If you are running the sample on an Exchange server that is using the default self-signed certificate, you will receive a certificate error when the web browser starts. After you verify that the web browser is opening the correct
+ URL by looking at the web address, you can click <strong>Continue to this Web site</strong> to start Outlook Web App.</span></p>
+<p><span style="font-size:small">Follow these steps to run the sample:</span></p>
+<ol>
+<li><span style="font-size:small">Log on to the email account by entering the account name and password.</span>
+</li><li><span style="font-size:small">Select a message in the Inbox.</span> </li><li><span style="font-size:small">Wait for the App bar to appear over the message.</span>
+</li><li><span style="font-size:small">In the App bar, click <strong>EWSRequest</strong>.</span>
+</li><li><span style="font-size:small">When the EWS Request mail app appears, click the
+<strong>Make EWS request </strong>button to request the subject of the current message from the Exchange server.</span>
+</li><li><span style="font-size:small">You can review the response XML that is returned by the request.</span>
+</li></ol>
+<h1>Troubleshooting</h1>
+<p><span style="font-size:small">The following are common errors that can occur when you use Outlook Web App to test a mail app for Outlook:</span></p>
+<ul>
+<li><span style="font-size:small">The App bar does not appear when a message is selected. If this occurs, restart the application by selecting
+<strong>Debug &ndash; Stop Debugging</strong> in the Visual Studio window, then press F5 to rebuild and deploy the app.</span>
+</li><li><span style="font-size:small">Changes to the JavaScript code may not be picked up when you deploy and run the app. If the changes are not picked up, clear the cache on the web browser by selecting
+<strong>Tools &ndash; Internet options</strong> and clicking the <strong>Delete&hellip;</strong> button. Delete the temporary Internet files and then restart the app.</span>
+</li></ul>
+<h1>Related content</h1>
+<ul>
+<li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/f49ef705-a5ab-40d3-8a77-b68fe15d91e7">Create EWS Solutions</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2">makeEwsRequestAsync method</a></span>
+</li></ul>
+
+</div>
+
+
+    </div>
+</body>
+</html>

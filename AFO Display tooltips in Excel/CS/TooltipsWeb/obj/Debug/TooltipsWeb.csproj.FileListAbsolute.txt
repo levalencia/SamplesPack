@@ -1,0 +1,5 @@
+C:\Visual Studio Projects\Tooltips\TooltipsWeb\bin\TooltipsWeb.dll
+C:\Visual Studio Projects\Tooltips\TooltipsWeb\bin\TooltipsWeb.pdb
+C:\Visual Studio Projects\Tooltips\TooltipsWeb\obj\Debug\TooltipsWeb.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\Tooltips\TooltipsWeb\obj\Debug\TooltipsWeb.dll
+C:\Visual Studio Projects\Tooltips\TooltipsWeb\obj\Debug\TooltipsWeb.pdb

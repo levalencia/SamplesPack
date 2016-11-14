@@ -1,0 +1,12 @@
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\CrossDomainRestDemoWeb.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\CrossDomainRestDemoWeb.pdb
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.IdentityModel.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.SharePoint.Client.xml
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\Microsoft.SharePoint.Client.Runtime.xml
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\obj\Debug\CrossDomainRestDemoWeb.csprojResolveAssemblyReference.cache
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\obj\Debug\CrossDomainRestDemoWeb.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemoWeb\obj\Debug\CrossDomainRestDemoWeb.pdb

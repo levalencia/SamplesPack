@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="46331511-c38b-4c75-861c-85d568afdcbc" Scope="Web" Title="BasicDataOperations Feature1">
+  <ElementManifests>
+    <ElementManifest Location="List1\Elements.xml" />
+    <ElementManifest Location="RemoteEventReceiver1\Elements.xml" />
+  </ElementManifests>
+</Feature>

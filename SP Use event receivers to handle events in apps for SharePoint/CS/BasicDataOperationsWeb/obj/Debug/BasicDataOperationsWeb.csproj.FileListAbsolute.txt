@@ -1,0 +1,12 @@
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\BasicDataOperationsWeb.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\BasicDataOperationsWeb.pdb
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.IdentityModel.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.SharePoint.Client.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.SharePoint.Client.xml
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\Microsoft.SharePoint.Client.Runtime.xml
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\bin\en\Microsoft.IdentityModel.resources.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\obj\Debug\BasicDataOperationsWeb.csprojResolveAssemblyReference.cache
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\obj\Debug\BasicDataOperationsWeb.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperationsWeb\obj\Debug\BasicDataOperationsWeb.pdb

@@ -1,0 +1,3 @@
+C:\TFS\AMS\DEV\Samples\Core.ConnectedAppParts\Core.ConnectedAppParts\bin\Debug\Core.ConnectedAppParts.pdb
+C:\TFS\AMS\DEV\Samples\Core.ConnectedAppParts\Core.ConnectedAppParts\obj\Debug\Core.ConnectedAppParts.dll
+C:\TFS\AMS\DEV\Samples\Core.ConnectedAppParts\Core.ConnectedAppParts\obj\Debug\Core.ConnectedAppParts.pdb

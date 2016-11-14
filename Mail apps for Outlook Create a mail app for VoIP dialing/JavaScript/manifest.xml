@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>BB10B02E-6F7F-46BB-8DFC-49878F7986AF</Id>
+  <Version>1.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Phone Dialer"/>
+  <Description DefaultValue="Detects phone numbers within a message body and shows the links to call. Only North American phone number formats are currently supported, and you must have some Voice over IP application already installed (like Lync or Skype)"/>
+  <IconUrl DefaultValue="https://www.exchangemoe.com/ext/ach/PostRTMSampleMailAppsCDN/PhoneDialer/Images/Icon.png" />
+  <Capabilities>
+    <Capability Name="Mailbox"/>
+  </Capabilities> 
+  <DesktopSettings>
+    <SourceLocation DefaultValue="https://www.exchangemoe.com/ext/ach/PostRTMSampleMailAppsCDN/PhoneDialer/dialer.htm" />
+    <RequestedHeight>150</RequestedHeight>
+  </DesktopSettings>
+  <Permissions>ReadItem</Permissions>
+  <Rule xsi:type="ItemHasKnownEntity" EntityType="PhoneNumber"/>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+</OfficeApp>

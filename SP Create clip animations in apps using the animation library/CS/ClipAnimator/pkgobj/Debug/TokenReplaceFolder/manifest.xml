@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="18f5ea07-8936-4a8e-8c63-468cafa6a92f" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="ClipAnimator_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

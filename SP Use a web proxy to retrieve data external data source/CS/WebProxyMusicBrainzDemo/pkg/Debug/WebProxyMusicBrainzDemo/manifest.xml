@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a998d218-64c9-48e3-bc34-a17bb0a85e89" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="WebProxyMusicBrainzDemo_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

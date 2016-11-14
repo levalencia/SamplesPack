@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0109535f-9c78-4c54-9b8b-64c51a3b9935" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="SimpleSPAnimationDemo_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

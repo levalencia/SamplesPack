@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite;/Areas/Epx/Themes/Office/Content:0&amp;amp;hashKey=E1FC421F1D5AE3E6B1DA86D200AF8596" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/bb71b810-2af1-4380-a675-2b59f4987be1Combined.css,0:ImageSprite,1:LinkList;/Areas/Epx/Themes/Office/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=9BAB513DD514708AF2FC3AC8D5196E78" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Get attachments from an Exchange server</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/3bef2de5-6f8a-4eb3-88e5-1886cb923ea7Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Get attachments from an Exchange server</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Exchange Online, Outlook Web App, Exchange 2013, Outlook 2013, apps for Office
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            attachments
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/25/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/office/Mail-apps-for-Office-Get-38babdc9">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Mail apps for Outlook: Get attachments from an Exchange server</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p>&nbsp;</p>
+<div>
+<p>This sample shows you how to get attachments from an Exchange mailbox.</p>
+</div>
+<h1>Description of the Mail apps for Outlook: Get attachments from an Exchange server sample</h1>
+<div id="sectionSection0">
+<p>This sample shows you how to retrieve attachments from a web service that supports your mail app. For example, you can create a service that uploads photos to a sharing site, or a service that stores documents into a repository. The service gets the attachments
+ directly from the Exchange server, and doesn't require the client to perform extra processing to get the attachment and then send it along to the service.</p>
+<p>The sample has two parts. The first part, the mail app, runs in the email client. The mail app is shown whenever a message or an appointment is the active item. When you select the
+<strong><span class="ui">Process attachments</span></strong> button, the mail app sends details about the attachment to the web service that processes the request. The service uses the following steps to process attachments:</p>
+<ul>
+<li>
+<p>Sends a <a href="http://msdn.microsoft.com/en-us/library/aa494316(v=exchg.150).aspx" >
+GetAttachment operation</a> request to the Exchange server that hosts the mailbox. The server responds by sending the attachment to the service. In this sample, the service simply writes the XML from the server to trace output.</p>
+</li><li>
+<p>Returns the number of attachments processed to the mail app.</p>
+</li></ul>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires that you have the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012, with the apps for Office project templates.</p>
+</li><li>
+<p>A computer running cumulative update 1 (CU1) for Exchange 2013 and at least one email account, or an Office 365 developer account.</p>
+</li><li>
+<p>Familiarity with JavaScript programming and web services.</p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2">
+<p>The sample solution contains the following files:</p>
+<ul>
+<li>
+<p>Attachments project:</p>
+<ul>
+<li>
+<p>Attachments.xml - The manifest file for the mail app.</p>
+</li></ul>
+</li><li>
+<p>The AttachmentService project defines a REST service by using the WCF API. The project was created by using the WebAPI wizard in Visual Studio 2012. The project contains the following files:</p>
+<ul>
+<li>
+<p>Controllers\AttachmentServiceController.cs - The service object that provides the business logic for the sample service.</p>
+</li><li>
+<p>Models\ServiceRequest - The object that represents a web request. The contents of the object are created from a JSON request object sent from your mail app.</p>
+</li><li>
+<p>Models\Attachment.cs - The utility object that helps deserialize the JSON object that is sent by the mail app.</p>
+</li><li>
+<p>Models\AttachmentDetails.cs - The object that represents the details of each attachment. It provides a .NET Framework object that matches the mail apps
+<a >AttachmentDetails object</a>.</p>
+</li><li>
+<p>Models\ServiceResponse - The object that represents a response from the web service. The contents of the object are serialized to a JSON object when they are sent back to the mail app.</p>
+</li><li>
+<p>Web.config - Binds the sample service to the web server endpoint.</p>
+</li></ul>
+</li><li>
+<p>The AttachmentsWeb project contains the UI and JavaScript code for the mail app. The project was created in Visual Studio 2012 and is based on the mail app project template. The following files were modified for this sample:</p>
+<ul>
+<li>
+<p>App\Home\Home.html - The HTML user interface for the mail app.</p>
+</li><li>
+<p>App\Home\Home.js - The JavaScript file that handles sending the attachment information to the remote service.</p>
+</li><li>
+<p>Scripts\Office\1.0\ - The mail app API.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3">
+<p>The mail app will be activated on any item in the user's Inbox that has one or more attachments. You can make it easier to test the app by sending one or more email items to your test account before you run the sample app.</p>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4">
+<p>Press F5 to build and deploy the sample application. Complete the following tasks to deploy the application:</p>
+<ol>
+<li>
+<p>Connect to an Exchange account by providing the email address and password for an Exchange mailbox.</p>
+</li><li>
+<p>Allow the server to configure the email account.</p>
+</li></ol>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5">
+<p>You run and test the sample in the web browser that is started by Visual Studio when you build and deploy the sample.</p>
+<p>Follow these steps to run the sample:</p>
+<ol>
+<li>
+<p>Log on to the email account by entering the account name and password.</p>
+</li><li>
+<p>Select a message in the Inbox.</p>
+</li><li>
+<p>Wait for the app bar to appear over the message.</p>
+</li><li>
+<p>In the app bar, choose <strong><span class="ui">Attachments</span></strong>.</p>
+</li><li>
+<p>When the EWS Request mail app appears, choose the <strong><span class="ui">Test attachments</span></strong> button to send a request to the Exchange server.</p>
+</li><li>
+<p>The server will respond with the number of attachments processed for the item. This should equal the number of attachments that the item contains.</p>
+</li></ol>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6">
+<p>The following are common errors that can occur when you use Outlook Web App to test a mail app for Outlook:</p>
+<ul>
+<li>
+<p>The app bar does not appear when a message is selected. If this occurs, restart the application by selecting
+<strong><span class="ui">Debug - Stop Debugging</span></strong> in the Visual Studio window, then select F5 to rebuild and deploy the app.</p>
+</li><li>
+<p>Changes to the JavaScript code might not be picked up when you deploy and run the app. If the changes are not picked up, clear the cache on the web browser by selecting
+<strong><span class="ui">Tools - Internet options</span></strong> and choosing the
+<strong><span class="ui">Delete&hellip;</span></strong> button. Delete the temporary Internet files and then restart the app.</p>
+</li></ul>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection7">
+<ul>
+<li>
+<p><a href="http://www.asp.net/web-api" >Web API: The Official Microsoft ASP.NET Site</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/dn148008.aspx" >How to: Get attachments from an Exchange server</a></p>
+</li></ul>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection8">
+<p>Updated the sample to use the latest API release.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

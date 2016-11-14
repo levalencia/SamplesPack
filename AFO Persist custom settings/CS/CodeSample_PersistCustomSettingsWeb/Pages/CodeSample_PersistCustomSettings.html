@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>CodeSample_PersistCustomSettings</title>
+
+
+    <!--CSS files. Office.css defines Office styles; App.css defines app-specific styles.-->
+    <link rel="stylesheet" type="text/css" href="../Content/Office.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/App.css" />
+
+    <script src="../Scripts/jquery-1.7.1.js"></script>
+
+    <!-- Use the local script references for Office.js to enable offline debugging -->
+    <!--<script src="../Scripts/Office/1.0/MicrosoftAjax.js"></script>
+    <script src="../Scripts/Office/1.0/office.js"></script>-->
+
+    <!-- Use the CDN reference to Office.js -->
+    <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js"></script>
+
+    <!-- App-specific JavaScript is in the following files -->
+    <script type="text/javascript" src="../Scripts/StorageLibrary.js"></script>
+    <script type="text/javascript" src="../Scripts/toast.js"></script>
+    <script src="../Scripts/CodeSample_PersistCustomSettings.js"></script>
+
+  </head>
+  <body>
+      <h1 id="page">Storage</h1>
+      <div id="nav" style="padding:0px;margin:0px">
+          <table>
+              <tr>
+                  <td><a id="storelink" href="javascript:switchPage('Storage')">Storage</a></td>
+                  <td><a id="settingslink" href="javascript:switchPage('Settings')">Settings</a></td>
+              </tr>
+          </table>
+      </div>
+      <div id="saveui" class="displayedpage">
+        <h2>Store Info</h2>
+        <input type="text"  
+            id="newSetting" 
+            value="Type a setting name" 
+            onfocusin="changeText(this, false)" 
+            onfocusout="changeText(this, false)"
+            class="textbox"/>
+        <input type="text"  
+            id="newValue" 
+            value="Type a setting value" 
+            onfocusin="changeText(this, false)" 
+            onfocusout="changeText(this, false)"
+            class="textbox"
+            style="margin-top:10px"/>
+        <input style="margin-top:10px" type="button" onclick="setSettings()" value="Save"/>
+    </div>
+    <div id="getui" class="displayedpage">
+        <h2>Get Info</h2>
+        <input type="text" 
+            id="storedSetting" 
+            value="Type a setting to get" 
+            onfocusin="changeText(this, false)" 
+            onfocusout="changeText(this, false)"
+            class="textbox"/>
+        <input type="button" style="margin-top:10px" onclick="getSettings()" value="Get" /> 
+    </div>
+    <div id="appsettings" class="hiddenpage">
+        <h2>Select storage type</h2>
+        <form>
+        <select name="storagetype" id="storagetype" onchange="setStorageMode()">
+            <option value="PropertyBag" selected="selected">Office App storage</option>
+            <option value="Cookies">Browser cookies</option>
+            <option value="LocalStorage">Browser long-term storage</option>
+            <option value="SessionStorage">Browser short-term storage</option>
+            <option value="Document">Document storage</option>
+        </select>
+        </form>
+    </div>
+  </body>
+</html>

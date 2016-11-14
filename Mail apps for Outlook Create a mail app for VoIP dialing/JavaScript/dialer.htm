@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=Edge”/>
+    <style type="text/css">
+        .supportLabel
+        {
+            bottom: 5px;
+            left: 5px;
+            z-index: 10;
+            font-size: 10px;
+            white-space: nowrap;
+        }
+    </style>
+    <title>Phone Dialer</title>
+    <link rel="stylesheet" type="text/css" href="Css/Outlook.css" />
+    <script type="text/javascript" src="Scripts/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="Scripts/MicrosoftAjax.js"></script>
+    <!-- Use the CDN reference to Office.js when deploying your app. -->
+    <script type="text/javascript" 
+        src="https://appsforoffice.microsoft.com/lib/1.0/hosted/Office.js"></script>
+    <script type="text/javascript" src="Scripts/dialer.js"></script>
+</head>
+<body onload="loadcomplete()">
+    <div>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <img src="Images/Icon_narrow.png" alt='Phone Dialer' align="top" />
+                </td>
+                <td style="font-family: Segoe UI; font-size: 10pt;" valign="top">
+                    <b>Click to Call:</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-family: Segoe UI; font-size: 10pt;" valign="middle" align="center">
+                    <div id="dialerholder">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p style="font-family: Segoe UI; font-size: 10pt;" class="supportLabel">
+            <i>Please <a id="support" href="mailto:ExDogAgave@microsoft.com?subject=Phone Dialer Feedback&body=">
+                Contact</a> for any feedback.</i>
+        </p>
+    </div>
+</body>
+</html>

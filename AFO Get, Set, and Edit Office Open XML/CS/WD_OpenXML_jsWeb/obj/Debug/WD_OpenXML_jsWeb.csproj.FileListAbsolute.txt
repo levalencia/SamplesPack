@@ -1,0 +1,30 @@
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+C:\Users\soliver\documents\visual studio 2012\Projects\WD_OpenXML_js\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\MSDN OOXML sample\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\MSDN OOXML sample\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\MSDN OOXML sample\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\MSDN OOXML sample\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\MSDN OOXML sample\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Edited OOXML sample for testing Get and Set\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Edited OOXML sample for testing Get and Set\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Edited OOXML sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\Edited OOXML sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Edited OOXML sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Edited OOXML code sample for testing Get and Set\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Edited OOXML code sample for testing Get and Set\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Edited OOXML code sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\Edited OOXML code sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Edited OOXML code sample for testing Get and Set\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Get and Set OOXML_With OOXML ScratchPad\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Get and Set OOXML_With OOXML ScratchPad\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Get and Set OOXML_With OOXML ScratchPad\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\Get and Set OOXML_With OOXML ScratchPad\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Get and Set OOXML_With OOXML ScratchPad\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Get, Set, and Edit OOXML\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Get, Set, and Edit OOXML\WD_OpenXML_jsWeb\bin\WD_OpenXML_jsWeb.pdb
+X:\O2013 Apps\OOXML white paper\Get, Set, and Edit OOXML\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\Get, Set, and Edit OOXML\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.dll
+X:\O2013 Apps\OOXML white paper\Get, Set, and Edit OOXML\WD_OpenXML_jsWeb\obj\Debug\WD_OpenXML_jsWeb.pdb

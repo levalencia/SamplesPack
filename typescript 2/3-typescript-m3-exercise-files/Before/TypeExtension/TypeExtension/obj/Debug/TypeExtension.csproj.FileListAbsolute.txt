@@ -1,0 +1,6 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\bin\TypeExtension.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\bin\TypeExtension.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\bin\TypeExtension.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\obj\Debug\TypeExtension.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\obj\Debug\TypeExtension.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module3\Code\Before\TypeExtension\TypeExtension\obj\Debug\TypeExtension.pdb

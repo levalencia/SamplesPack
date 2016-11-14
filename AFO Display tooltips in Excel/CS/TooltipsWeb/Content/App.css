@@ -1,0 +1,11 @@
+﻿#span_help_01, #span_help_02 {
+    width: 25%;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid rgb(195,151,51);
+    border-radius: 5px;
+}
+
+#keyword01, #keyword02 {
+    color: red;
+}

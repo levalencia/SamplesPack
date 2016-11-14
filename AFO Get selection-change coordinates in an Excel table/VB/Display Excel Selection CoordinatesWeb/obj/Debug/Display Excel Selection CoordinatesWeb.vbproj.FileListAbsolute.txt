@@ -1,0 +1,8 @@
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\bin\Display Excel Selection CoordinatesWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\bin\Display Excel Selection CoordinatesWeb.pdb
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\bin\Display Excel Selection CoordinatesWeb.xml
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\obj\Debug\Display_Excel_Selection_CoordinatesWeb.Resources.resources
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\obj\Debug\Display Excel Selection CoordinatesWeb.vbproj.GenerateResource.Cache
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\obj\Debug\Display Excel Selection CoordinatesWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\obj\Debug\Display Excel Selection CoordinatesWeb.xml
+c:\users\saulc\documents\visual studio 2012\Projects\Display Excel Selection Coordinates\Display Excel Selection CoordinatesWeb\obj\Debug\Display Excel Selection CoordinatesWeb.pdb

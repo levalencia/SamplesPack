@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ScriptFiles" Url="Scripts" List="101">
+    <File Path="ScriptFiles\Custom\test1.js"   Url="Custom/test1.js"  Type="GhostableInLibrary"/>
+    
+    <File Path="ScriptFiles\JQuery\1.10.1\jquery-1.10.1.min.js" Url="JQuery/1.10.1/jquery-1.10.1.min.js"   Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 1.10.1" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.10.1" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQuery\1.6.4\jquery-1.6.4.min.js"    Url="JQuery/1.6.4/jquery-1.6.4.min.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 1.6.4" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.6.4" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQuery\1.7.2\jquery-1.7.2.min.js"    Url="JQuery/1.7.2/jquery-1.7.2.min.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 1.7.2" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.7.2" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQuery\1.8.3\jquery-1.8.3.min.js"    Url="JQuery/1.8.3/jquery-1.8.3.min.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 1.8.3" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.8.3" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQuery\1.9.1\jquery-1.9.1.min.js"    Url="JQuery/1.9.1/jquery-1.9.1.min.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 1.9.1" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.9.1" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQuery\2.0.2\jquery-2.0.2.min.js"    Url="JQuery/2.0.2/jquery-2.0.2.min.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQuery 2.0.2" Type="string" />
+      <Property Name="ScriptDescription" Value="DOM manipulation, animation, ajax, etc." Type="string" />
+      <Property Name="DocumentationLink" Value="http://jquery.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.com" Type="string" />
+      <Property Name="VersionNumber" Value="2.0.2" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.css"  Url="JQueryUI/1.10.3/jquery-ui-1.10.3.custom.min.css"   Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQUeryUI 1.10.3 CSS" Type="string" />
+      <Property Name="ScriptDescription" Value="CSS for user interface interactions, effects, widgets, and themes built on top of jQuery" Type="string" />
+      <Property Name="DocumentationLink" Value="http://jqueryui.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jqueryui.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.10.3" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.js"   Url="JQueryUI/1.10.3/jquery-ui-1.10.3.custom.min.js"    Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQueryUI 1.10.3 JavaScript" Type="string" />
+      <Property Name="ScriptDescription" Value="JS for user interface interactions, effects, widgets, and themes built on top of jQuery" Type="string" />
+      <Property Name="DocumentationLink" Value="http://jqueryui.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jqueryui.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.10.3" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.css"    Url="JQueryUI/1.9.2/jquery-ui-1.9.2.custom.min.css"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQueryUI 1.9.2 CSS" Type="string" />
+      <Property Name="ScriptDescription" Value="CSS for User interface interactions, effects, widgets, and themes built on top of jQuery" Type="string" />
+      <Property Name="DocumentationLink" Value="http://jqueryui.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jquery.comui" Type="string" />
+      <Property Name="VersionNumber" Value="1.9.2" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.js"     Url="JQueryUI/1.9.2/jquery-ui-1.9.2.custom.min.js"      Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JQueryUI 1.9.2 JavaScript" Type="string" />
+      <Property Name="ScriptDescription" Value="JS for user interface interactions, effects, widgets, and themes built on top of jQuery" Type="string" />
+      <Property Name="DocumentationLink" Value="http://jqueryui.com" Type="string" />
+      <Property Name="OriginalSource" Value="http://jqueryui.com" Type="string" />
+      <Property Name="VersionNumber" Value="1.9.2" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JSRender\jsrender.min.js"            Url="JSRender/jsrender.min.js" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JSRender" Type="string" />
+      <Property Name="ScriptDescription" Value="JavaScript templating engine" Type="string" />
+      <Property Name="DocumentationLink" Value="http://www.jsviews.com/#jsrender" Type="string" />
+      <Property Name="OriginalSource" Value="http://www.jsviews.com/#jsrender" Type="string" />
+      <Property Name="VersionNumber" Value="beta" Type="string" />
+    </File>
+    <File Path="ScriptFiles\JStorage\JStorage.js"   Url="JStorage/JStorage.js"    Type="GhostableInLibrary" >
+      <Property Name="Title" Value="JStorage" Type="string" />
+      <Property Name="ScriptDescription" Value="Browser local storage library" Type="string" />
+      <Property Name="DocumentationLink" Value="http://jstorage.info" Type="string" />
+      <Property Name="OriginalSource" Value="http://jstorage.info" Type="string" />
+      <Property Name="VersionNumber" Value="1.0" Type="string" />
+    </File>
+    <File Path="ScriptFiles\Knockout\2.1.0\knockout-2.1.0.js"    Url="Knockout/2.1.0/knockout-2.1.0.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Knockout 2.1.0" Type="string" />
+      <Property Name="ScriptDescription" Value="JavaScript MVVM and Databinding library" Type="string" />
+      <Property Name="DocumentationLink" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="OriginalSource" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="VersionNumber" Value="2.1.0" Type="string" />
+    </File>
+    <File Path="ScriptFiles\Knockout\2.2.0\knockout-2.2.0.js"    Url="Knockout/2.2.0/knockout-2.2.0.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Knockout 2.2.0" Type="string" />
+      <Property Name="ScriptDescription" Value="JavaScript MVVM and Databinding library" Type="string" />
+      <Property Name="DocumentationLink" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="OriginalSource" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="VersionNumber" Value="2.2.0" Type="string" />
+    </File>
+    <File Path="ScriptFiles\Knockout\2.3.0\knockout-2.3.0.js"    Url="Knockout/2.3.0/knockout-2.3.0.js"     Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Knockout 2.3.0" Type="string" />
+      <Property Name="ScriptDescription" Value="JavaScript MVVM and Databinding library" Type="string" />
+      <Property Name="DocumentationLink" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="OriginalSource" Value="http://knockoutjs.com/" Type="string" />
+      <Property Name="VersionNumber" Value="2.3.0" Type="string" />
+    </File>
+    <File Path="ScriptFiles\Moment\moment.min.js"   Url="Moment/moment.min.js"    Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Moment" Type="string" />
+      <Property Name="ScriptDescription" Value="Date/Time manipulation and formatting" Type="string" />
+      <Property Name="DocumentationLink" Value="http://momentjs.com/" Type="string" />
+      <Property Name="OriginalSource" Value="http://momentjs.com/" Type="string" />
+      <Property Name="VersionNumber" Value="2.2.1" Type="string" />
+    </File>
+    <File Path="ScriptFiles\Custom\Library1.js"     Url="Custom/Library1.js"      Type="GhostableInLibrary" />
+    <File Path="ScriptFiles\Custom\Library2.js"     Url="Custom/Library2.js"      Type="GhostableInLibrary"/>
+    <File Path="ScriptFiles\Custom\Library3.js"     Url="Custom/Library3.js"      Type="GhostableInLibrary"/>
+    <File Path="ScriptFiles\Custom\Library4.js"     Url="Custom/Library4.js"      Type="GhostableInLibrary"/>
+  </Module>
+</Elements>

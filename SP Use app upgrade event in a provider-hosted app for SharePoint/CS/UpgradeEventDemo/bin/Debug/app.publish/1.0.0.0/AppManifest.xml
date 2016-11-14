@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Published:a2ba41A2-b704-4a9d-a9ed-aecacc1d43ed-->
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" Name="UpgradeEventDemo" ProductID="{b09f6c70-a9a4-485d-8a8d-9f04fb32989a}" Version="1.0.0.0" SharePointMinVersion="15.0.0.0">
+  <Properties>
+    <Title>Upgrade Event Demo (MSDN)</Title>
+    <StartPage>https://localhost:44324/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <InstalledEventEndpoint>https://localhost:44324/AppEventReceiver.svc</InstalledEventEndpoint>
+    <UpgradedEventEndpoint>https://localhost:44324/AppEventReceiver.svc</UpgradedEventEndpoint>
+  </Properties>
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="2084f712-a88b-45d7-a4e6-82d39cbb80d0" />
+  </AppPrincipal>
+  <AppPermissionRequests AllowAppOnlyPolicy="true" />
+</App>

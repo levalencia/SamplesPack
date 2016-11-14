@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93B7738A-3D75-4B41-9D03-5AF28CE53301}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExcelDataVisualization</RootNamespace>
+    <AssemblyName>ExcelDataVisualization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <AppFeaturePartId>{3b3e5e12-37fa-4aed-9007-9d8048e4ad64}</AppFeaturePartId>
+    <WspPartId>{b0c952e9-de99-4cb1-a45d-2fead163a74a}</WspPartId>
+    <WorkflowPartId>{dba8f52b-3b49-4619-8268-21f7416b4144}</WorkflowPartId>
+    <CspkgPartId>{d103ecf1-5abb-4bcb-a8fb-1f44426c2ded}</CspkgPartId>
+    <SqlPackagePartId>{8519ca73-d905-40fa-8f73-3ab5d9b875b4}</SqlPackagePartId>
+    <ProjectMode>OfficeApp</ProjectMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="PopulationVisualizationContentApp\ExcelDataVisualization.xml">
+      <OpcRelationship>manifest-oemanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="PopulationVisualization.xlsx" />
+    <None Include="PopulationVisualizationTaskPaneApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0906cdd4-7a5e-4cf1-abd2-c59c485a2e20}</SharePointProjectItemId>
+    </None>
+    <Content Include="PopulationVisualizationTaskPaneApp\ExcelDataVisualizationTaskPane.xml">
+      <OpcRelationship>manifest-oemanifest</OpcRelationship>
+    </Content>
+    <None Include="PopulationVisualizationContentApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d43cfbc-998d-4a58-b7bc-c133c0fa6729}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelDataVisualizationWeb\ExcelDataVisualizationWeb.csproj">
+      <Project>{29318916-04E3-42AC-A214-A80579559E02}</Project>
+      <Name>ExcelDataVisualizationWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>ExcelDataVisualizationWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ContentApp">
+  <Id>0c1acb4f-6eb4-439b-a5f0-b6fcdd1bd6d4</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Administrator</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Population Visualization Output" />
+  <Description DefaultValue="Shows the Population Visualization App in the Worksheet"/>
+  <Capabilities>
+    <Capability Name="Workbook" />
+  </Capabilities>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/App/PopulationVisualization/PopulationVisualizationContent.html" />
+    <RequestedWidth>300</RequestedWidth>
+    <RequestedHeight>400</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

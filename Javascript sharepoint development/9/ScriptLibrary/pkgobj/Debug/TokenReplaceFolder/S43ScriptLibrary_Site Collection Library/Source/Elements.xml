@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{adbd3f85-6946-46af-b82b-284094c13677}"
+       Name="OriginalSource"
+       DisplayName="Source"
+       Type="Text"
+       Required="FALSE"
+       Group="s43" >
+  </Field>
+</Elements>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>https://levalencia.sharepoint.com/sites/dev/</SharePointSiteUrl>
+    <OfficeAppStartAction>
+    </OfficeAppStartAction>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <OpenFolderAfterPackaging>true</OpenFolderAfterPackaging>
+          <AdviseUsingServiceBusForDebugging>true</AdviseUsingServiceBusForDebugging>
+          <AppInstancePackageModifiedTime>2014-09-03T18:48:01.1303574Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>771dff8d-e84f-4e2a-83ff-4764f942c9e3</AppInstanceId>
+          <AutoRetract>true</AutoRetract>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

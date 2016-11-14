@@ -1,0 +1,79 @@
+﻿<form class="form-horizontal" name="employeeForm" novalidate role="form">
+
+    <fieldset>
+        <legend>Basic Information</legend>
+        <div class="form-group" show-errors>
+            <label for="fullName" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" id="fullName" name="fullName" class="form-control"
+                       ng-model="editableEmployee.fullName" ng-required="true"
+                       />
+                <span class="help-block" 
+                      ng-if="employeeForm.fullName.$error.required">Full Name is required</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="notes" class="col-sm-3 control-label">Notes</label>
+            <div class="col-sm-9">
+                <textarea name="notes" id="notes" class="form-control" rows="5" cols="40"
+                          ng-model="editableEmployee.notes"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="department" class="col-sm-3 control-label">Department</label>
+            <div class="col-sm-9">
+                <select name="department" id="department" class="form-control"
+                        ng-model="editableEmployee.department"
+                        ng-options="dept for dept in departments"></select>
+            </div>
+        </div>
+
+    </fieldset>
+    <br />
+
+    
+
+    <fieldset>
+        <legend>Payroll Type</legend>
+        <div class="form-group">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="w2"
+                               ng-model="editableEmployee.payrollType" /> W-2
+                    </label><br />
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="ten99"
+                               ng-model="editableEmployee.payrollType" /> 1099
+                    </label><br />
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="none"
+                               ng-model="editableEmployee.payrollType" /> None
+                    </label><br />
+                </div>
+                <br />
+
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="col-sm-offset-3 col-sm-9">
+        <input type="button" class="btn btn-default" value="Cancel"
+               ng-click="cancelForm()" />
+        <input type="submit" class="btn btn-primary" value="Submit"
+               ng-click="submitForm()" />
+        <input type="reset" class="btn btn-warning" value="Reset"
+               ng-click="resetForm()" />
+        <div class="alert alert-danger" ng-if="hasFormError">{{formErrors}}</div>
+    </div>
+
+</form>

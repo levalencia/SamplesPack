@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{359b7a80-4f49-4a10-b35e-db28e44d2d69}"
+       Name="VersionNumber"
+       DisplayName="Version Number"
+       Type="Text"
+       Required="FALSE"
+       Group="s43">
+  </Field>
+</Elements>

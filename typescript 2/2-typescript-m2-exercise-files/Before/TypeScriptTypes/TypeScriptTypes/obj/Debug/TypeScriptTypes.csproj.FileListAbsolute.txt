@@ -1,0 +1,11 @@
+C:\Users\wahlin-nuc\Desktop\After\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.dll.config
+C:\Users\wahlin-nuc\Desktop\After\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\After\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\After\TypeScriptTypes\TypeScriptTypes\obj\Debug\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\After\TypeScriptTypes\TypeScriptTypes\obj\Debug\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\obj\Debug\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\obj\Debug\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.dll.config
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\bin\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\TypeScriptTypes\TypeScriptTypes\obj\Debug\TypeScriptTypes.csprojResolveAssemblyReference.cache

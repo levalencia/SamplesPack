@@ -1,0 +1,5 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\NodeJSDemo\NodeJSDemo\bin\NodeJSDemo.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\NodeJSDemo\NodeJSDemo\bin\NodeJSDemo.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\NodeJSDemo\NodeJSDemo\bin\NodeJSDemo.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\NodeJSDemo\NodeJSDemo\obj\Debug\NodeJSDemo.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\NodeJSDemo\NodeJSDemo\obj\Debug\NodeJSDemo.pdb

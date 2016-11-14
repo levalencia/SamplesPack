@@ -1,0 +1,5 @@
+C:\Users\b-chschu\Documents\Visual Studio 2012\Projects\VendorLookup - Demo\VendorLookupWeb\bin\VendorLookupWeb.dll
+C:\Users\b-chschu\Documents\Visual Studio 2012\Projects\VendorLookup - Demo\VendorLookupWeb\bin\VendorLookupWeb.pdb
+C:\Users\b-chschu\Documents\Visual Studio 2012\Projects\VendorLookup - Demo\VendorLookupWeb\obj\Debug\VendorLookupWeb.csprojResolveAssemblyReference.cache
+C:\Users\b-chschu\Documents\Visual Studio 2012\Projects\VendorLookup - Demo\VendorLookupWeb\obj\Debug\VendorLookupWeb.dll
+C:\Users\b-chschu\Documents\Visual Studio 2012\Projects\VendorLookup - Demo\VendorLookupWeb\obj\Debug\VendorLookupWeb.pdb

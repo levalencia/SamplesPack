@@ -1,0 +1,3 @@
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperations\bin\Debug\BasicDataOperations.pdb
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperations\obj\Debug\BasicDataOperations.dll
+c:\users\kempb\documents\visual studio 2012\Projects\BasicDataOperations\BasicDataOperations\obj\Debug\BasicDataOperations.pdb

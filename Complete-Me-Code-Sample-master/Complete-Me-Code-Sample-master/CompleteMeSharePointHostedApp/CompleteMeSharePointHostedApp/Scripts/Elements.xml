@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\moment.min.js" Url="Scripts/moment.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ui-bootstrap-tpls-0.10.0.min.js" Url="Scripts/ui-bootstrap-tpls-0.10.0.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Services\MockSharePointService.js" Url="Scripts/Services/MockSharePointService.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Services\SharePointService.js" Url="Scripts/Services/SharePointService.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Controller\BumpItController.js" Url="Scripts/Controller/BumpItController.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Controller\TaskInlineEditController.js" Url="Scripts/Controller/TaskInlineEditController.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Controller\TodoController.js" Url="Scripts/Controller/TodoController.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

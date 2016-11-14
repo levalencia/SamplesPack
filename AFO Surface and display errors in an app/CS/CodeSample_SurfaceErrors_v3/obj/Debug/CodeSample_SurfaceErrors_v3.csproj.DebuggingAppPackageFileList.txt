@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CodeSample_SurfaceErrors_v3.xml
+\\back\Scratch\erschmid\Projects\CodeSample_SurfaceErrors_v3\CodeSample_SurfaceErrors_v3\bin\Debug\CodeSample_SurfaceErrors_v3.app

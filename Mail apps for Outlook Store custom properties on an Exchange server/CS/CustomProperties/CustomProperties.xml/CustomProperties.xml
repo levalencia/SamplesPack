@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>80ed0c95-7f07-478b-905f-d166922fec6d</Id>
+  <Version>1.1</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="CustomProperties" />
+  <Description DefaultValue="CustomProperties Description"/>
+  <Capabilities>
+    <Capability Name="Mailbox" />
+  </Capabilities>
+  <DesktopSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/CustomProperties.html" />
+    <RequestedHeight>250</RequestedHeight>
+  </DesktopSettings>
+  <Permissions>ReadItem</Permissions>
+    <Rule xsi:type="RuleCollection" Mode="Or">
+      <Rule xsi:type="ItemIs" ItemType="Message"/>
+    </Rule>
+</OfficeApp>

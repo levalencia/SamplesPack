@@ -1,0 +1,27 @@
+﻿body
+{
+}
+table 
+{
+    width:100%;
+}
+#display 
+{
+    height:200px;
+}
+#footer 
+{
+    position:absolute;
+    bottom:0px;
+    font-style:italic;
+}
+.scrolling 
+{
+    overflow-y:scroll;
+    scrollbar-track-color:#fff;
+    scrollbar-arrow-color:#fff;
+}
+.static 
+{
+    overflow-y:hidden;
+}

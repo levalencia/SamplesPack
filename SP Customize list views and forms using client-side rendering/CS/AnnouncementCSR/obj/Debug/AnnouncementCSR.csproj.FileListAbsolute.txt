@@ -1,0 +1,4 @@
+C:\Demos\AnnouncementCSR\AnnouncementCSR\bin\Debug\AnnouncementCSR.pdb
+C:\Demos\AnnouncementCSR\AnnouncementCSR\obj\Debug\AnnouncementCSR.dll
+C:\Demos\AnnouncementCSR\AnnouncementCSR\obj\Debug\AnnouncementCSR.pdb
+C:\Demos\AnnouncementCSR\AnnouncementCSR\obj\Debug\AnnouncementCSR.csprojResolveAssemblyReference.cache

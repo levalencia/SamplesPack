@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="c2b85b06-ff74-4e8e-9717-6ae7165dec8b" 
+        solutionId="c2b85b06-ff74-4e8e-9717-6ae7165dec8b" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BasicJSRest"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="96af891b-2de4-4b2f-a05f-377d9249f9be" />
+  </features>
+</package>

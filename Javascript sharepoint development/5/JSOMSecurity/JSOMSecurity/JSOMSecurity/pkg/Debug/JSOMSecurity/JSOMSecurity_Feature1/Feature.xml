@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="8064b268-4ed3-43b5-b27d-37e24da0aab7" Scope="Web" Title="JSOMSecurity Feature1">
+  <ElementManifests>
+    <ElementManifest Location="SampleData\Elements.xml" />
+    <ElementFile Location="SampleData\Schema.xml" />
+    <ElementManifest Location="SampleDataInstance\Elements.xml" />
+  </ElementManifests>
+</Feature>

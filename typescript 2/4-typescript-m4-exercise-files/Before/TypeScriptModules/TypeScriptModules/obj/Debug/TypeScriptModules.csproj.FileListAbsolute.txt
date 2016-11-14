@@ -1,0 +1,6 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\bin\TypeScriptModules.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\bin\TypeScriptModules.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\bin\TypeScriptModules.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\obj\Debug\TypeScriptModules.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\obj\Debug\TypeScriptModules.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptModules\TypeScriptModules\obj\Debug\TypeScriptModules.pdb

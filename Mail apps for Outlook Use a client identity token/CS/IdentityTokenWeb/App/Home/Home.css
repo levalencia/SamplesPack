@@ -1,0 +1,18 @@
+﻿.displayedPage {
+    display:block;
+}
+
+.hiddenPage {
+    display:none;
+    background-color:red;
+}
+
+h1 {
+    font-size: medium;
+    color:royalblue;
+}
+
+h2 {
+  font-size: medium;
+  color: royalblue;
+}

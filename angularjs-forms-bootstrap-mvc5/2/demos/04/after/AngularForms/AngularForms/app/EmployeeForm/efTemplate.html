@@ -1,0 +1,55 @@
+﻿<form role="form">
+
+    <div class="form-group">
+        <label for="fullName">Name</label>
+        <input type="text" id="fullName" name="fullName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea name="notes" id="notes" class="form-control" rows="5" cols="40"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select name="department" id="department" class="form-control" >
+            <option>Engineering</option>
+            <option>Marketing</option>
+            <option>Finance</option>
+            <option>Administration</option>
+        </select>
+    </div>
+    <br />
+
+    <span><b>Perks</b></span><br />
+
+    <div class="checkbox">
+        <label><input type="checkbox" value="perkCar" />Company Car</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="perkStock" />Stock Options</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" value="perkSixWeeks" />Six Weeks Vacation</label>
+    </div>
+
+    <br />
+
+    <span><b>Payroll Type</b></span><br />
+
+    <div class="radio">
+        <label><input type="radio" name="payrollType" value="w2" /> W-2</label><br />
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="payrollType" value="ten99" /> 1099</label><br />
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="payrollType" value="none" /> None</label><br />
+    </div>
+    <br />
+
+    <input type="submit" class="btn btn-primary" value="Submit" />
+
+        
+
+</form>

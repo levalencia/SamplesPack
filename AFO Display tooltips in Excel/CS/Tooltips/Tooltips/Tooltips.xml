@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>b97ff806-9bff-4549-8243-aeabc6bbd3b1</Id>
+  <Version>1.0</Version>
+  <ProviderName>Administrator</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Tooltips" />
+  <Description DefaultValue="Tooltips Description"/>
+  <Capabilities>
+    <Capability Name="Workbook" />
+    <Capability Name="Presentation" />
+    <Capability Name="Document" />
+  </Capabilities>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/Pages/Tooltips.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

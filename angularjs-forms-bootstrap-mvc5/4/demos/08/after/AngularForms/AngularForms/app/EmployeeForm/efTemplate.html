@@ -1,0 +1,152 @@
+﻿<form class="form-horizontal" role="form">
+
+    <fieldset>
+        <legend>Basic Information</legend>
+        <div class="form-group">
+            <label for="fullName" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" id="fullName" name="fullName" class="form-control"
+                       ng-model="editableEmployee.fullName" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="notes" class="col-sm-3 control-label">Notes</label>
+            <div class="col-sm-9">
+                <textarea name="notes" id="notes" class="form-control" rows="5" cols="40"
+                          ng-model="editableEmployee.notes"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="department" class="col-sm-3 control-label">Department</label>
+            <div class="col-sm-9">
+                <select name="department" id="department" class="form-control"
+                        ng-model="editableEmployee.department"
+                        ng-options="dept for dept in departments"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="topProgrammingLanguage" class="col-sm-3 control-label">
+                Top Programming Language
+            </label>
+            <div class="col-sm-9">
+                <input type="text" id="topProgrammingLanguage" name="topProgrammingLanguage" 
+                       class="form-control"
+                       ng-model="editableEmployee.topProgrammingLanguage"
+                       typeahead="language for language in programmingLanguages | filter:$viewValue"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="interviewRating" class="col-sm-3 control-label">Interview Rating</label>
+            <div class="rating-control col-sm-3">
+                <rating id=" interviewrating" name="interviewRating"
+                 ng-model="interviewRating"
+                 max="10" on-hover="hoveringOver(value)" on-leave="overStar = null" />
+            </div>
+            <div class="rating-control">
+                <span class="label"
+                      ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
+                      ng-show="overStar">{{percent}}%</span>
+            </div>
+        </div>
+
+        <div class="col-sm-offset-3 col-sm-9">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="isUnderNonCompete"
+                           ng-model="editableEmployee.isUnderNonCompete" />
+                    <span tooltip="Contact Legal if you are uncertain"
+                          tooltip-placement="right"
+                          tooltip-trigger="mouseenter">
+                        Is employee under a non-compete contract?
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group" collapse="!editableEmployee.isUnderNonCompete">
+            <label for="nonCompeteNotes" class="col-sm-3 control-label">
+                Non-Compete Notes
+            </label>
+            <div class="col-sm-9">
+                <textarea name="notes" id="notes" class="form-control" rows="5" cols="40"
+                          ng-model="editableEmployee.nonCompeteNotes"></textarea>
+            </div>
+        </div>
+
+
+    </fieldset>
+    <br />
+
+    <fieldset>
+        <legend>Perks</legend>
+        <div class="form-group">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="perkCar"
+                               ng-model="editableEmployee.perkCar" />Company Car
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="perkStock"
+                               ng-model="editableEmployee.perkStock" />Stock Options
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="perkSixWeeks"
+                               ng-model="editableEmployee.perkSixWeeks" />Six Weeks Vacation
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+        <legend>Payroll Type</legend>
+        <div class="form-group">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="w2"
+                               ng-model="editableEmployee.payrollType" /> W-2
+                    </label><br />
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="ten99"
+                               ng-model="editableEmployee.payrollType" /> 1099
+                    </label><br />
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payrollType" value="none"
+                               ng-model="editableEmployee.payrollType" /> None
+                    </label><br />
+                </div>
+                <br />
+
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="col-sm-offset-3 col-sm-9">
+        <input type="button" class="btn btn-default" value="Cancel"
+               ng-click="cancelForm()" />
+        <input type="submit" class="btn btn-primary" value="Submit"
+               ng-click="submitForm()" />
+    </div>
+
+</form>

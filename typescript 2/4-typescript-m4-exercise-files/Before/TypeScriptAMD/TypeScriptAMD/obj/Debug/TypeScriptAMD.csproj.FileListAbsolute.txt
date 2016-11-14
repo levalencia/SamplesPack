@@ -1,0 +1,6 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\bin\TypeScriptAMD.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\bin\TypeScriptAMD.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\bin\TypeScriptAMD.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\obj\Debug\TypeScriptAMD.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\obj\Debug\TypeScriptAMD.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module4\Code\Before\TypeScriptAMD\TypeScriptAMD\obj\Debug\TypeScriptAMD.csprojResolveAssemblyReference.cache

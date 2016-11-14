@@ -1,0 +1,3 @@
+C:\Demos\SimpleSPAnimationDemo\SimpleSPAnimationDemo\bin\Debug\SimpleSPAnimationDemo.pdb
+C:\Demos\SimpleSPAnimationDemo\SimpleSPAnimationDemo\obj\Debug\SimpleSPAnimationDemo.dll
+C:\Demos\SimpleSPAnimationDemo\SimpleSPAnimationDemo\obj\Debug\SimpleSPAnimationDemo.pdb

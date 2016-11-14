@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{021EC4BA-1A18-4B63-B5CD-218FD8F2E481}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>S43ScriptLibrary</RootNamespace>
+    <AssemblyName>S43ScriptLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActiveDeploymentConfiguration>Green Field</ActiveDeploymentConfiguration>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <SandboxedSolution>True</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\ScriptItem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{76bc2295-8933-49df-aa10-09b5d721625d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Site Collection Library\Site Collection Library.feature">
+      <FeatureId>{4f2d4083-7484-48d5-b8a9-da92b7b4f48f}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Scripts\ScriptsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{627cc9ef-1f68-4b20-bb63-afd3b5425c09}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f380449b-2bac-4424-a07f-7254188286a4}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{fb407b53-0efb-4c4a-baae-3cf95de2b0e1}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ScriptFiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84de602d-480a-444c-ad59-36d2c822ee43}</SharePointProjectItemId>
+    </None>
+    <None Include="ScriptLoader\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f85e5f0-3074-4353-a923-4e065aba2248}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\Description\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e110880e-d084-4b3e-9cea-315d833fdad7}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\DocumentationLink\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20cd761d-82bc-494d-a9aa-e30250cda6df}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\Source\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{448ac984-acb6-43ce-afeb-d81bc10999e5}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\VersionNumber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0095556-b236-4ddc-916c-e65b9293551a}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\ScriptItem\Elements.xml" />
+    <Content Include="Features\Site Collection Library\Site Collection Library.Template.xml">
+      <DependentUpon>Site Collection Library.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\Scripts\EditDlg.htm" />
+    <Content Include="Lists\Scripts\Elements.xml" />
+    <Content Include="Lists\Scripts\FileDlg.htm" />
+    <Content Include="Lists\Scripts\Repair.aspx" />
+    <Content Include="Lists\Scripts\Schema.xml" />
+    <Content Include="Lists\Scripts\ScriptsInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Scripts\Upload.aspx" />
+    <Content Include="ScriptFiles\Custom\Library4.js" />
+    <Content Include="ScriptFiles\Custom\Library3.js" />
+    <Content Include="ScriptFiles\Custom\Library2.js" />
+    <Content Include="ScriptFiles\Custom\Library1.js" />
+    <Content Include="ScriptFiles\Custom\test1.js" />
+    <Content Include="ScriptFiles\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="ScriptFiles\JQuery\1.10.1\jquery-1.10.1.min.js" />
+    <Content Include="ScriptFiles\JQuery\1.6.4\jquery-1.6.4.min.js" />
+    <Content Include="ScriptFiles\JQuery\1.7.2\jquery-1.7.2.min.js" />
+    <Content Include="ScriptFiles\JQuery\1.8.3\jquery-1.8.3.min.js" />
+    <Content Include="ScriptFiles\JQuery\1.9.1\jquery-1.9.1.min.js" />
+    <Content Include="ScriptFiles\JQuery\2.0.2\jquery-2.0.2.min.js" />
+    <Content Include="ScriptFiles\JSRender\jsrender.min.js" />
+    <Content Include="ScriptFiles\JStorage\JStorage.js" />
+    <Content Include="ScriptFiles\Knockout\2.1.0\knockout-2.1.0.js" />
+    <Content Include="ScriptFiles\Knockout\2.2.0\knockout-2.2.0.js" />
+    <Content Include="ScriptFiles\Knockout\2.3.0\knockout-2.3.0.js" />
+    <Content Include="ScriptFiles\Moment\moment.min.js" />
+    <Content Include="ScriptLoader\Elements.xml" />
+    <Content Include="SiteColumns\Description\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteColumns\DocumentationLink\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteColumns\Source\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteColumns\VersionNumber\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <DeploymentConfigurations>
+          <DeploymentConfiguration Name="Green Field">
+            <DeploymentSteps>Microsoft.VisualStudio.SharePoint.PreDeploymentCommand;Microsoft.VisualStudio.SharePoint.RecycleApplicationPool;CKS.Dev.SharePoint.Deployment.RecreateSite;Microsoft.VisualStudio.SharePoint.AddSolution;Microsoft.VisualStudio.SharePoint.ActivateFeatures;CKS.Dev.SharePoint.Deployment.WarmUpSite;Microsoft.VisualStudio.SharePoint.PostDeploymentCommand</DeploymentSteps>
+            <RetractionSteps>
+            </RetractionSteps>
+          </DeploymentConfiguration>
+        </DeploymentConfigurations>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

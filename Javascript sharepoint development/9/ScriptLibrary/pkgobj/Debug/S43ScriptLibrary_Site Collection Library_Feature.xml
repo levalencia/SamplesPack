@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="9a9d18d5-0f7c-406c-956f-2db65349b6bb" Scope="Site" Title="Scripts Library Feature">
+  <ElementManifests>
+    <ElementManifest Location="ScriptFiles\Elements.xml" />
+    <ElementFile Location="ScriptFiles\JQuery\1.10.1\jquery-1.10.1.min.js" />
+    <ElementFile Location="ScriptFiles\JQuery\1.6.4\jquery-1.6.4.min.js" />
+    <ElementFile Location="ScriptFiles\JQuery\1.7.2\jquery-1.7.2.min.js" />
+    <ElementFile Location="ScriptFiles\JQuery\1.8.3\jquery-1.8.3.min.js" />
+    <ElementFile Location="ScriptFiles\JQuery\1.9.1\jquery-1.9.1.min.js" />
+    <ElementFile Location="ScriptFiles\JQuery\2.0.2\jquery-2.0.2.min.js" />
+    <ElementFile Location="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.css" />
+    <ElementFile Location="ScriptFiles\JQueryUI\1.10.3\jquery-ui-1.10.3.custom.min.js" />
+    <ElementFile Location="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.css" />
+    <ElementFile Location="ScriptFiles\JQueryUI\1.9.2\jquery-ui-1.9.2.custom.min.js" />
+    <ElementFile Location="ScriptFiles\JSRender\jsrender.min.js" />
+    <ElementFile Location="ScriptFiles\JStorage\JStorage.js" />
+    <ElementFile Location="ScriptFiles\Knockout\2.1.0\knockout-2.1.0.js" />
+    <ElementFile Location="ScriptFiles\Knockout\2.2.0\knockout-2.2.0.js" />
+    <ElementFile Location="ScriptFiles\Knockout\2.3.0\knockout-2.3.0.js" />
+    <ElementFile Location="ScriptFiles\Moment\moment.min.js" />
+    <ElementFile Location="ScriptFiles\Custom\Library1.js" />
+    <ElementFile Location="ScriptFiles\Custom\test1.js" />
+    <ElementFile Location="ScriptFiles\Custom\Library2.js" />
+    <ElementFile Location="ScriptFiles\Custom\Library3.js" />
+    <ElementFile Location="ScriptFiles\Custom\Library4.js" />
+    <ElementManifest Location="ScriptItem\Elements.xml" />
+    <ElementManifest Location="Source\Elements.xml" />
+    <ElementManifest Location="DocumentationLink\Elements.xml" />
+    <ElementManifest Location="VersionNumber\Elements.xml" />
+    <ElementManifest Location="Description\Elements.xml" />
+    <ElementManifest Location="ScriptsInstance\Elements.xml" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\Schema.xml" />
+    <ElementFile Location="Scripts\EditDlg.htm" />
+    <ElementFile Location="Scripts\FileDlg.htm" />
+    <ElementFile Location="Scripts\Repair.aspx" />
+    <ElementFile Location="Scripts\Upload.aspx" />
+  </ElementManifests>
+</Feature>

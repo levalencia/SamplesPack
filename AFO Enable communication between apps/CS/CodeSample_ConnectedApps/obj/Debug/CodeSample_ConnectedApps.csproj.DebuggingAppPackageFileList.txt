@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CodeSample_ConnectedApps.xml
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedApps\bin\Debug\CodeSample_ConnectedApps.app

@@ -1,0 +1,5 @@
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedAppsWeb\bin\CodeSample_ConnectedAppsWeb.dll
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedAppsWeb\bin\CodeSample_ConnectedAppsWeb.pdb
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedAppsWeb\obj\Debug\CodeSample_ConnectedAppsWeb.csprojResolveAssemblyReference.cache
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedAppsWeb\obj\Debug\CodeSample_ConnectedAppsWeb.dll
+\\back\Scratch\erschmid\Projects\CodeSample_ConnectedApps\CodeSample_ConnectedAppsWeb\obj\Debug\CodeSample_ConnectedAppsWeb.pdb

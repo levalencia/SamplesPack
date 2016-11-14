@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ContentApp">
+  <Id>2c4f7262-b9ca-4cc2-b045-e69520099573</Id>
+  <Version>1.0</Version>
+  <ProviderName>erschmid</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="CodeSample_ConsumerApp" />
+  <Description DefaultValue="CodeSample_ConsumerApp Description"/>
+  <Capabilities>
+    <Capability Name="Workbook" />
+  </Capabilities>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="http://localhost:63612/Pages/CodeSample_ConsumerApp.html" />
+    <RequestedWidth>400</RequestedWidth>
+    <RequestedHeight>400</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" />
+    <File Path="Pages\ScriptTag.aspx" Url="Pages/ScriptTag.aspx" />
+    <File Path="Pages\FlagVar.aspx" Url="Pages/FlagVar.aspx" />
+    <File Path="Pages\ExecuteFunc.aspx" Url="Pages/ExecuteFunc.aspx" />
+    <File Path="Pages\Defer.aspx" Url="Pages/Defer.aspx" />
+  </Module>
+</Elements>

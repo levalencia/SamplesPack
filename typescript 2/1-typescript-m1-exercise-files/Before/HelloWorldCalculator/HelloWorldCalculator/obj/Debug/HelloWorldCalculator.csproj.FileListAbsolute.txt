@@ -1,0 +1,6 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\bin\HelloWorldCalculator.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\bin\HelloWorldCalculator.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\bin\HelloWorldCalculator.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\obj\Debug\HelloWorldCalculator.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\obj\Debug\HelloWorldCalculator.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module1\Code\Before\HelloWorldCalculator\HelloWorldCalculator\obj\Debug\HelloWorldCalculator.pdb

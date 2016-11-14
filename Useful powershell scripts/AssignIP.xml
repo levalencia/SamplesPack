@@ -1,0 +1,17 @@
+<Sharepoint>
+<WebApplication name="#@#ApplicationName##" hostheader="#@#hostheader##">
+	<Port>80</Port>
+	<ServerBindings>
+		<ServerBinding servername="#@#Server1Name##" ipAddress="" />
+		<ServerBinding servername="#@#Server2Name##" ipAddress="" />
+	</ServerBindings>
+	<Extensions>
+		<Extension name="#@#Ano.ExtensionName##" hostheader="#@#Ano.hostheader##">
+			<ServerBindings>			
+				<ServerBinding servername="#@#Server1Name##" ipAddress="" />
+				<ServerBinding servername="#@#Server2Name##" ipAddress="" />
+			</ServerBindings>
+		</Extension>
+	</Extensions> 
+</WebApplication>
+</Sharepoint>

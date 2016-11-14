@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/bcc2dc10-d575-4280-9d7e-3c057f3c2603Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Validate a client identity token using the .NET Framework</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Validate a client identity token using the .NET Framework</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            apps for Office, Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Authentication
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">7/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Mail-apps-for-Outlook-10c039dd">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText"></span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Mail apps for Outlook: Validate a client identity token using the .NET Framework</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p></p>
+<div>
+<p>This sample shows you how to create a library to validate Exchange client identity tokens by using the .NET Framework.</p>
+</div>
+<h1>Description of the Mail apps for Outlook: Validate a client identity token using the .NET Framework sample</h1>
+<div id="sectionSection0" name="collapseableSection">
+<p>This sample shows you how to create a .NET Framework service that validates an Exchange client access token. The Exchange server issues a token that is unique to the mailbox on the server; you can use this token to associate a mailbox with services that
+ you provide to a mail app for Outlook.</p>
+<p>The sample is divided into two parts. The first part, the mail app for Outlook, runs in your email client. It requests an identity token from the Exchange server and sends this token to the second part, a web service that validates the token from the client.
+ The web service responds with the contents of the token, which the mail app then displays.</p>
+<p>The service uses the following steps to process the token:</p>
+<ul>
+<li>
+<p>Decodes the identity token to get the URL for the Exchange server's authentication metadata document. The service also checks to determine whether the token has expired and checks the version number on the token during this step.</p>
+</li><li>
+<p>If the identity token passes the first step, the service uses the information in the authentication metadata document to get the certificate that was used to sign the token from the server.</p>
+</li><li>
+<p>If the token is valid, the service returns it to the mail app for Outlook for display.</p>
+</li></ul>
+<p>The service does not use the token in any way. It responds with the information contained in the token, or with an error message if the token is not valid.
+</p>
+<p>This sample also requires an X.509 certificate validation function that allows the service to respond to requests that are signed with a self-signed certificate issued by the Exchange server. The Exchange server will use this self-signed certificate by default;
+ if your Exchange server has a valid certificate that traces back to a root provider, this validation function is not required. For more information about the validation function, see
+<a href="http://msdn.microsoft.com/en-us/library/bb408523(EXCHG.80).aspx" >
+Validating X509 Certificates for SSL over HTTP</a>.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1" name="collapseableSection">
+<p>This sample requires that you have the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012, with the apps for Office project templates.</p>
+</li><li>
+<p>A computer running Exchange 2013 with at least one email account, or an Office 365 developer account.</p>
+</li><li>
+<p>Microsoft.IdentityModel.dll - This library is included in the Windows Identity Foundation SDK. You can download the SDK from the
+<a href="http://www.microsoft.com/en-us/download/details.aspx?id=4451" >
+Microsoft Download Center</a>.</p>
+</li><li>
+<p>Microsoft.IdentityModel.Extensions.dll - This library is available for download from one of the following locations:
+</p>
+<ul>
+<li>
+<p><a href="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/MicrosoftIdentityExtensions-32.msi" >Windows IdentityModel.Extensions.dll for 32-bit applications</a>
+</p>
+</li><li>
+<p><a href="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/MicrosoftIdentityExtensions-64.msi" >Windows IdentityModel.Extensions.dll for 64-bit applications</a>
+</p>
+</li></ul>
+</li><li>
+<p>Familiarity with JavaScript programming and web services.</p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2" name="collapseableSection">
+<p>The sample solution contains the following file in the IdentityToken project:</p>
+<ul>
+<li>
+<p>IdentityTokenManifest.xml - The manifest file for the mail app for Outlook.</p>
+</li></ul>
+<p>The IdentityTokenService project defines a REST service by using the WCF API. The project was created by using the WebAPI wizard in Visual Studio 2012. The project contains the following files:</p>
+<ul>
+<li>
+<p>Controllers\IdentityTestController.cs - The service object that provides the business logic for the sample service.</p>
+</li><li>
+<p>Models\AuthClaimTypes.cs - The static object that provides identifiers for the parts of the client identity token.</p>
+</li><li>
+<p>Models\AuthMetadata.cs - The object that represents the authentication metadata document retrieved from the location specified in the client identity token.
+</p>
+</li><li>
+<p>Models\Base64UrlEncoder.cs - The static object that decodes a URL that has been base-64 URL-encoded, as specified in RFC 4648.
+</p>
+</li><li>
+<p>Models\Config.cs - Provides string values that must be matched in the client identity token. Also provides a certificate validation callback suitable for test use.</p>
+</li><li>
+<p>Models\DecodedJSONToken.cs - Represents a valid JSON Web Token (JWT) decoded from the base-64 URL-encoded client identity token. If the token is not valid, the constructor for the
+<span value="DecodedJSONToken"><b><span class="keyword">DecodedJSONToken</span></b></span> object will throw an
+<span value="ApplicationException"><b><span class="keyword">ApplicationException</span></b></span> error.</p>
+</li><li>
+<p>Models\IdentityTokenRequest.cs - The object that represents the REST request from the mail app.</p>
+</li><li>
+<p>Models\IdentityTokenResponse.cs - The object that represents the REST response from the web service.</p>
+</li><li>
+<p>Models\IdentityToken.cs - The object that represents the decoded and validated client identity token.</p>
+</li><li>
+<p>Models\JsonAuthMetadataDocument.cs - The object that represents the authentication metadata document sent from the Exchange server.</p>
+</li><li>
+<p>Models\JsonTokenDecoder.cs - The static object that decodes the base-64 URL-encoded client identity token from the mail app for Outlook.</p>
+</li><li>
+<p>Global.asax - The global file for the web service. The web API and route table are configured for the REST service in the
+<span value="Application_Start"><b><span class="keyword">Application_Start</span></b></span> event handler.</p>
+</li><li>
+<p>Web.config - Binds the sample service to the web server endpoint.</p>
+</li></ul>
+<p>The IdentityTokenWeb project contains the UI and JavaScript code for the mail app for Outlook. The project was created by using Visual Studio 2012 and is based on the mail app for Outlook project template. The following files were modified for this sample:</p>
+<ul>
+<li>
+<p>App\Home\Home.html - The HTML user interface for the mail app for Outlook.</p>
+</li><li>
+<p>App\Home\Home.js - The JavaScript file that handles requesting and using the identity token.</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3" name="collapseableSection">
+<p>The mail app will be activated on any email message in the user's Inbox. You can make it easier to test the app by sending one or more email messages to your test account before you run the sample app.</p>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4" name="collapseableSection">
+<p>Press F5 to build the sample application. Complete the following tasks to deploy the application:</p>
+<ol>
+<li>
+<p>Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.</p>
+</li><li>
+<p>Allow the server to configure the email account.</p>
+</li></ol>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5" name="collapseableSection">
+<p>You run and test the sample in the web browser that is started by Visual Studio when you build and deploy the sample.</p>
+<p>If you are running the sample on an Exchange server that is using the default self-signed certificate, you will receive a certificate error when the web browser starts. After you verify that the web browser is opening the correct URL by looking at the web
+ address, you can select <b><span class="ui">Continue to this Web site</span></b> to start Outlook Web App.</p>
+<p>Follow these steps to run the sample:</p>
+<ol>
+<li>
+<p>Log on to the email account by entering the account name and password.</p>
+</li><li>
+<p>Select a message in the Inbox.</p>
+</li><li>
+<p>Wait for the App bar to appear over the message.</p>
+</li><li>
+<p>In the App bar, select <b><span class="ui">Identity Token Test</span></b>.</p>
+</li><li>
+<p>When the identity token mail app appears, it will display the contents of the client identity token.</p>
+</li></ol>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6" name="collapseableSection">
+<p>The following are common errors that can occur when you use Outlook Web App to test a mail app for Outlook:</p>
+<ul>
+<li>
+<p>The App bar does not appear when a message is selected. If this occurs, restart the application by selecting
+<b><span class="ui">Debug - Stop Debugging</span></b> in the Visual Studio window, then press F5 to rebuild and deploy the app.</p>
+</li><li>
+<p>Changes to the JavaScript code might not be picked up when you deploy and run the app. If the changes are not picked up, clear the cache on the web browser by selecting
+<b><span class="ui">Tools - Internet options</span></b> and selecting the <b><span class="ui">Delete…</span></b> button. Delete the temporary Internet files and then restart the app.</p>
+</li></ul>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection7" name="collapseableSection">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/bb408523(EXCHG.80).aspx" >Validating X509 Certificates for SSL over HTTP</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e" >Authenticating a mail app by using Exchange 2013 identity tokens</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp179819(v=office.15)" >How to: Validate an Exchange 2013 identity token</a>
+</p>
+</li><li>
+<p><a href="http://www.asp.net/web-api" >Web API: The Official Microsoft ASP.NET Site</a>
+</p>
+</li></ul>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection8" name="collapseableSection">
+<p>Updated the sample to use the latest API release.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

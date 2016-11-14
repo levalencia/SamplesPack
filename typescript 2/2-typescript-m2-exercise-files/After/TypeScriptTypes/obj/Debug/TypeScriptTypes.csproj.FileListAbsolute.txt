@@ -1,0 +1,12 @@
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\bin\TypeScriptTypes.dll.config
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\bin\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\bin\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Dropbox\TSCode\Module2\Code\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\bin\TypeScriptTypes.dll.config
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\bin\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\bin\TypeScriptTypes.pdb
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.csprojResolveAssemblyReference.cache
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.dll
+C:\Users\wahlin-nuc\Desktop\TypeScript\2-typescript-m2-exercise-files\After\TypeScriptTypes\obj\Debug\TypeScriptTypes.pdb

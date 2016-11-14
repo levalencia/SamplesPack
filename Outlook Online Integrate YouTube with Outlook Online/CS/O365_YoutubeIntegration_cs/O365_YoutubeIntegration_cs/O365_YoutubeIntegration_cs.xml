@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>7abd462e-9a82-48a9-80fe-153c3450147c</Id>
+  <Version>1.0</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="O365_YoutubeIntegration_cs" />
+  <Description DefaultValue="O365_YoutubeIntegration_cs Description"/>
+  <Capabilities>
+    <Capability Name="Mailbox" />
+  </Capabilities>
+  <DesktopSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/Pages/O365_YoutubeIntegration_cs.html" />
+    <RequestedHeight>250</RequestedHeight>
+  </DesktopSettings>
+  <Permissions>ReadItem</Permissions>
+    <Rule xsi:type="RuleCollection" Mode="Or">
+      <Rule xsi:type="ItemIs" ItemType="Message"/>
+        <!--Regular Ex defined for YouTube videos-->
+      <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="VideoURL" RegExValue="http://www\.youtube\.com/embed/[a-zA-Z0-9_-]{11}" PropertyName="BodyAsHTML"/>
+    </Rule>
+</OfficeApp>

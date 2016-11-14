@@ -1,0 +1,3 @@
+C:\Demos_Samples\ClipAnimator\ClipAnimator\bin\Debug\ClipAnimator.pdb
+C:\Demos_Samples\ClipAnimator\ClipAnimator\obj\Debug\ClipAnimator.dll
+C:\Demos_Samples\ClipAnimator\ClipAnimator\obj\Debug\ClipAnimator.pdb

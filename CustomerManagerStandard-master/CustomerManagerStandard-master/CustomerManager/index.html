@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="customersApp">
+<head>
+    <title>Customer Manager</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/animations.css" rel="stylesheet" />
+    <link href="Content/styles.css" rel="stylesheet" />
+</head>
+<body data-ng-cloak="">
+
+    <header class="navbar navbar-inner navbar-fixed-top" data-ng-controller="NavbarController">
+        <nav class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-ng-click="isCollapsed = !isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">
+                    <img src="Content/images/people.png" alt="logo">
+                    <span class="appTitle">{{ appTitle }}</span>
+                </a>
+            </div>
+            <div class="nav-container" data-collapse="isCollapsed">
+
+                <!-- With menu-highlighter directive -->
+                <ul class="nav navbar-nav nav-pills navBarPadding"
+                    data-menu-highlighter data-highlight-class-name="active">
+                    <li><a href="#/customers">Customers</a></li>
+                    <li><a href="#/orders">Orders</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li id="nav-login" data-ng-click="loginOrOut()">
+                        <!-- href not used but needed to compare against path in menu-highlighter -->
+                        <a data-href="#/login">{{ loginLogoutText }}</a>
+                    </li>
+                </ul>
+
+                <!-- Without menu-highlighter directive -->
+                <!--<ul class="nav navbar-nav nav-pills navBarPadding">
+                    <li data-ng-class="{'active':highlight('/customers')}"><a href="#/customers">Customers</a></li>
+                    <li data-ng-class="{'active':highlight('/orders')}"><a href="#/orders">Orders</a></li>
+                    <li data-ng-class="{'active':highlight('/about')}"><a href="#/about">About</a></li>
+                    <li data-ng-class="{'active':highlight('/login')}" id="nav-login"
+                        data-ng-click="loginOrOut()">
+                        <a>{{ loginLogoutText }}</a>
+                    </li>
+                </ul>-->
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-animation-container">
+        <div data-ng-view id="ng-view" class="slide-animation"><div class="customers view indent ng-scope">
+    <div class="container">
+        <header>
+            <h3><span class="glyphicon glyphicon-user"></span> Customers</h3>
+        </header>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li data-ng-class="{active: !listDisplayModeEnabled}" class="toolbaritem active">
+                            <a data-ng-click="changeDisplayMode(DisplayModeEnum.Card)">
+                                <span class="glyphicon glyphicon-th-large"></span> Card View
+                            </a>
+                        </li>
+                        <li data-ng-class="{active: listDisplayModeEnabled}" class="toolbaritem">
+                            <a data-ng-click="changeDisplayMode(DisplayModeEnum.List)">
+                                <span class="glyphicon glyphicon-align-justify"></span> List View
+                            </a>
+                        </li>
+                        <li class="toolbaritem">
+                            <a data-ng-click="navigate('/customeredit/0')">
+                                <span class="glyphicon glyphicon-plus"></span> Add Customer
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right ng-pristine ng-valid">
+                        <div class="form-group">
+                            <label class="navbarText col-sm-2">xcddter:</label>
+                            <div class="col-sm-10">
+                                <input type="text" data-ng-model="searchText" data-ng-change="searchTextChanged();" class="novalidate form-control ng-pristine ng-untouched ng-valid">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row cardContainer show-hide-animation" data-ng-hide="listDisplayModeEnabled">
+                <!-- ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/10" class="white ng-binding">Ward Bell <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/10" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Dallas, Texas</div>
+                                    <div>
+                                        <a href="#/customerorders/10" class="btn-link ng-binding">
+                                            7
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/7" class="white ng-binding">Robin Cleark <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/7" class="white"><img data-ng-src="Content/images/female.png" class="cardImage" src="Content/images/female.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Los Angeles, California</div>
+                                    <div>
+                                        <a href="#/customerorders/7" class="btn-link ng-binding">
+                                            15
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/8" class="white ng-binding">Albert Einsteddin <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/8" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Seattle,dd Washington</div>
+                                    <div>
+                                        <a href="#/customerorders/8" class="btn-link ng-binding">
+                                            15
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/6" class="white ng-binding">Miško Hevery <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/6" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Anaheim, California</div>
+                                    <div>
+                                        <a href="#/customerorders/6" class="btn-link ng-binding">
+                                            3
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/1" class="white ng-binding">Marcus HighTower <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/1" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Phoenix,  Arizona</div>
+                                    <div>
+                                        <a href="#/customerorders/1" class="btn-link ng-binding">
+                                            8
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/3" class="white ng-binding">Cindy Jamison <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/3" class="white"><img data-ng-src="Content/images/female.png" class="cardImage" src="Content/images/female.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Chandler,  Arizona</div>
+                                    <div>
+                                        <a href="#/customerorders/3" class="btn-link ng-binding">
+                                            5
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/5" class="white ng-binding">Jesse Smith <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/5" class="white"><img data-ng-src="Content/images/female.png" class="cardImage" src="Content/images/female.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Encinitas, California</div>
+                                    <div>
+                                        <a href="#/customerorders/5" class="btn-link ng-binding">
+                                            5
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/9" class="white ng-binding">Gene Thomas <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/9" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Seattle, Washington</div>
+                                    <div>
+                                        <a href="#/customerorders/9" class="btn-link ng-binding">
+                                            6
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/2" class="white ng-binding">Dan Wahlin <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/2" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Chandler,  Arizona</div>
+                                    <div>
+                                        <a href="#/customerorders/2" class="btn-link ng-binding">
+                                            12
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' --><div class="col-sm-6 col-md-4 col-lg-3 ng-scope" data-ng-class="cardAnimationClass" data-ng-repeat="customer in filteredCustomers | orderBy:'lastName'">
+                    <div class="card">
+                        <button class="btn close cardClose" title="Delete Customer" data-ng-click="deleteCustomer(customer.id)">×</button>
+                        <div class="cardHeader"><a href="#/customeredit/4" class="white ng-binding">Jeff Wahlin <i class="icon-edit icon-white editIcon"></i></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a href="#/customeredit/4" class="white"><img data-ng-src="Content/images/male.png" class="cardImage" src="Content/images/male.png"></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent ng-binding">Albuquerque,  Arizona</div>
+                                    <div>
+                                        <a href="#/customerorders/4" class="btn-link ng-binding">
+                                            0
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngRepeat: customer in filteredCustomers | orderBy:'lastName' -->
+            </div>
+            <div class="row gridContainer customersTable show-hide-animation ng-hide" data-ng-show="listDisplayModeEnabled">
+                <div class="col-md-10">
+                    <div>
+                        <table class="table table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th data-ng-click="setOrder('lastName')">Name</th>
+                                    <th data-ng-click="setOrder('city')">Location</th>
+                                    <th data-ng-click="setOrder('orderCount')">Orders</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/10"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/10" class="ng-binding">Ward Bell</a></td>
+                                    <td class="ng-binding">Dallas, Texas</td>
+                                    <td>
+                                        <a href="#/customerorders/10" class="btn-link ng-binding">
+                                            7 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/7"><img data-ng-src="Content/images/female.png" class="cardImage" alt="Customer Image" src="Content/images/female.png"></a></td>
+                                    <td><a href="#/customeredit/7" class="ng-binding">Robin Cleark</a></td>
+                                    <td class="ng-binding">Los Angeles, California</td>
+                                    <td>
+                                        <a href="#/customerorders/7" class="btn-link ng-binding">
+                                            15 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/8"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/8" class="ng-binding">Albert Einstein</a></td>
+                                    <td class="ng-binding">Seattle, Washington</td>
+                                    <td>
+                                        <a href="#/customerorders/8" class="btn-link ng-binding">
+                                            15 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/6"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/6" class="ng-binding">Miško Hevery</a></td>
+                                    <td class="ng-binding">Anaheim, California</td>
+                                    <td>
+                                        <a href="#/customerorders/6" class="btn-link ng-binding">
+                                            3 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/1"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/1" class="ng-binding">Marcus HighTower</a></td>
+                                    <td class="ng-binding">Phoenix,  Arizona</td>
+                                    <td>
+                                        <a href="#/customerorders/1" class="btn-link ng-binding">
+                                            8 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/3"><img data-ng-src="Content/images/female.png" class="cardImage" alt="Customer Image" src="Content/images/female.png"></a></td>
+                                    <td><a href="#/customeredit/3" class="ng-binding">Cindy Jamison</a></td>
+                                    <td class="ng-binding">Chandler,  Arizona</td>
+                                    <td>
+                                        <a href="#/customerorders/3" class="btn-link ng-binding">
+                                            5 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/5"><img data-ng-src="Content/images/female.png" class="cardImage" alt="Customer Image" src="Content/images/female.png"></a></td>
+                                    <td><a href="#/customeredit/5" class="ng-binding">Jesse Smith</a></td>
+                                    <td class="ng-binding">Encinitas, California</td>
+                                    <td>
+                                        <a href="#/customerorders/5" class="btn-link ng-binding">
+                                            5 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/9"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/9" class="ng-binding">Gene Thomas</a></td>
+                                    <td class="ng-binding">Seattle, Washington</td>
+                                    <td>
+                                        <a href="#/customerorders/9" class="btn-link ng-binding">
+                                            6 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/2"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/2" class="ng-binding">Dan Wahlin</a></td>
+                                    <td class="ng-binding">Chandler,  Arizona</td>
+                                    <td>
+                                        <a href="#/customerorders/2" class="btn-link ng-binding">
+                                            12 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse --><tr data-ng-repeat="customer in filteredCustomers | orderBy:orderby:reverse" class="repeat-animation ng-scope">
+                                    <td><a href="#/customeredit/4"><img data-ng-src="Content/images/male.png" class="cardImage" alt="Customer Image" src="Content/images/male.png"></a></td>
+                                    <td><a href="#/customeredit/4" class="ng-binding">Jeff Wahlin</a></td>
+                                    <td class="ng-binding">Albuquerque,  Arizona</td>
+                                    <td>
+                                        <a href="#/customerorders/4" class="btn-link ng-binding">
+                                            0 
+                                            <span data-ng-pluralize="" count="customer.orderCount" when="{'1': 'Order','other': 'Orders'}">Orders</span>
+                                        </a>
+                                    </td>
+                                    <td><button class="btn btn-danger" data-ng-click="deleteCustomer(customer.id)">Delete</button></td>
+                                </tr><!-- end ngRepeat: customer in filteredCustomers | orderBy:orderby:reverse -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row show-hide-animation ng-hide" data-ng-show="filteredCustomers.length == 0">
+                <div class="col-span-12">
+                    <h4>No customers found</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row show-hide-animation" data-ng-show="customers.length > 0">
+            <div class="col-md-12">
+                <ul class="pagination-sm pagination ng-isolate-scope" data-pagination="" data-on-select-page="pageChanged(page)" data-total-items="totalRecords" data-page="currentPage" data-items-per-page="pageSize" data-boundary-links="true">
+  <!-- ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">First</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope disabled"><a ng-click="selectPage(page.number)" class="ng-binding">Previous</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope active"><a ng-click="selectPage(page.number)" class="ng-binding">1</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope"><a ng-click="selectPage(page.number)" class="ng-binding">2</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope"><a ng-click="selectPage(page.number)" class="ng-binding">3</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope"><a ng-click="selectPage(page.number)" class="ng-binding">Next</a></li><!-- end ngRepeat: page in pages --><li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}" class="ng-scope"><a ng-click="selectPage(page.number)" class="ng-binding">Last</a></li><!-- end ngRepeat: page in pages -->
+</ul>
+                <h5 class="ng-binding">Showing 10 of 23 total customers</h5>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</div>
+</div>
+    </div>
+
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner footer">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Created by <a href="http://twitter.com/DanWahlin" target="_blank">Dan Wahlin</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-wc-overlay data-wc-overlay-delay="300">
+        <br /><img src="Content/images/spinner.gif" />&nbsp;&nbsp;Loading
+    </div>
+
+    <!-- 3rd party libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular-animate.min.js"></script>
+    <script src="Scripts/angular-ui-bootstrap.js"></script>
+    <script src="Scripts/tweenMax.min.js"></script>
+    
+    <!-- To use breeze change the app/customersApp/services/config.js useBreeze property to true -->
+    <script src="Scripts/breeze.min.js"></script>
+    <script src="Scripts/breeze.angular.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="app/wc.directives/directives/wcOverlay.js"></script>
+    <script src="app/wc.directives/directives/menuHighlighter.js"></script>
+    <script src="app/customersApp/app.js"></script>
+    <script src="app/customersApp/animations/listAnimations.js"></script>
+    <script src="app/customersApp/directives/wcUnique.js"></script>
+    <script src="app/customersApp/filters/nameCityStateFilter.js"></script>
+    <script src="app/customersApp/filters/nameProductFilter.js"></script>
+    <script src="app/customersApp/services/config.js"></script>
+    <script src="app/customersApp/services/authService.js"></script>
+    <script src="app/customersApp/services/httpInterceptors.js"></script>
+    <script src="app/customersApp/services/customersBreezeService.js"></script>
+    <script src="app/customersApp/services/customersService.js"></script>
+    <script src="app/customersApp/services/dataService.js"></script>
+    <script src="app/customersApp/services/modalService.js"></script>
+    <script src="app/customersApp/controllers/customers/customerEditController.js"></script>
+    <script src="app/customersApp/controllers/customers/customerOrdersController.js"></script>
+    <script src="app/customersApp/controllers/customers/customersController.js"></script>
+    <script src="app/customersApp/controllers/orders/orderChildController.js"></script>
+    <script src="app/customersApp/controllers/orders/ordersController.js"></script>
+    <script src="app/customersApp/controllers/aboutController.js"></script>
+    <script src="app/customersApp/controllers/navbarController.js"></script>
+    <script src="app/customersApp/controllers/loginController.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,66 @@
+/*
+ * File     : itemPropsRS.css
+ * Author   : Microsoft
+ */
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Sans-serif;
+}
+html 
+{
+    height: 100%;
+    scrollbar-base-color: #ffffff;
+    scrollbar-arrow-color: #ababab; 
+    scrollbar-lightshadow-color: #ababab; 
+    scrollbar-highlight-color: #ababab; 
+    scrollbar-darkshadow-color: #ffffff; 
+    scrollbar-track-color: #ffffff;
+}
+body
+{
+    color: #000000;
+    background: #ffffff;
+}
+div#apiReady
+{
+    text-align: center;
+    font-weight: bold;
+}
+div#container
+{
+    height: 100%;
+    width: 715px;
+    padding: 2px;
+    margin: 0px auto;
+}
+div#container table
+{
+    table-layout: fixed;
+    width: 700px;
+}
+div#container td
+{
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+td.propName
+{
+    width: 200px;
+    padding: 0px 5px 0px 0px;
+}
+td.propVal
+{
+    width: 300px;
+    word-wrap: break-word;
+    padding: 0px 0px 0px 5px;
+    color: #ffff00;
+    font-weight: bold;
+    border-right: 1px solid #ffffff;
+}
+td.firstRow
+{
+    border-top: 1px solid #ffffff;
+}

@@ -1,0 +1,9 @@
+﻿@using Books.Entities
+@using Books.Web.Helpers
+@{
+    var items = typeof(Genre).GetItems((int?)Model);
+        
+}
+
+
+@Html.DropDownList("", items)

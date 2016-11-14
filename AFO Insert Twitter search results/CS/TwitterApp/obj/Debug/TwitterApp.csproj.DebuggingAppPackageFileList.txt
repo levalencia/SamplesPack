@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\TwitterApp.xml
+C:\Users\soliver\Documents\Visual Studio 2012\Projects\TwitterApp\TwitterApp\bin\Debug\TwitterApp.app

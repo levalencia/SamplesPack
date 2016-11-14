@@ -1,0 +1,20 @@
+﻿body
+{
+    font-size: 11pt;
+}
+input[type='text']
+{
+    font-style: italic;
+}
+h1 
+{
+    font-size: 22pt;
+}
+h2 
+{
+    font-size: 16pt;
+}
+button, input #error-message{
+    margin-top:10px
+}
+

@@ -1,0 +1,49 @@
+﻿/* CSS styles for app-specific UI*/
+body
+{
+    font-size: 11pt;
+}
+.textbox 
+{
+    font-style: italic;
+}
+.displayedpage 
+{
+    display:block;
+}
+.hiddenpage 
+{
+    display:none;
+}
+a 
+{
+    color:#0b8be8;
+}
+a:link 
+{
+    text-decoration:none;
+    color:#0b8be8;  
+}
+a:visited 
+{
+    text-decoration:none;
+    color:#0b8be8;
+}
+a:hover 
+{
+    text-decoration:underline;
+    color:#0b8be8;
+}
+a:active 
+{
+    text-decoration:underline;
+    color:#0b8be8;
+}
+h1 
+{
+    font-size: 22pt;
+}
+h2 
+{
+    font-size: 16pt;
+}
