@@ -1,0 +1,5 @@
+c:\users\soliver\documents\visual studio 2012\Projects\CorporateBio\CorporateBioWeb\bin\CorporateBioWeb.dll
+c:\users\soliver\documents\visual studio 2012\Projects\CorporateBio\CorporateBioWeb\bin\CorporateBioWeb.pdb
+c:\users\soliver\documents\visual studio 2012\Projects\CorporateBio\CorporateBioWeb\obj\Debug\CorporateBioWeb.csprojResolveAssemblyReference.cache
+c:\users\soliver\documents\visual studio 2012\Projects\CorporateBio\CorporateBioWeb\obj\Debug\CorporateBioWeb.dll
+c:\users\soliver\documents\visual studio 2012\Projects\CorporateBio\CorporateBioWeb\obj\Debug\CorporateBioWeb.pdb

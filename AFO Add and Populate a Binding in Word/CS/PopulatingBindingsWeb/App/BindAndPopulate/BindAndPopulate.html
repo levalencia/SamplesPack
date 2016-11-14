@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!--    <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>       -->
+    <!--    <script src="../../Scripts/Office/1.0/office.js" type="text/javascript"></script>          -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="BindAndPopulate.css" rel="stylesheet" type="text/css" />
+    <script src="BindAndPopulate.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div id="content-header">
+        <div class="padding">
+            <h1>Add and Populate a Binding</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <p>Use the first button to add a named content control (with hidden container) and bind to it.</p>
+                <p>Click one of the Insert buttons to populate the binding with sample content. You can click one to populate the binding and then click the other to replace the bound content.</p>
+            <p style="margin-top: 10px;">Note: Add other content to the document or move your insertion point to another position in the body of the document as desired. The bound location will populate regardless of your cursor position.</p>
+
+            <button id="addBinding" >Add and Bind Control </button>
+            <button id="popBinding" >Insert Content at Binding</button>
+            <button id="popBinding2" >Insert (alt) Content at Binding</button>
+            <p style="margin-top: 50px;">
+                <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkId=276812">Find more samples online...</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

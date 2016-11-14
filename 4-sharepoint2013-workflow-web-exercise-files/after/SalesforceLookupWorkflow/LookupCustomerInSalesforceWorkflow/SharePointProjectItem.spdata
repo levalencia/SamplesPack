@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Workflow4App" DefaultFile="Workflow.xaml" SupportedTrustLevels="All" SupportedDeploymentScopes="AppPackage" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Workflow.xaml" Target="LookupCustomerInSalesforceWorkflow\" Type="AppPackage" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="WorkflowAssociation.EventSourceGuid" Value="Lists/Customers" />
+    <ExtensionDataItem Key="WorkflowAssociation.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociation.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Description" Value="LookupCustomerInSalesforceWorkflow - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.DisplayName" Value="LookupCustomerInSalesforceWorkflow - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventSourceGUID" Value="Lists/Customers" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventType" Value="ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Id" Value="d9f8abb3-9224-469b-8cbe-9630a468f4f2" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Enabled" Value="false" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Description" Value="LookupCustomerInSalesforceWorkflow - WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.DisplayName" Value="LookupCustomerInSalesforceWorkflow - WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.EventSourceGUID" Value="Lists/Customers" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.EventType" Value="WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Id" Value="c8b62124-b8c2-4891-b502-b5177b0315ce" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowDefinition.Description" Value="My 'Lookup Customer In Salesforce Workflow' Workflow" />
+    <ExtensionDataItem Key="WorkflowDefinition.DisplayName" Value="Lookup Customer In Salesforce Workflow" />
+    <ExtensionDataItem Key="WorkflowDefinition.Id" Value="e7534688-5b32-4b0e-b732-8800bec71f3e" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToId" Value="Lists/Customers" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToType" Value="List" />
+  </ExtensionData>
+</ProjectItem>

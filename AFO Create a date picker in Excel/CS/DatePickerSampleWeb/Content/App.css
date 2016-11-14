@@ -1,0 +1,24 @@
+﻿input[type = 'text']
+{
+    margin-left: 15px;
+}
+
+#container
+{
+    border: 2px solid red;
+    height: 375px;
+    width: 275px;
+    background-color: antiquewhite;    
+}
+
+button
+{
+    position:relative;
+    top: 250px;
+    left: 170px;
+}
+
+#alternate
+{
+    visibility:hidden;
+}

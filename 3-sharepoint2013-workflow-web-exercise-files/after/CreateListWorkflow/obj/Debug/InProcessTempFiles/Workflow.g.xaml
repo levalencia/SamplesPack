@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cc:Workflow xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:cc="clr-namespace:CreateListWorkflow.Create_List_Workflow;assembly=CreateListWorkflow" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:msdad="clr-namespace:Microsoft.SharePoint.DesignTime.Activities.Design;assembly=Microsoft.SharePoint.DesignTime.Activities.Design" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:p1="wf://workflow.windows.net/$Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>Microsoft.Activities</x:String>
+      <x:String>Microsoft.Activities.Messaging</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>CreateListWorkflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <cc:Workflow.Implementation>
+    <Sequence DisplayName="ROOT">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="ListTitle" />
+        <Variable x:TypeArguments="x:Int32" Name="ListTemplateId" />
+        <Variable x:TypeArguments="x:String" Name="SecurityDigest" />
+        <Variable x:TypeArguments="x:String" Name="ParentWebUrl" />
+        <Variable x:TypeArguments="p:SecurityToken" Name="SecurityToken" />
+        <Variable x:TypeArguments="x:String" Name="ListEntityRestUrl" />
+      </Sequence.Variables>
+      <Sequence DisplayName="Get List Request Properties">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="p:DynamicValue" Name="ListRequestItemProperties" />
+        </Sequence.Variables>
+        <p:SetUserStatus Description="Collecting Data from List Item" />
+        <p1:WriteToHistory Message="Getting the list creation request details..." />
+        <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}">
+          <p1:LookupSPListItem.ItemId>
+            <InArgument x:TypeArguments="x:Int32">
+              <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+                <p1:GetCurrentItemId />
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:LookupSPListItem.ItemId>
+          <p1:LookupSPListItem.ListId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p1:GetCurrentListId />
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:LookupSPListItem.ListId>
+          <p1:LookupSPListItem.Result>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">ListRequestItemProperties</mca:CSharpReference>
+            </OutArgument>
+          </p1:LookupSPListItem.Result>
+        </p1:LookupSPListItem>
+        <p:GetODataProperties DisplayName="GetDynamicValueProperties">
+          <p:GetODataProperties.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">ListRequestItemProperties</mca:CSharpValue>
+            </InArgument>
+          </p:GetODataProperties.Source>
+          <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+            <OutArgument x:TypeArguments="x:String" x:Key="Title">
+              <mca:CSharpReference x:TypeArguments="x:String">ListTitle</mca:CSharpReference>
+            </OutArgument>
+            <OutArgument x:TypeArguments="x:Int32" x:Key="ListTemplateType_x0028_Number_x0029_">
+              <mca:CSharpReference x:TypeArguments="x:Int32">ListTemplateId</mca:CSharpReference>
+            </OutArgument>
+          </scg:Dictionary>
+        </p:GetODataProperties>
+        <WriteLine DisplayName="DEBUG">
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"List Requested: [ID="+ListTemplateId+"] "+ListTitle</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <p1:WriteToHistory>
+          <p1:WriteToHistory.Message>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"..received request to create a new list of type '" + ListTemplateId.ToString() +"' named '" +ListTitle +"'."</mca:CSharpValue>
+            </InArgument>
+          </p1:WriteToHistory.Message>
+        </p1:WriteToHistory>
+      </Sequence>
+      <Sequence DisplayName="Get HostWeb Url">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="AppWebUrl" />
+          <Variable x:TypeArguments="p:DynamicValue" Name="GetHostWebPropertiesResponse" />
+          <Variable x:TypeArguments="x:String" Name="HostWebServerRelativeUrl" />
+          <Variable x:TypeArguments="p:DynamicValue" Name="GetHostSiteCollectionPropertiesResponse" />
+          <Variable x:TypeArguments="x:String" Name="HostSiteCollectionUrl" />
+        </Sequence.Variables>
+        <p:SetUserStatus Description="Resolving HostWeb Url" />
+        <p1:WriteToHistory Message="Getting the HostWeb absolute URL..." />
+        <p1:WebUri DisplayName="Get AppWeb Url">
+          <p1:WebUri.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">AppWebUrl</mca:CSharpReference>
+            </OutArgument>
+          </p1:WebUri.Result>
+        </p1:WebUri>
+        <p:HttpSend DisplayName="Get HostWeb Properties" Method="GET">
+          <p:HttpSend.RequestHeaders>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p:HttpSend.RequestHeaders>
+          <p:HttpSend.ResponseContent>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">GetHostWebPropertiesResponse</mca:CSharpReference>
+            </OutArgument>
+          </p:HttpSend.ResponseContent>
+          <p:HttpSend.Uri>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">AppWebUrl +"/_api/web/parentweb"</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.Uri>
+        </p:HttpSend>
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Extract Host Web RelativeUrl" PropertyName="d/ServerRelativeUrl">
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">HostWebServerRelativeUrl</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">GetHostWebPropertiesResponse</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <p:HttpSend DisplayName="Get Host Site Collection Properties" Method="GET">
+          <p:HttpSend.RequestHeaders>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p:HttpSend.RequestHeaders>
+          <p:HttpSend.ResponseContent>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">GetHostSiteCollectionPropertiesResponse</mca:CSharpReference>
+            </OutArgument>
+          </p:HttpSend.ResponseContent>
+          <p:HttpSend.Uri>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">AppWebUrl +"/_api/site"</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.Uri>
+        </p:HttpSend>
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Extract Host Site Collection Url" PropertyName="d/Url">
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">HostSiteCollectionUrl</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">GetHostSiteCollectionPropertiesResponse</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <Assign>
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">ParentWebUrl</mca:CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">HostSiteCollectionUrl + HostWebServerRelativeUrl</mca:CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+        <WriteLine DisplayName="DEBUG">
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" xml:space="preserve">"AppWebUrl: " +AppWebUrl
+              + "\nHostWebServerRelativeUrl: " + HostWebServerRelativeUrl
+              + "\nHostSiteCollectionUrl: " + HostSiteCollectionUrl
+              + "\nParentWebUrl: " + ParentWebUrl</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <p1:WriteToHistory>
+          <p1:WriteToHistory.Message>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"..hostWeb root URL (the site where the list will be created):" + ParentWebUrl</mca:CSharpValue>
+            </InArgument>
+          </p1:WriteToHistory.Message>
+        </p1:WriteToHistory>
+      </Sequence>
+      <p:GetS2SSecurityToken DisplayName="Get Workflow Manager S2S Token">
+        <p:GetS2SSecurityToken.Result>
+          <OutArgument x:TypeArguments="p:SecurityToken">
+            <mca:CSharpReference x:TypeArguments="p:SecurityToken">SecurityToken</mca:CSharpReference>
+          </OutArgument>
+        </p:GetS2SSecurityToken.Result>
+      </p:GetS2SSecurityToken>
+      <Sequence DisplayName="Get SP Digest">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="p:DynamicValue" Name="GetSecurityDigestResponse" />
+        </Sequence.Variables>
+        <p:SetUserStatus Description="Obtain HostWeb Security Digest" />
+        <p1:WriteToHistory Message="Retrieving security digest from HostWeb..." />
+        <p:HttpSend DisplayName="Get Security Digest" Method="POST">
+          <p:HttpSend.RequestHeaders>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Content-Length">0</InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p:HttpSend.RequestHeaders>
+          <p:HttpSend.ResponseContent>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">GetSecurityDigestResponse</mca:CSharpReference>
+            </OutArgument>
+          </p:HttpSend.ResponseContent>
+          <p:HttpSend.SecurityToken>
+            <InArgument x:TypeArguments="p:SecurityToken">
+              <mca:CSharpValue x:TypeArguments="p:SecurityToken">SecurityToken</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.SecurityToken>
+          <p:HttpSend.Uri>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">ParentWebUrl + "/_api/contextinfo"</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.Uri>
+        </p:HttpSend>
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Extract Security Digest" PropertyName="d/GetContextWebInformation/FormDigestValue">
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">SecurityDigest</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">GetSecurityDigestResponse</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <WriteLine DisplayName="DEBUG">
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"SecurityDigest: " + SecurityDigest</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <p1:WriteToHistory>
+          <p1:WriteToHistory.Message>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"...security digest retrieved from HostWeb: " +SecurityDigest</mca:CSharpValue>
+            </InArgument>
+          </p1:WriteToHistory.Message>
+        </p1:WriteToHistory>
+      </Sequence>
+      <Sequence DisplayName="Create List">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="p:DynamicValue" Name="CreateListResponse" />
+          <Variable x:TypeArguments="p:DynamicValue" Name="CreateListPayload" />
+        </Sequence.Variables>
+        <p:SetUserStatus Description="Create New List in HostWeb" />
+        <p1:WriteToHistory Message="Creating list in HostWeb..." />
+        <p:BuildDynamicValue DisplayName="Create New List Payload for REST API">
+          <p:BuildDynamicValue.Result>
+            <InOutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">CreateListPayload</mca:CSharpReference>
+            </InOutArgument>
+          </p:BuildDynamicValue.Result>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument">
+            <InArgument x:TypeArguments="x:String" x:Key="Title">
+              <mca:CSharpValue x:TypeArguments="x:String">ListTitle</mca:CSharpValue>
+            </InArgument>
+            <InArgument x:TypeArguments="x:Int32" x:Key="BaseTemplate">101</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="__metadata/type">SP.List</InArgument>
+          </scg:Dictionary>
+        </p:BuildDynamicValue>
+        <p:HttpSend DisplayName="Create List via REST API" Method="POST">
+          <p:HttpSend.RequestContent>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">CreateListPayload</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.RequestContent>
+          <p:HttpSend.RequestHeaders>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/json;odata=verbose</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="X-RequestDigest">
+                    <mca:CSharpValue x:TypeArguments="x:String">SecurityDigest</mca:CSharpValue>
+                  </InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p:HttpSend.RequestHeaders>
+          <p:HttpSend.ResponseContent>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">CreateListResponse</mca:CSharpReference>
+            </OutArgument>
+          </p:HttpSend.ResponseContent>
+          <p:HttpSend.SecurityToken>
+            <InArgument x:TypeArguments="p:SecurityToken">
+              <mca:CSharpValue x:TypeArguments="p:SecurityToken">SecurityToken</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.SecurityToken>
+          <p:HttpSend.Uri>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">ParentWebUrl +"_api/web/lists"</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.Uri>
+        </p:HttpSend>
+        <WriteLine DisplayName="DEBUG">
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" xml:space="preserve">"CreateListPayload: " + CreateListPayload.ToString()
+            + "\nCreateListResponse: " + CreateListResponse.ToString()</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Get New List REST Endpoint" PropertyName="d/__metadata/id">
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">ListEntityRestUrl</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">CreateListResponse</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <WriteLine>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"New List REST Endpoint: " + ListEntityRestUrl</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <p1:WriteToHistory Message="... list created in HostWeb!" />
+      </Sequence>
+      <Sequence DisplayName="Update Request">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="ListDefaultViewUrl" />
+          <Variable x:TypeArguments="p:DynamicValue" Name="GetListDefaultViewUrlResponse" />
+        </Sequence.Variables>
+        <p:SetUserStatus Description="Update Original List Request" />
+        <p:HttpSend DisplayName="Get List's DefaultView URL" Method="GET">
+          <p:HttpSend.RequestHeaders>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p:HttpSend.RequestHeaders>
+          <p:HttpSend.ResponseContent>
+            <OutArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpReference x:TypeArguments="p:DynamicValue">GetListDefaultViewUrlResponse</mca:CSharpReference>
+            </OutArgument>
+          </p:HttpSend.ResponseContent>
+          <p:HttpSend.Uri>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">ListEntityRestUrl +"/DefaultView"</mca:CSharpValue>
+            </InArgument>
+          </p:HttpSend.Uri>
+        </p:HttpSend>
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Extract DefaultView Url" PropertyName="d/ServerRelativeUrl">
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">ListDefaultViewUrl</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">GetListDefaultViewUrlResponse</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <WriteLine DisplayName="DEBUG">
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Default View Url: " +ListDefaultViewUrl</mca:CSharpValue>
+          </InArgument>
+        </WriteLine>
+        <Assign>
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">ListDefaultViewUrl</mca:CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">ParentWebUrl + (ListDefaultViewUrl).Substring(1)</mca:CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+        <p1:UpdateListItem ItemGuid="{x:Null}" ListItemProperties="{x:Null}" DisplayName="Update Original Request">
+          <p1:UpdateListItem.ItemId>
+            <InArgument x:TypeArguments="x:Int32">
+              <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+                <p1:GetCurrentItemId />
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:UpdateListItem.ItemId>
+          <p1:UpdateListItem.ListId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p1:GetCurrentListId />
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:UpdateListItem.ListId>
+          <p1:UpdateListItem.ListItemPropertiesDynamicValue>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <p:SetDynamicValueProperties>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                  <InArgument x:TypeArguments="x:String" x:Key="ListUrl">
+                    <mca:CSharpValue x:TypeArguments="x:String">ListDefaultViewUrl</mca:CSharpValue>
+                  </InArgument>
+                </scg:Dictionary>
+              </p:SetDynamicValueProperties>
+            </InArgument>
+          </p1:UpdateListItem.ListItemPropertiesDynamicValue>
+        </p1:UpdateListItem>
+        <p1:WriteToHistory>
+          <p1:WriteToHistory.Message>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"Original list request item updated with the new list URL: " + ListDefaultViewUrl</mca:CSharpValue>
+            </InArgument>
+          </p1:WriteToHistory.Message>
+        </p1:WriteToHistory>
+      </Sequence>
+      <sads:DebugSymbol.Symbol>d7cBQzpcRGV2XEFDSVx6UGx1cmFsc2lnaHRcTWFpblxzaGFyZXBvaW50MjAxMy13b3JrZmxvdy1hZHZhbmNlZC10b3BpY3Ncc2hhcmVwb2ludDIwMTMtd29ya2Zsb3ctYWR2YW5jZWQtdG9waWNzLW01LXdlYnNlcnZpY2VzXEV4QWZ0ZXJcQ3JlYXRlTGlzdFdvcmtmbG93XENyZWF0ZUxpc3RXb3JrZmxvd1xXb3JrZmxvdy54YW1shgErA8gDDgIBATQFahADAdgDawXZARADAacC2gEF4AEdAwGfAuEBBZoCEAMB2QGbAgXrAhACAWPsAgXGAxACAQI4Bzh5AwGRBDkHOYYBAwGPBDoHTh0DAYQETwddHgMB6wNeB2ITAwHiA2MHaRsDAdkDcwdzcAMB1gN0B3R9AwHUA3UHexMDAccDfAeQARQDAasDkQEHnAEjAwGRA50BB7EBFAMB9QKyAQe9ASMDAdsCvgEHyQEQAwHCAsoBB9EBEwMBtQLSAQfYARsDAagC3QEL3QFlAwGgAuUBB+UBeQMBnQLmAQfmAYQBAwGbAucBB4ECFAMB/gGCAgeNAiMDAewBjgIHkgITAwHjAZMCB5kCGwMB2gGgAgegAnUDAdcBoQIHoQJ1AwHVAaICB68CHQMBwAGwAgfSAhQDAY4B0wIH2AITAwGEAdkCB+QCIwIBcOUCB+kCEwIBZuoCB+oCdgIBZPECB/ECdwIBYfICB4YDFAIBS4cDB5IDIwIBN5MDB5cDEwIBLZgDB6MDEAIBGqQDB74DGwIBDb8DB8UDGwIBAzgkOEQDAZIEOVU5gwEDAZAERA1GKgMBjgRLDUtyAwGGBD0NPyoDAYUEUg1SagMB/ANXDVdcAwH0A1oNWmADAewDYAtgfQMB4wNmDWa4AQMB2gNzJHM7AwHXA3RVdHoDAdUDeA14XAMByAN/DYMBKwMBxQONAQ2NAWsDAbkDiAENiAF1AwGtA3xsfHEDAawDlAENlAFrAwGfA5kBDZkBbQMBkwORAbMBkQHIAQMBkgOgAQ2kASsDAY8DrgENrgFiAwGDA6kBDakBgAEDAfcCnQF5nQF+AwH2ArUBDbUBaAMB6QK6AQ26AXgDAd0CsgG3AbIBvgEDAdwCxgENxgF7AwHPAsEBDcEBXwMBwwLMAQvPAUQDAbYC1QEN1QGZAQMBqQLlASTlAUQDAZ4C5gFV5gGBAQMBnAL5AQ35AV8DAZMC6gEN7wErAwGQAv4BDf4BbQMBiAL0AQ30AXIDAYAC5wFp5wFvAwH/AYUCDYUCYQMB9gGKAg2KAmoDAe4BggKuAYIC2gEDAe0BkAILkAJsAwHkAZYCDZYCiAEDAdsBoAIkoAJAAwHYAaECVaECcgMB1gGtAkqtAlEDAdQBrAJGrAJJAwHTAaUCDaUCagMBygGqAg2qAlQDAcEBygINygJfAwG3AbgCDcACKwMBqwGzAg2zAmIDAaIBzwINzwJpAwGZAcUCDcUCawMBkAGwAm6wAnQDAY8B1QIL1gJZAwGFAdwCDdwCZAIBe+ECDeECYwIBctkCsQHZAsIBAgFx5wIL5wJ3AgFn6gJV6gJzAgFl8QIk8QJCAgFi9QIN+QIrAgFfgwMNgwNsAgFW/gIN/gJ2AgFN8gJw8gJ1AgFMigMNigNlAgFCjwMNjwNuAgE5hwOuAYcDwwECATiVAwuVA3ECAS6gAw2gA3sCASSbAw2bA2UCARu1Aw27AysCARCuAw2wAyoCAQ+nAw2pAyoCAQ7CAw3CA5wBAgEERQ9FJgQBjgQBPg8+JgQBhQQBgQFHgQFlAwHGA6IBR6IBZQMBkAPsAUfsAWUDAZIC7QFP7QFQAwGRAroCR7oCZQMBtgG9AhO9Al8DAa0BuwJNuwJrAwGsAfcCR/cCZQIBYLgDE7gDYwIBEa8DD68DJgMBDwGoAw+oAyYDAQ4B</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </cc:Workflow.Implementation>
+</cc:Workflow>

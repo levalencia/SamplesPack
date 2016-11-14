@@ -1,0 +1,5 @@
+X:\O2013 Apps\OOXML white paper\PopulatingBindings\PopulatingBindingsWeb\bin\PopulatingBindingsWeb.dll
+X:\O2013 Apps\OOXML white paper\PopulatingBindings\PopulatingBindingsWeb\bin\PopulatingBindingsWeb.pdb
+X:\O2013 Apps\OOXML white paper\PopulatingBindings\PopulatingBindingsWeb\obj\Debug\PopulatingBindingsWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\PopulatingBindings\PopulatingBindingsWeb\obj\Debug\PopulatingBindingsWeb.dll
+X:\O2013 Apps\OOXML white paper\PopulatingBindings\PopulatingBindingsWeb\obj\Debug\PopulatingBindingsWeb.pdb

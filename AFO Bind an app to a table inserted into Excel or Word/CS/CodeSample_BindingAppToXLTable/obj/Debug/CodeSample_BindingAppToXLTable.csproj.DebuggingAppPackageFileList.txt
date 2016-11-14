@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\CodeSample_BindingAppToXLTableManifest.xml
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTable\bin\Debug\CodeSample_BindingAppToXLTable.debugapp

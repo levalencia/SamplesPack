@@ -1,0 +1,5 @@
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTableWeb\bin\CodeSample_BindingAppToXLTableWeb.dll
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTableWeb\bin\CodeSample_BindingAppToXLTableWeb.pdb
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTableWeb\obj\Debug\CodeSample_BindingAppToXLTableWeb.csprojResolveAssemblyReference.cache
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTableWeb\obj\Debug\CodeSample_BindingAppToXLTableWeb.dll
+C:\Users\erschmid\Documents\Visual Studio 2012\Projects\CodeSample_BindingAppToXLTable\CodeSample_BindingAppToXLTableWeb\obj\Debug\CodeSample_BindingAppToXLTableWeb.pdb

@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Apps for Office: Create a date picker in Excel</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Apps for Office: Create a date picker in Excel</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, Excel 2013, apps for Office
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">5/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Apps-for-Office-Create-a-1267e47b">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="mainSection">
+<div id="mainBody">
+<div class="introduction">
+<div class="section" id="sectionSection0">
+<p>This code sample demonstrates a task pane app that is displayed in Excel 2013 when the app is first started. The task pane contains a text box that, when clicked, displays a calendar. The calendar has various options such as scrolling through the months
+ and selecting different years to display. Choosing on a date in the calendar inserts the date in two different formats into the two text boxes. Choosing the
+<span class="ui">Insert date</span> button inserts the formatted date from one of the text boxes into the worksheet.</p>
+<p>Figure 1 shows the workbook with the date-picker calendar displayed.</p>
+<div class="caption"><strong>Figure 1. Date-picker calendar</strong></div>
+<br>
+<img src="description/image.png" alt="">
+<p>&nbsp;</p>
+<p>Figure 2 shows the formatted date after it is inserted into the worksheet.</p>
+<div class="caption"><strong>Figure 2. Formatted date is inserted into the worksheet</strong></div>
+<br>
+<img src="description/a7a0c65d-2e6f-4fea-a518-b90857e472f2image.png" alt="">
+<p>&nbsp;</p>
+<p>The sample demonstrates how to perform the following tasks:</p>
+<ul>
+<li>
+<p>Attach an event to a HTML element.</p>
+</li><li>
+<p>Customize the <span><span class="keyword">datepicker</span></span> method included as part of the
+<strong>jquery-ui.js</strong> JavaScript library by specifying various options.</p>
+</li><li>
+<p>Dynamically add style settings to HTML elements by using JavaScript.</p>
+</li></ul>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>This sample requires:</p>
+<ul>
+<li>
+<p>Visual Studio 2012.</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012.</p>
+</li><li>
+<p>Excel 2013.</p>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<p>The sample app contains the following components:</p>
+<ul>
+<li>
+<p>The DatePickerSample project, which contains the DatePickerSample.xml manifest file. The XML manifest file of an app for Office enables you to declaratively describe how the app should be activated when you install and use it with Office documents and applications.</p>
+</li><li>
+<p>The DatePickerSampleWeb project, which contains multiple template files. However, the three files that have been developed as part of this sample solution include:</p>
+<ul>
+<li>
+<p>DatePickerSample.html (in the Pages folder). This file contains the HTML user interface that is displayed in the task pane when the app is started. The markup consists of a &lt;div&gt; element that contains two text boxes and a button. One of the text boxes,
+ which has the ID <span class="code">datepicker</span>, is where you place the cursor to trigger the display of the calendar. After you select a date in the calendar, another text box, which has the ID
+<span class="code">alternate</span>, displays a formatted date. Clicking the <span class="ui">
+Insert Date</span> button (ID of <span class="code">setDateBtn</span>) inserts the formatted date at the current location in the worksheet.</p>
+</li><li>
+<p>App.css (in the Styles folder). This cascading style sheet (CSS) contains the code that specifies the position of the text boxes as shown in the following code.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>input[type = 'text']
+{
+    margin-left: 15px;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>The file also contains the style code for the bordered box that contains all of the controls.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>#container
+{
+    border: 2px solid red;
+    height: 375px;
+    width: 275px;
+    background-color: antiquewhite;    
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>The following style code specifies the position of the button.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>button
+{
+    position:relative;
+    top: 250px;
+    left: 170px;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>Finally, the <span><span class="keyword">alternate</span></span> text box is initially hidden.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>#alternate
+{
+    visibility:hidden;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>DatePickerSample.js (in the Scripts folder). This script file contains code that runs when the task pane app is loaded. Specifically, the script consists of commands from the JavaScript JQuery library. This startup script first sets options for the
+<span><span class="keyword">datepicker</span></span> method. These include the following:</p>
+<ul>
+<li>
+<p>Specifying the number of months to display at one time. This sample displays just a single month.</p>
+</li><li>
+<p>Adding a user interface that enables you to change the year displayed as well as how many years to choose from. In this sample, two years before and two years after the current year are displayed in a drop-down list.</p>
+</li><li>
+<p>A user interface is set up to allow a different date format to be used instead of the default format. The alternate date format is displayed in the text box with the ID of
+<span class="code">alternate</span> in a format where the day of the week is shown followed by the day, month, and then the four-digit year.</p>
+</li></ul>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>var options = {
+    numberOfMonths: 1,
+    changeYear: true,
+    yearRange: &quot;-2:&#43;2&quot;,
+    altField: &quot;#alternate&quot;,
+    altFormat: &quot;DD, d MM, yy&quot;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>When you click the <span><span class="keyword">datepicker</span></span> text box, the script calls the
+<span><span class="keyword">datepicker</span></span> method, passing in the options defined previously. This action displays the calendar. Clicking the text box also executes its
+<span><span class="keyword">click</span></span> event, which runs an anonymous function that changes the
+<span><span class="keyword">visibility</span></span> attribute of the <span><span class="keyword">alternate</span></span> text box so that the
+<span><span class="keyword">alternate</span></span> text box is displayed.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>$(&quot;#datepicker&quot;).datepicker(options).click(function () {
+    $('#alternate').css('visibility', 'visible');
+});</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>Next, when the <span class="ui">Insert date</span> button is clicked, its <span>
+<span class="keyword">click</span></span> event is triggered. This executes an anonymous function that calls the
+<span><span class="keyword">setData</span></span> function.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>$('#setDateBtn').click(function () {
+    setData('#alternate');
+});</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>The <span><span class="keyword">setData</span></span> function inserts the formatted date that is contained in the
+<span><span class="keyword">alternate</span></span> text box into the worksheet at the current active location.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>function setData(elementId) {
+    Office.context.document.setSelectedDataAsync($(elementId).val());
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li></ul>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for apps for Office, and they have not been modified in the development of this sample app.</p>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection3">
+<p>To configure the sample, open the DatePickerSample.sln file with Visual Studio 2012. No other configuration is necessary.</p>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection4">
+<p>To build the sample, choose Ctrl&#43;Shift&#43;B, or on the <span class="ui">Build</span> menu, choose
+<span class="ui">Build Solution</span>.</p>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection5">
+<p>To run the sample, choose the F5 key. After the task pane is displayed in Excel 2013, click the text box. The calendar is displayed. Notice that you can change the year by selecting an item in the drop-down list. There are also controls that enable you to
+ move between months. Notice after clicking into the one text box that another text box is displayed. Selecting a date in the calendar inserts a different formatted date into each text box. Clicking the
+<span class="ui">Insert date</span> button inserts the formatted date from the top text box into the worksheet.</p>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection6">
+<p>If the app fails to install, ensure that the XML in your DatePickerSample.xml manifest file parses correctly. Also look for any errors in the JavaScript code that could keep the calendar from being displayed. For example, you may have forgotten to end a
+ statement with a semicolon, or you may have misspelled a method name or keyword. If the text boxes in the task pane do not look as you think they should, or if the calendar is not displayed after you click the text box, check the CSS styles. Ensure that you
+ didn't forget a colon between the style and its value, or leave off a semicolon at the end of a style statement.</p>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection7">
+<p>First release: April 29, 2013.</p>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj220060.aspx" >Build apps for Office</a></p>
+</li><li>
+<p><a href="http://www.w3schools.com/html/" >HTML Tutorial</a></p>
+</li><li>
+<p><a href="http://jquery.com/" >What is jQuery?</a></p>
+</li><li>
+<p><a href="http://www.w3schools.com/css/css_intro.asp" >CSS Introduction</a></p>
+</li><li>
+<p><a href="http://jqueryui.com/datepicker/" >Datepicker</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp142145.aspx" >Document.setSelectedDataAsync</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
