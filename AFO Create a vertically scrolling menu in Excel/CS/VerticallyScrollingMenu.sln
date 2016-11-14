@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticallyScrollingMenu", "VerticallyScrollingMenu\VerticallyScrollingMenu.csproj", "{BCA51F8E-7FB5-400D-A041-656A139FADDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticallyScrollingMenuWeb", "VerticallyScrollingMenuWeb\VerticallyScrollingMenuWeb.csproj", "{1772D8C8-A3B1-4202-83C8-5C8E1F6C6EAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA51F8E-7FB5-400D-A041-656A139FADDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1772D8C8-A3B1-4202-83C8-5C8E1F6C6EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1772D8C8-A3B1-4202-83C8-5C8E1F6C6EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1772D8C8-A3B1-4202-83C8-5C8E1F6C6EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1772D8C8-A3B1-4202-83C8-5C8E1F6C6EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

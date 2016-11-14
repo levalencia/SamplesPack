@@ -1,0 +1,27 @@
+﻿#dashboard {
+	width: 70px;
+	background-color: rgb(110,138,195);
+	padding: 20px 20px 20px 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+
+#setDataBtn
+{
+    margin-right: 10px; 
+    padding: 0px; 
+    width: 90px;
+}
+
+#getDataBtn
+{
+    padding: 0px; 
+    width: 90px;
+}
+
+#selectedDataTxt
+{
+    margin-top: 10px; 
+    width: 210px
+}

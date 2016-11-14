@@ -1,0 +1,5 @@
+C:\Visual Studio Projects\News_Ticker\News_TickerWeb\bin\News_TickerWeb.dll
+C:\Visual Studio Projects\News_Ticker\News_TickerWeb\bin\News_TickerWeb.pdb
+C:\Visual Studio Projects\News_Ticker\News_TickerWeb\obj\Debug\News_TickerWeb.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\News_Ticker\News_TickerWeb\obj\Debug\News_TickerWeb.dll
+C:\Visual Studio Projects\News_Ticker\News_TickerWeb\obj\Debug\News_TickerWeb.pdb

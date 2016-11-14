@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=9F0CCCC97DAD4F1F3A575BD6D7C0968F" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/4bddbedd-d607-4e1b-81ed-a0fcff588b7cCombined.css,0:ImageSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C97250CEAD16A74DB3C011A59B072919" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Apps for Office: Create an Invoice Manager</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Apps for Office: Create an Invoice Manager</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Word 2013, apps for Office
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last updated</label>
+                    <div id="LastUpdated">8/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Apps-for-Office-Create-an-a3ad6522">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText"></span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Apps for Office: Create an invoice manager</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p><span>Summary:</span> This sample shows how to create a task pane app for Office that manages invoices in Word 2013.</p>
+</div>
+<h1>Description</h1>
+<div id="sectionSection0" name="collapseableSection">
+<p>This sample loads order data into an invoice form in Word 2013. It writes customer data to a set of custom XML parts that are bound to content controls within a Word document. Based on user input, it populates forms in the document with customer and order
+ information. To simplify this sample, the order data is stored in the same JavaScript file that creates the app for Office. However, in a real application, that data could come from a data source anywhere on the web.</p>
+<p>The JavaScript code in the Home.js file includes a function for the <b><span class="keyword">initialize</span></b> event, which waits for the DOM to load, gets a reference to the current document, and then calls two other functions. The first of these,
+<b><span class="keyword">setupMyOrders</span></b>, creates an array to hold the order data.</p>
+<p>The second function, <b><span class="keyword">initializeOrder</span></b>, does most of the important work. When the
+<b>Populate</b> button is chosen, this function first calls the <a href="http://msdn.microsoft.com/en-us/library/fp142144(office.15).aspx" >
+getByNamespaceAsync</a> method of the <a href="http://msdn.microsoft.com/en-us/library/fp142202(office.15).aspx" >
+CustomXmlParts</a> object to determine whether the packing slip form is already populated. If it is, the function calls the
+<a href="http://msdn.microsoft.com/en-us/library/fp142157(office.15).aspx" >
+deleteAysnc</a> method of the <a href="http://msdn.microsoft.com/en-us/library/fp161160(office.15).aspx" >
+CustomXmlPart</a> object to delete the existing data in the form. Then it calls the
+<a href="http://msdn.microsoft.com/en-us/library/fp161009(office.15).aspx" >
+addAsync</a> method of the <a href="http://msdn.microsoft.com/en-us/library/fp142202.aspx" >
+CustomXmlParts</a> object to repopulate the form with the selected data.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1" name="collapseableSection">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Word 2013.</p>
+</li><li>
+<p>Visual Studio 2012; App for Office 2013 project template.</p>
+</li><li>
+<p>Internet Explorer 9 or Internet Explorer 10.</p>
+</li><li>
+<p>Basic familiarity with JavaScript and HTML.</p>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection2" name="collapseableSection">
+<p>The <i>Apps for Office: Create an Invoice Manager</i> sample is created by the InvoiceManager solution, which contains the following projects and important files:</p>
+<ul>
+<li>
+<p>The InvoiceManager project, including the following files:</p>
+<ul>
+<li>
+<p>InvoiceManager.xml manifest file</p>
+</li><li>
+<p>Packing Slip Document.docx file</p>
+</li></ul>
+</li><li>
+<p>The InvoiceManagerWeb project, including the following files:</p>
+<ul>
+<li>
+<p>Home.html file</p>
+</li><li>
+<p>Home.js file</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3" name="collapseableSection">
+<p>No additional configuration is necessary.</p>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4" name="collapseableSection">
+<p>Choose the F5 key in Visual Studio 2012 to build and deploy the app and open it in Word 2013.</p>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5" name="collapseableSection">
+<ol>
+<li>
+<p>Open the InvoiceManager.sln file in Visual Studio 2012.</p>
+</li><li>
+<p>Choose the F5 key in Visual Studio 2012 to build and deploy the app.</p>
+</li><li>
+<p>In the app task pane, select an order in the <b><span class="ui">Order ID</span></b> drop-down list.</p>
+</li><li>
+<p>Choose <b><span class="ui">Populate</span></b> to populate the forms in the Word document with information from the selected order.</p>
+</li></ol>
+<p>You can view a list of the custom XML parts in a document by opening the <b><span class="ui">XML Mapping</span></b> pane in Word (<b><span class="ui">Developer</span></b> tab).</p>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6" name="collapseableSection">
+<p>If the app fails to respond as described, try reloading it. (In the task pane, choose the down arrow, and then choose
+<b><span class="ui">Reload</span></b>.)</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection7" name="collapseableSection">
+<p>Third release.</p>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection8" name="collapseableSection">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp142185(office.15).aspx" >JavaScript API for Office</a>
+</p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

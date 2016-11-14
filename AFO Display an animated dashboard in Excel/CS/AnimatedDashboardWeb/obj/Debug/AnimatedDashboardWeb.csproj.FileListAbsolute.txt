@@ -1,0 +1,5 @@
+C:\Visual Studio Projects\AnimatedDashboard\AnimatedDashboardWeb\bin\AnimatedDashboardWeb.dll
+C:\Visual Studio Projects\AnimatedDashboard\AnimatedDashboardWeb\bin\AnimatedDashboardWeb.pdb
+C:\Visual Studio Projects\AnimatedDashboard\AnimatedDashboardWeb\obj\Debug\AnimatedDashboardWeb.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\AnimatedDashboard\AnimatedDashboardWeb\obj\Debug\AnimatedDashboardWeb.dll
+C:\Visual Studio Projects\AnimatedDashboard\AnimatedDashboardWeb\obj\Debug\AnimatedDashboardWeb.pdb

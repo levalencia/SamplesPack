@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\News_Ticker.xml
+C:\Visual Studio Projects\News_Ticker\News_Ticker\bin\Debug\News_Ticker.app

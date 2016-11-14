@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Apps for Office: Create a news ticker display in Excel</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Apps for Office: Create a news ticker display in Excel</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, Excel 2013, apps for Office
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            sites and content
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">5/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Apps-for-Office-Create-a-d1faf18e">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">This code sample demonstrates a task pane app that is displayed in Excel 2013 when the app is first started. The task pane displays a number of lines of text (with anchor elements) that scroll upward. As the top line of text disappears, another
+ line of text appears at the bottom of the task pane. This type of action is suited to displaying news headlines from RSS feeds or other information that scrolls when size prohibits more details.</div>
+<div id="mainSection">
+<div id="mainBody">
+<div class="introduction">
+<div class="section" id="sectionSection0">
+<p>Figure 1 shows the task pane with the lines of news headlines.</p>
+<div class="caption"><strong>Figure 1. List of news headlines</strong></div>
+<br>
+<img src="description/image.png" alt="">
+<p>The sample demonstrates how to perform the following tasks:</p>
+<ul>
+<li>
+<p>Attach event handlers to HTML elements.</p>
+</li><li>
+<p>Use custom JQuery functions to animate HTML elements.</p>
+</li><li>
+<p>Dynamically add style settings to HTML elements to change the display of the list.</p>
+</li><li>
+<p>Chaining JQuery functions together to make the code more efficient.</p>
+</li></ul>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>This sample requires:</p>
+<ul>
+<li>
+<p>Visual Studio 2012.</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012.</p>
+</li><li>
+<p>Excel 2013.</p>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<p>The sample app contains the following components:</p>
+<ul>
+<li>
+<p>The News_Ticker project, which contains the News_Ticker.xml manifest file. The XML manifest file of an app for Office enables you to declaratively describe how the app should be activated when you install and use it with Office documents and applications.</p>
+</li><li>
+<p>The News_TickerWeb project, which contains multiple template files. However, the three files that have been developed as part of this sample solution include:</p>
+<ul>
+<li>
+<p>News_Ticker.html (in the Pages folder). This file contains the HTML user interface that is displayed in the task pane when the app is started. The markup consists of an unordered list element with the ID of
+<span class="code">listticker</span> that contains a list of anchor elements enclosed in paragraph elements. There is also an animated image that precedes each anchor element.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>HTML </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>&lt;ul id=&quot;listticker&quot;&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 2&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 4&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 5&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 6&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 7&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline 8&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>App.css (in the Styles folder). This cascading style sheet (CSS) contains the code that specifies the look of each line of the unordered list and the image.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>#listticker {
+font-weight:900;
+font-size: 20px;
+}
+
+#listticker li a {
+color: blue;
+}
+
+img {
+display: inline;
+width: 25px;
+height: 22px;
+padding: 0 10px 0 0; 
+}#dashboard {
+width: 70px;
+background-color: rgb(110,138,195);
+padding: 20px 20px 20px 20px;
+position: absolute;
+left: -92px;
+z-index: 100;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>News_Ticker.js (in the Scripts folder). This script file contains code that runs when the task pane app is loaded. Specifically, the script consists of commands from the JavaScript JQuery library named
+<span><span class="keyword">jquery-1.7.1.min.js</span></span>. This code first sets variables that determine various intervals such as that used by the first item as it fades out to make room for an additional item that is added to the bottom of the list
+ and how much time to takes before the next item is displayed.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>var first = 0;
+var speed = 700;
+var pause = 3000;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>Next, the <span class="code">removeFirst</span> function causes the first item at the top of the list to fade out at a specified speed. The code uses the
+<span class="code">first</span> pseudo code operator to choose the first list item. It then uses chaining to string together the
+<span class="code">animate</span> and <span class="code">fadeout</span> functions to accomplish the fade out. And finally, the code calls the
+<span class="code">addLast</span> function to add an item to the bottom of the list.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>function removeFirst() {
+    first = $('ul#listticker li:first').html();
+    $('ul#listticker li:first')
+    .animate({ opacity: 0 }, speed)
+    .fadeOut('slow', function () { $(this).remove(); });
+    addLast(first);
+    } 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>The code next sets the <span class="code">i</span> counter that is appended to each line item as it is added at the bottom of the list. The
+<span class="code">addLast</span> function then adds an item to the bottom of the list. The function uses the intervals that were specified previously to affect the speed at which the items fade into view. The time it takes before the item is displayed is
+ also set by using the <span class="code">setInterval</span> function.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>JavaScript </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>var i = 9;
+
+function addLast(first) {
+    last = '&lt;li&gt;&lt;p&gt;&lt;img src=&quot;../images/news.gif&quot; /&gt;&lt;a href=&quot;#&quot;&gt;News Headline ' &#43; (i&#43;&#43;) &#43; '&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;';
+
+    first &#43; '';
+    $('ul#listticker').append(last)
+    $('ul#listticker li:last')
+    .animate({ opacity: 1 }, speed)
+    .fadeIn('slow')
+}
+interval = setInterval(removeFirst, pause);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li></ul>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for apps for Office, and they have not been modified in the development of this sample app.</p>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection3">
+<p>To configure the sample, open the News_Ticker.sln file with Visual Studio 2012. No other configuration is necessary.</p>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection4">
+<p>To build the sample, choose Ctrl&#43;Shift&#43;B, or on the <span class="ui">Build</span> menu, select
+<span class="ui">Build Solution</span>.</p>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection5">
+<p>To run the sample, choose the F5 key. After the task pane is displayed in Excel 2013, notice that there are eight lines of text displayed preceded by an image. After an interval of time passes, the top line item starts to fade out. After the top line item
+ disappears, the entire list moves up one position to take the place of the first item. After another interval of time passes, a line item fades in at the bottom of the list. The process then repeats itself.</p>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection6">
+<p>If the app fails to install, ensure that the XML in your AnimatedDashboard.xml manifest file parses correctly. Also look for any errors in the JavaScript code that could keep the list from being displayed or the list items from properly fading in or fading
+ out. For example, you may have forgotten to end a statement with a semicolon, or you may have misspelled a method name or keyword. If the components in the task pane do not look as you think they should, check the CSS styles to ensure that you didn't forget
+ a colon between the style and its value, or leave off a semicolon at the end of a style statement.</p>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection7">
+<p>First release: April 29, 2013.</p>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj220060.aspx" >Build apps for Office</a></p>
+</li><li>
+<p><a href="http://www.w3schools.com/html/" >HTML Tutorial</a></p>
+</li><li>
+<p><a href="http://jquery.com/" >What is jQuery?</a></p>
+</li><li>
+<p><a href="http://www.w3schools.com/css/css_intro.asp" >CSS Introduction</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

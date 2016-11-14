@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Apps for Office:  Create a web service using the ASP.NET Web API</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Apps for Office:  Create a web service using the ASP.NET Web API</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Word 2013, Excel 2013, apps for Office, PowerPoint 2013, Project 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            web service
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">6/7/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Apps-for-Office-Create-a-ce255a96">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText"></span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Apps for Office: Create a web service for an app for Office using the ASP.NET Web API</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p></p>
+<div>
+<p><span>Summary:</span> This sample demonstrates how to create and query an ASP.NET Web API service from an apps for Office. The example app is comprised of a &quot;Send Feedback&quot; page, which lets a user submit feedback, and uses a Web API service to send it to
+ the developer team. </p>
+</div>
+<div>
+<h1>Description of the sample</h1>
+<div id="sectionSection0" name="collapseableSection">
+<p>This sample demonstrates how to create and query an ASP.NET Web API service. The app for Office makes an AJAX request to the web service, passing in data from the client-side JavaScript code. The Web API controller receives the data, performs an action,
+ and returns the results back to the caller. The AJAX call then completes, displaying the results or showing an error message. For a walkthrough blog post that describes the sample, see
+<a href="http://blogs.msdn.com/b/officeapps/archive/2013/06/05/create-a-web-service-for-an-app-for-office-using-the-asp-net-web-api.aspx" >
+Walkthrough: Create a web service for an app for Office using the ASP.NET Web API</a>.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1" name="collapseableSection">
+<p>This sample requires:</p>
+<ul>
+<li>
+<p>Excel 2013, Word 2013, PowerPoint 2013, or Project 2013</p>
+</li><li>
+<p>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>Internet Explorer 9 or Internet Explorer 10</p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2" name="collapseableSection">
+<p>The sample app contains:</p>
+<ul>
+<li>
+<p>Home.html and Home.js (in the App/Home folder of the web project) for the client-side page and logic.</p>
+</li><li>
+<p>SendFeedbackController.cs (in the Controllers folder of the web project) for the ASP.NET Web API controller.</p>
+</li><li>
+<p>Globals.asax (in the root of the web project), which specifies the default routing for Web API.</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3" name="collapseableSection">
+<p>The sample will work and run right out of the box - but it won't be able to really send feedback unless you configure it with appropriate credentials for sending the feedback. To configure it for real use, open the &quot;SendFeedbackController.cs&quot; file (in the
+ Controllers folder of the web project), and update the following constants:</p>
+<div><span>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<th>C# </th>
+<th></th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>const string MailingAddressFrom = &quot;app_name@contoso.com &quot;;
+    const string MailingAddressTo = &quot;dev_team@contoso.com&quot;;
+    const string SmtpHost = &quot;smtp.contoso.com&quot;;
+    const int SmtpPort = 587;
+    const bool SmtpEnableSsl = true;
+    const string SmtpCredentialsUsername = &quot;username&quot;;
+    const string SmtpCredentialsPassword = &quot;password&quot;;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4" name="collapseableSection">
+<p>Choose the F5 key to build and deploy the app.</p>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5" name="collapseableSection">
+<p>Choose the F5 key to build and deploy the app.</p>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6" name="collapseableSection">
+<p>If the app fails to send feedback, showing a notification message with &quot;Sorry, your feedback could not be sent&quot;, be sure that you have configured an appropriate email address as described in &quot;Configure the sample&quot; above. Alternatively, you can remove the
+ mail-sending code, and/or replace it with a different form of sending feedback (e.g., logging to a database).</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection7" name="collapseableSection">
+<p>First release: June 10, 2013.</p>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection8" name="collapseableSection">
+<ul>
+<li>
+<p><a href="http://blogs.msdn.com/b/officeapps/archive/2013/06/05/create-a-web-service-for-an-app-for-office-using-the-asp-net-web-api.aspx" >Walkthrough: Create a web service for an app for Office using the ASP.NET Web API</a>
+</p>
+</li><li>
+<p><a href="http://www.asp.net/web-api" >ASP.NET Web API</a> </p>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

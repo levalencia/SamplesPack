@@ -1,0 +1,5 @@
+c:\users\saulc\documents\visual studio 2012\Projects\InvoiceManager\InvoiceManagerWeb\bin\InvoiceManagerWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\InvoiceManager\InvoiceManagerWeb\bin\InvoiceManagerWeb.pdb
+c:\users\saulc\documents\visual studio 2012\Projects\InvoiceManager\InvoiceManagerWeb\obj\Debug\InvoiceManagerWeb.csprojResolveAssemblyReference.cache
+c:\users\saulc\documents\visual studio 2012\Projects\InvoiceManager\InvoiceManagerWeb\obj\Debug\InvoiceManagerWeb.dll
+c:\users\saulc\documents\visual studio 2012\Projects\InvoiceManager\InvoiceManagerWeb\obj\Debug\InvoiceManagerWeb.pdb

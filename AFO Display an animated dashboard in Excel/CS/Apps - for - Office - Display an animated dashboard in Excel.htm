@@ -1,0 +1,505 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="BuildDateTime" CONTENT="2013-04-26 10:40:23" /><META NAME="BuildVersion" CONTENT="1.0.13116.1040" /><META NAME="save" CONTENT="history" /><META NAME="DCSext.Title" CONTENT="Apps for Office: Display an animated dashboard in Excel" /><title>Apps for Office: Display an animated dashboard in Excel</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="6a2dfffe-2178-4be2-8e43-882c533ed290" /><meta name="Microsoft.Help.Category" content="Office.Version=v15" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><style type="text/css">
+                        .userDataStyle {
+                        BEHAVIOR: url(#default#userData)
+                        }
+                        DIV.saveHistory {
+                        BEHAVIOR: url(#default#savehistory)
+                        }
+                        IMG.toggle {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 5px; BORDER-RIGHT: 0px
+                        }
+                        IMG#toggleAllImage {
+                        MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle
+                        }
+                        MSHelp\:link {
+                        COLOR: #0000ff; CURSOR: hand; TEXT-DECORATION: underline; hoverColor: #3366ff
+                        }
+                        MSHelp\:link:visited {
+                        COLOR: #0481da
+                        }
+                        BODY {
+                        FONT-STYLE: normal; MARGIN: 0px; WIDTH: 100%; FONT-FAMILY: Verdana; BACKGROUND: #ffffff; COLOR: #000000; FONT-SIZE: medium; FONT-WEIGHT: normal
+                        }
+                        DL {
+                        MARGIN-TOP: 15px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 5px
+                        }
+                        DL.authored DT {
+                        MARGIN-TOP: 2px
+                        }
+                        DD {
+                        MARGIN-LEFT: 0px
+                        }
+                        UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17px
+                        }
+                        UL UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 17px
+                        }
+                        OL {
+                        LIST-STYLE-TYPE: decimal; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 28px
+                        }
+                        OL OL {
+                        LIST-STYLE-TYPE: lower-alpha; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        OL OL OL {
+                        LIST-STYLE-TYPE: lower-roman; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        LI {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+                        }
+                        P {
+                        MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px
+                        }
+                        A:link {
+                        COLOR: #0000ff
+                        }
+                        A:visited {
+                        COLOR: #dd7c3b
+                        }
+                        A:hover {
+                        COLOR: #3366ff
+                        }
+                        CODE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.italic {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.selflink {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.nolink {
+                        FONT-WEIGHT: bold
+                        }
+                        DIV#mainSection {
+                        WIDTH: 100%; FONT-SIZE: 62.5%
+                        }
+                        HTML &gt; BODY #mainSection {
+                        WIDTH: 100%; FONT-SIZE: 73%
+                        }
+                        DIV#mainBody {
+                        MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 100%
+                        }
+                        HTML &gt; BODY #mainBody {
+                        PADDING-BOTTOM: 20px; MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 93%
+                        }
+                        DIV#mainBody P {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody OL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody UL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody DL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#header {
+                        PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+                        }
+                        DIV#header TABLE {
+                        WIDTH: 100%
+                        }
+                        DIV#header TABLE TD {
+                        MARGIN-TOP: 0px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; COLOR: #0000ff; FONT-SIZE: 70%
+                        }
+                        DIV#header TABLE TR#headerTableRow2 TD {
+                        PADDING-LEFT: 13px
+                        }
+                        DIV#header TABLE TR#headerTableRow3 TD {
+                        PADDING-LEFT: 15px; PADDING-TOP: 2px
+                        }
+                        DIV#header TABLE#bottomTable {
+                        TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV#mainBody DIV.alert {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.code {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.tableSection {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.section DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV.alert P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.tableSection P {
+                        MARGIN-TOP: 1px; MARGIN-BOTTOM: 4px
+                        }
+                        LI P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.seeAlsoNoToggleSection DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.section DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.section DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: -0.4em; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        SPAN#runningHeaderText {
+                        PADDING-LEFT: 13px; COLOR: #8c8c8c; FONT-SIZE: 90%
+                        }
+                        SPAN#nsrTitle {
+                        FONT-FAMILY: arial; COLOR: #000000; FONT-SIZE: 160%; FONT-WEIGHT: 400
+                        }
+                        DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 100%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 8px
+                        }
+                        HTML &gt; BODY DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 98%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.section {
+                        PADDING-BOTTOM: 0px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        HTML &gt; BODY DIV.section {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 97%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.seeSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        .heading {
+                        MARGIN-TOP: 18px; MARGIN-BOTTOM: 8px; FONT-WEIGHT: bold
+                        }
+                        H1.heading {
+                        COLOR: #003399; FONT-SIZE: 145%
+                        }
+                        .subHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        .procedureSubHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        H3.subHeading {
+                        COLOR: #003399; FONT-SIZE: 125%; FONT-WEIGHT: 800
+                        }
+                        H3.procedureSubHeading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        H4.subHeading {
+                        FONT-VARIANT: small-caps; COLOR: #003399; FONT-SIZE: 110%; FONT-WEIGHT: 800
+                        }
+                        SPAN.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        DIV.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        IMG.copyCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 1px 3px 1px 1px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG.downloadCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.viewCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.note {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: 5px; WIDTH: 98.9%; MARGIN-BOTTOM: 5px; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE TR {
+                        VERTICAL-ALIGN: top
+                        }
+                        DIV#mainSection TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #efeff7; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000066
+                        }
+                        DIV#mainSection TABLE TD {
+                        BORDER-BOTTOM: #d5d5d3 1px solid; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #f7f7ff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV.alert TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.alert TABLE TH {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000066
+                        }
+                        DIV.alert TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid
+                        }
+                        SPAN.copyCode {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        SPAN.copyCodeOnHover {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #e85f17; FONT-SIZE: xx-small; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        .downloadCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        .viewCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        DIV.code PRE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; BACKGROUND: #f7f7ff; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        .tip {
+                        FONT-STYLE: italic; COLOR: #0000ff; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        .math {
+                        FONT-FAMILY: Times New Roman; FONT-SIZE: 125%
+                        }
+                        #devlangsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberOptionsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberFrameworksMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        .checkboxLabel {
+                        PADDING-BOTTOM: 4px; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        IMG#devlangsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberOptionsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberFrameworksDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.footerLine {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 8px
+                        }
+                        DIV.hr1 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #c8cdde; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr2 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #d4dfff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr3 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #eeeeff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        SPAN.cs {
+                        DISPLAY: none
+                        }
+                        SPAN.vb {
+                        DISPLAY: none
+                        }
+                        SPAN.cpp {
+                        DISPLAY: none
+                        }
+                        SPAN.nu {
+                        DISPLAY: inline
+                        }
+                        SPAN.fs {
+                        DISPLAY: none
+                        }
+                        SPAN.code {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.ui {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.math {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.input {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.term {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.label {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.foreignPhrase {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.placeholder {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.keyword {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.typeparameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.caption {
+                        COLOR: #003399; FONT-SIZE: 100%; FONT-WEIGHT: bold
+                        }
+                        DIV.code SPAN.identifier {
+
+                        }
+                        DIV.code SPAN.keyword {
+                        COLOR: #871f78
+                        }
+                        DIV.code SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.code SPAN.literal {
+                        COLOR: #8b0000
+                        }
+                        DIV.code SPAN.comment {
+                        COLOR: #006400
+                        }
+                        SPAN.syntaxLabel {
+                        COLOR: #0481da; FONT-WEIGHT: bold
+                        }
+                        SPAN.introStyle {
+                        COLOR: darkgray
+                        }
+                        DIV.seeAlsoStyle {
+                        PADDING-TOP: 5px
+                        }
+                        TD.nsrBottom {
+                        WIDTH: 100%; HEIGHT: 0.6em
+                        }
+                        SPAN.clsGlossary {
+                        COLOR: #509950; CURSOR: default; FONT-WEIGHT: bold
+                        }
+                        DIV.clsTooltip {
+                        BORDER-BOTTOM: black 1px solid; POSITION: absolute; BORDER-LEFT: black 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ffffaa; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; DISPLAY: none; FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 8pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 2px; TOP: 0px; LEFT: 0px
+                        }
+                        SPAN.feedbackcss {
+                        WIDTH: 100%; MARGIN-LEFT: 15px; FONT-SIZE: 110%
+                        }
+                        DIV#feedbackarea TABLE {
+                        BORDER-RIGHT-WIDTH: 0px; MARGIN-TOP: 0px; WIDTH: 300px; MARGIN-BOTTOM: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 0px; BORDER-LEFT-WIDTH: 0px
+                        }
+                        DIV#feedbackarea TABLE TD {
+                        BORDER-BOTTOM: 0px; TEXT-ALIGN: center; FONT-FAMILY: Verdana; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea P {
+                        MARGIN: 0px 5px 0px 6px; WIDTH: 100%; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea H5 {
+                        MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: 6px; FONT-SIZE: 10pt
+                        }
+                        P.feedbackarea {
+                        BACKGROUND-COLOR: #d4dfff; ; WIDTH: expression(document.body.clientWidth-27); FONT-SIZE: 100%
+                        }
+                        INPUT#submitFeedback {
+                        TEXT-ALIGN: center; FONT-SIZE: 100%
+                        }
+                        SPAN#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        DIV#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        SPAN.filterOnHover {
+                        COLOR: #e85f17
+                        }
+                        SPAN.filter {
+                        COLOR: #0000ff
+                        }
+                        A IMG {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                    </style></head><body><div id="header"><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText" /></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Apps for Office: Display an animated dashboard in Excel</span></td></tr></table></div><div id="mainSection"><div id="mainBody"><font color="DarkGray"></font><p /><div class="summary"><p><span class="label">Summary:</span>&nbsp;&nbsp;This sample app for Office shows how to use cascading style sheets and JavaScript in an Excel 2013 task pane app to create an animated dashboard that is retractable along the side of the task pane. </p></div><div class="introduction" /><a name="O15Readme_Description" /><h1 class="heading">Description of the sample</h1><div id="sectionSection0" class="section" name="collapseableSection" style=""><p>This code sample demonstrates a task pane app that is displayed in Excel 2013 when the app is first started. The task pane contains a partially hidden menu along its left side. Moving the mouse over the dashboard causes the menu to be fully displayed. Each menu item also includes a button that is used to either insert the text from a text box into the worksheet or retrieve text from the worksheet and insert it into the text box. </p><p>Figure 1 shows the task pane with the partially displayed dashboard.</p><div class="caption">Figure 1. Initial state of the dashboard</div><br /><img alt="Initial state of the tab menu" src="Apps_AnimatedDashboard_01.jpg" /><p>Figure 2 shows the fully displayed dashboard.</p><div class="caption">Figure 2. Fully displayed dashboard</div><br /><img alt="Fully displayed tab menu" src="Apps_AnimatedDashboard_02.jpg" /><p>The sample demonstrates how to perform the following tasks: </p><ul><li><p>Attach event handlers to HTML elements.</p></li><li><p>Use custom JQuery functions to animate HTML elements.</p></li><li><p> Dynamically add style settings to HTML elements to change the display of the dashboard.</p></li><li><p> Retrieve selected content from the worksheet. </p></li><li><p> Insert content from a text box into the worksheet.</p></li></ul></div><a name="O15Readme_Prereq" /><h1 class="heading">Prerequisites</h1><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>This sample requires:</p><ul><li><p>Visual Studio 2012.</p></li><li><p>Office Developer Tools for Visual Studio 2012.</p></li><li><p>Excel 2013.</p></li></ul></div><a name="O15Readme_components" /><h1 class="heading">Key components of the sample</h1><div id="sectionSection2" class="section" name="collapseableSection" style=""><p>The sample app contains the following components:</p><ul><li><p>The AnimatedDashboard project, which contains the AnimatedDashboard.xml manifest file. The XML manifest file of an app for Office enables you to declaratively describe how the app should be activated when you install and use it with Office documents and applications.</p></li><li><p>The AnimatedDashboardWeb project, which contains multiple template files. However, the three files that have been developed as part of this sample solution include:</p><ul><li><p>AnimatedDashboard.html (in the Pages folder). This file contains the HTML user interface that is displayed in the task pane when the app is started. The markup consists of a &lt;div&gt; element that contains a text box element that has an ID of <span class="code">selectedDataTxt</span>. It also contains another &lt;div&gt; element that has the ID of <span class="code">dashboard</span> that contains two buttons that have IDs of <span class="code">setDataBtn</span> and <span class="code">getDataBtn</span>. The <span class="code">setDataBtn</span> button inserts text from the text box into the worksheet. The <span class="code">getDataBtn</span> button retrieves any selected text from the worksheet and inserts it into the text box.</p></li><li><p>App.css (in the Styles folder). This cascading style sheet (CSS) contains the code that specifies the initial look of the dashboard and the elements each menu item contains as shown in the following code. Particularly notice the <span class="code">left: -92px</span> setting that causes the dashboard to appear partially hidden on the left side of the task pane.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>#dashboard {
+width: 70px;
+background-color: rgb(110,138,195);
+padding: 20px 20px 20px 20px;
+position: absolute;
+left: -92px;
+z-index: 100;
+}</pre></td></tr></table></span></div><p>The CSS also contains the style code that specifies the appearance of the two buttons.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>#setDataBtn
+{
+margin-right: 10px; 
+padding: 0px; 
+width: 90px;
+}
+
+#getDataBtn
+{
+padding: 0px; 
+width: 90px;
+}</pre></td></tr></table></span></div><p>Finally, the following code formats the text box.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>#selectedDataTxt
+{
+margin-top: 10px; 
+width: 210px
+}</pre></td></tr></table></span></div></li><li><p>AnimatedDashboard.js (in the Scripts folder). This script file contains code that runs when the task pane app is loaded. Specifically, the script consists of commands from the JavaScript JQuery libraries named <span sdata="langKeyword" value="jquery.easing.1.3.js"><span class="keyword">jquery.easing.1.3.js</span></span> and <span sdata="langKeyword" value="jquery-1.7.1.min.js"><span class="keyword">jquery-1.7.1.min.js</span></span>. This startup script first attaches code to the <span sdata="langKeyword" value="hover"><span class="keyword">hover</span></span> event of the &lt;div&gt; element that has the ID <span sdata="langKeyword" value="dashboard"><span class="keyword">dashboard</span></span> that contains the menu items. The <span sdata="langKeyword" value="hover"><span class="keyword">hover</span></span> event takes two arguments that define what happens when you move the mouse over the menu and then what happens when you move the mouse off of the menu. </p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>$('#dashboard').hover(</pre></td></tr></table></span></div><p>When the mouse is moved over the dashboard, the CSS <span class="code">left</span> attribute value is dynamically changed from a negative value (menu is partially hidden) to 0, which causes the dashboard to be displayed. Next, the code sets the duration for the animation to 500 milliseconds, which equates to half a second. Finally, the code sets a custom easing method from the <span sdata="langKeyword" value="jquery.easing.1.3.js"><span class="keyword">jquery.easing.1.3.js</span></span> library that causes the dashboard to appear slowly at first and then speed up.</p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function() {
+$(this).stop().animate(
+{
+    left: '0',
+},
+500,
+'easeInSine'
+);</pre></td></tr></table></span></div><p>When the mouse is moved off of the dashboard, the following code is run. The <span class="code">left</span> attribute is reset to a negative value, which causes it to be partially hidden on the left side of the task pane. Next, the code sets the duration for the animation to 1500 milliseconds, which equates to one and a half seconds. Finally the code sets a custom easing, which causes the dashboard to retract to the left and then appear to bounce before settling in.</p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function() {
+$(this).stop().animate(
+{
+    left: '-92px'
+},
+1500,
+'easeOutBounce'
+);</pre></td></tr></table></span></div><p>When the <span class="ui">Set data</span> button is clicked, the <span sdata="langKeyword" value="click"><span class="keyword">click</span></span> event is activated to call the <span sdata="langKeyword" value="setData"><span class="keyword">setData</span></span> function, passing in the text in the text box. </p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>$('#setDataBtn').click(function () { setData('#selectedDataTxt'); });</pre></td></tr></table></span></div><p>The <span sdata="langKeyword" value="setData"><span class="keyword">setData</span></span> function calls the <span sdata="langKeyword" value="setSelectedDataAsync"><span class="keyword">setSelectedDataAsync</span></span> method to insert the text from the active panel into the worksheet. The <span sdata="langKeyword" value="setSelectedDataAsync"><span class="keyword">setSelectedDataAsync</span></span> method asynchronously writes data to the current selection in the document.</p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function setData(elementId) {
+    Office.context.document.setSelectedDataAsync($(elementId).val());
+}</pre></td></tr></table></span></div><p>Similar to the <span class="ui">Set data</span> button, the <span class="ui">Get data</span> button activates the <span sdata="langKeyword" value="click"><span class="keyword">click</span></span> event to call the <span sdata="langKeyword" value="getData"><span class="keyword">getData</span></span> function, passing in the ID of the <span class="code">selectedDataTxt</span> text box.</p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>$('#getDataBtn').click(function () { getData('#selectedDataTxt'); });</pre></td></tr></table></span></div><p>The <span sdata="langKeyword" value="getData"><span class="keyword">getData</span></span> function reads the data from current selection of the document and displays it in a text box</p><div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function getData(elementId) {
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
+    function (result) {
+        if (result.status === 'succeeded') {
+            $(elementId).val(result.value);
+        }
+});</pre></td></tr></table></span></div></li></ul></li></ul><p>This code sample also requires the use of a custom JQuery library named <span sdata="langKeyword" value="jquery.easing.1.3.js"><span class="keyword">jquery.easing.1.3.js</span></span> that contains the functions that enable the dashboard animations. All other files are automatically provided by the Visual Studio project template for apps for Office, and they have not been modified in the development of this sample app.</p></div><a name="O15Readme_config" /><h1 class="heading">Configure the sample</h1><div id="sectionSection3" class="section" name="collapseableSection" style=""><p>To configure the sample, open the AnimatedDashboard.sln file with Visual Studio 2012. No other configuration is necessary.</p></div><a name="O15Readme_build" /><h1 class="heading">Build the sample</h1><div id="sectionSection4" class="section" name="collapseableSection" style=""><p>To build the sample, choose Ctrl+Shift+B, or on the <span class="ui">Build</span> menu, select <span class="ui">Build Solution</span>.</p></div><a name="O15Readme_test" /><h1 class="heading">Run and test the sample</h1><div id="sectionSection5" class="section" name="collapseableSection" style=""><p>To run the sample, choose the F5 key. After the task pane is displayed in Excel 2013, notice that there is a text box that contains sample text. There is also a dashboard on the left side of the task pane. Moving the mouse over the dashboard causes it to move to the right, displaying the <span class="ui">Set data</span> and <span class="ui">Get data</span> buttons. Click the <span class="ui">Set data</span> button. Notice that the text from the text box is inserted into the worksheet. Change the text in the worksheet and then click the <span class="ui">Get data</span> button. Notice that the updated text appears in the text box. </p></div><a name="O15Readme_Troubleshoot" /><h1 class="heading">Troubleshooting</h1><div id="sectionSection6" class="section" name="collapseableSection" style=""><p>If the app fails to install, ensure that the XML in your AnimatedDashboard.xml manifest file parses correctly. Also look for any errors in the JavaScript code that could keep the dashboard from being displayed. For example, you may have forgotten to end a statement with a semicolon, or you may have misspelled a method name or keyword. If the components in the task pane do not look as you think they should, check the CSS styles to ensure that you didn't forget a colon between the style and its value, or leave off a semicolon at the end of a style statement. </p></div><a name="O15Readme_Changelog" /><h1 class="heading">Change log</h1><div id="sectionSection7" class="section" name="collapseableSection" style=""><p>First release: April 29, 2013.</p></div><a name="O15Readme_RelatedContent" /><h1 class="heading">Related content</h1><div id="sectionSection8" class="section" name="collapseableSection" style=""><ul><li><p><a href="http://msdn.microsoft.com/en-us/library/jj220060.aspx" target="_blank">Build apps for Office</a></p></li><li><p><a href="http://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p></li><li><p><a href="http://jquery.com/" target="_blank">What is jQuery?</a></p></li><li><p><a href="http://www.w3schools.com/css/css_intro.asp" target="_blank">CSS Introduction</a></p></li><li><p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp142145.aspx" target="_blank">Document.setSelectedDataAsync</a> method</p></li><li><p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp142294.aspx" target="_blank">Document.getSelectedDataAsync</a> method</p></li></ul></div></div></div></body></html>

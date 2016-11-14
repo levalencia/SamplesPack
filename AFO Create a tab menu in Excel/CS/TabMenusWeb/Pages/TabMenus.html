@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>TabMenus</title>
+
+    <link rel="stylesheet" type="text/css" href="../Content/Office.css" />
+
+    <!-- Add your CSS styles to the following file -->
+    <link rel="stylesheet" type="text/css" href="../Content/App.css" />
+
+    <script src="../Scripts/jquery-1.7.1.js"></script>
+
+    <!-- Use the CDN reference to Office.js when deploying your app -->
+    <!--<script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js"></script>-->
+
+    <!-- Use the local script references for Office.js to enable offline debugging -->
+    <script src="../Scripts/Office/1.0/MicrosoftAjax.js"></script>
+    <script src="../Scripts/Office/1.0/office.js"></script>
+
+    <!-- Add your JavaScript to the following file -->
+    <script src="../Scripts/TabMenus.js"></script>
+</head>
+<body>
+    <div class="tabbedPanels">
+	   <ul class="tabs">
+          <li><a href="#panel1" tabindex="1">Tab 1</a></li>
+          <li><a href="#panel2" tabindex="2">Tab 2</a></li>
+          <li><a href="#panel3" tabindex="3">Tab 3</a></li>
+       </ul>
+    </div>
+    <div class="panelContainer">
+        <div id="panel1" class="panel">
+            <h2>Panel 1 Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id sapien vel lorem lobortis vehicula. Quisque augue eros, viverra auctor vestibulum vitae, rutrum condimentum neque. Aenean ante ligula, convallis ac luctus at, fermentum at odio. Phasellus et aliquet tortor. Vivamus sagittis quam eu quam tincidunt egestas. Morbi velit libero, volutpat nec faucibus nec, placerat non tellus.</p>
+        </div>
+        <div id="panel2" class="panel">
+            <h2>Panel 2 Content</h2>
+            <p>Sed lorem arcu, blandit scelerisque mattis ut, lobortis vitae dolor. Sed erat leo, ornare in sagittis nec, aliquet at nunc. Curabitur at nisl ut erat gravida aliquet fringilla et ligula. Curabitur eu velit quis diam volutpat aliquet. Sed convallis, nunc sit amet egestas dictum, leo nunc rhoncus massa, non consequat velit erat sed dui. Ut posuere sem at ipsum vestibulum a egestas nisl pellentesque.</p>
+        </div>
+        <div id="panel3" class="panel">
+            <h2>Panel 3 Content</h2>
+            <p>Donec venenatis sem a elit ultricies sit amet sodales tortor cursus. Quisque sit amet ullamcorper nisi. Proin in nisl sed nisl consequat tincidunt ac vitae erat. Nunc accumsan purus in diam laoreet vel tempus tellus viverra. In eu tincidunt nisl. Mauris at felis sem. Maecenas dapibus tempor ipsum eu posuere. Duis elementum pellentesque lorem sit amet fermentum. Phasellus enim magna, vestibulum .</p>
+        </div>
+        <input type="button" value="Insert data" id="setDataBtn" style="margin-right: 10px; padding: 0px; width: 100px;" />
+    </div>

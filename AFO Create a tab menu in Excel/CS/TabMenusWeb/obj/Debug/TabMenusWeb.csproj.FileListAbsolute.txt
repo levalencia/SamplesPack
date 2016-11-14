@@ -1,0 +1,5 @@
+C:\Visual Studio Projects\TabMenus\TabMenusWeb\bin\TabMenusWeb.dll
+C:\Visual Studio Projects\TabMenus\TabMenusWeb\bin\TabMenusWeb.pdb
+C:\Visual Studio Projects\TabMenus\TabMenusWeb\obj\Debug\TabMenusWeb.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\TabMenus\TabMenusWeb\obj\Debug\TabMenusWeb.dll
+C:\Visual Studio Projects\TabMenus\TabMenusWeb\obj\Debug\TabMenusWeb.pdb

@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\VerticallyScrollingMenu.xml
+C:\CompletedAppsCodeSamples\VerticallyScrollingMenu\VerticallyScrollingMenu\bin\Debug\VerticallyScrollingMenu.app

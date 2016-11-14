@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>0d371781-d394-481f-ae01-37f64e40baae</Id>
+  <Version>1.0</Version>
+  <ProviderName>Administrator</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="News_Ticker" />
+  <Description DefaultValue="News_Ticker Description"/>
+  <Capabilities>
+    <Capability Name="Workbook" />
+    <Capability Name="Presentation" />
+    <Capability Name="Document" />
+  </Capabilities>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/Pages/News_Ticker.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

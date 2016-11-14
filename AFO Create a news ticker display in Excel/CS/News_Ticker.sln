@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News_Ticker", "News_Ticker\News_Ticker.csproj", "{977DD742-2793-49D4-B5CF-A7446A2E6220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News_TickerWeb", "News_TickerWeb\News_TickerWeb.csproj", "{BAADD559-B598-4641-A496-74402FE636BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977DD742-2793-49D4-B5CF-A7446A2E6220}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BAADD559-B598-4641-A496-74402FE636BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAADD559-B598-4641-A496-74402FE636BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAADD559-B598-4641-A496-74402FE636BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAADD559-B598-4641-A496-74402FE636BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
